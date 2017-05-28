@@ -1,0 +1,201 @@
+/* function */
+*, *::before, *::after{box-sizing: border-box;-webkit-box-sizing: border-box;}
+i[class^="icon-"]{display: block;}
+.f-l{float:left;}
+.f-r{float:right;}
+.clearfix{_height:1%;}
+.clearfix:after{content:".";display:block;height:0;clear:both;visibility:hidden;}
+.clearfix::before,.clearfix::after{content: " ";display:table; clear:both;}
+.show{display: block!important;}
+.hide{display: none!important;}
+.absolute{position: absolute;}
+.relative{position: relative;}
+.fixed{position: fixed;}
+.pointer{cursor: pointer;}
+.text-left{text-align: left!important;}
+.text-center{text-align: center!important;}
+.text-right{text-align: right!important;}
+.normal{font-weight: normal!important;font-style: normal!important;}
+.bold{font-weight: bold!important;}
+
+.bgc-fff{background-color: #fff!important;}
+.bgc-e6e6e6{background-color: #e6e6e6!important;}
+
+.auto{margin: 0 auto;}
+
+.base-wrap{
+  margin: 0 auto;
+  width: 1260px;
+  min-height: 20px;
+  position: relative;
+}
+
+/* grid */
+body, html {
+  height: 100%;
+  width: 100%;
+}
+.grid-box {
+  position: relative;
+  min-height: 100%;
+  _height: 100%;
+}
+/* header部分 -- start */
+#header{
+  height: 195px;
+}
+.header-top-box{
+  height: 130px;
+  padding-top: 27px;
+}
+.header-top-box a{
+  color: #767676;
+}
+.header-top-box a:hover{
+  color: #747474;
+  text-decoration: underline;
+}
+.header-top__left,
+.header-top__right{
+  width: 230px;
+}
+.header-top__left ul li,
+.header-top__right ul li{
+  float: left;
+}
+.header-top__left ul li{
+  margin-left: 40px;
+}
+.header-top__right{
+  text-align: right;
+}
+.icon-search__header{
+  width: 18px;
+  height: 18px;
+  background: url('../images/icon-search-header.png') center no-repeat;
+}
+.header-top__middle{ 
+  width: 100%;
+}
+.header-top-box .icon-logo{
+  width: 165px;
+  height: 102px;
+  background: url('../images/logo.png') center no-repeat;
+}
+/* >>>头部导航栏部分 -- start */
+.header-nav__ul{
+  height: 66px;
+  width: 1195px;
+  margin: auto;
+}
+.header-nav__ul li{
+  float: left;
+  line-height: 66px;
+  margin-left: 140px;
+}
+.header-nav__ul li:first-child{
+  margin-left: 0;
+}
+.header-nav__ul a,
+.header-nav__ul a span{
+  display: block;
+}
+.header-nav__ul li a{
+  height: 66px;
+  font-size: 10px;
+  color: #747474;
+}
+.header-nav__ul a .line{
+  display: none;
+  position: relative;
+  bottom: 6px;
+  height: 5px;
+  background: #0f1d41 url('../images/bg-nav__active.png') center repeat-x;
+}
+.header-nav__ul a.active .line,
+.header-nav__ul a:hover .line{
+  display: block;
+}
+/* >>>头部导航栏部分 -- end */
+/* header部分 -- end */
+#main{
+  padding: 0 0 484px;
+  zoom: 1;
+}
+/* footer部分 -- start */
+#footer {
+  position: relative;
+  height: 484px;
+  margin: -484px 0 0;
+}
+.footer-qrcode-box{
+  padding-top: 85px;
+  width: 452px;
+  height: 400px;
+}
+.footer-qrcode-box .icon-logo__bottom{
+  width: 298px;
+  height: 68px;
+  background: url('../images/logo-bottom.png') center no-repeat;
+}
+.qrcodes-box__ul{
+  margin-top: 64px;
+}
+.qrcodes-box__ul li{
+  float: left;
+  margin-left: 55px;
+  text-align: center;
+}
+.qrcodes-box__ul li:first-child{
+  margin-left: 0px;
+}
+.icon-qrcode__wechat,
+.icon-qrcode__android,
+.icon-qrcode__ios{
+  width: 96px;
+  height: 96px;
+  margin: 0 auto 18px;
+}
+.icon-qrcode__wechat{
+  background: url('../images/qrcode-wechat.png') center no-repeat;
+}
+.icon-qrcode__android{
+  background: url('../images/qrcode-andriod.png') center no-repeat;
+}
+.icon-qrcode__ios{
+  background: url('../images/qrcode-ios.png') center no-repeat;
+}
+.qrcodes-box__ul .qrcode-txt{
+  font-size: 8px;
+  color: #0f1d41;
+}
+.footer{
+  height: 84px;
+  background-color: #0f1d41;
+  color: #a6afb5;
+}
+.footer-box{
+  width: 895px;
+  padding-top: 35px;
+}
+.footer-nav__ul li{
+  width: 94px;
+  line-height: 1em;
+  margin-top: 3px;
+  text-align: center;
+  float: left;
+  border-left: 1px solid #a6afb5;
+  border-right: 1px solid #a6afb5;
+  margin-left: -1px;
+}
+.footer-nav__ul li:first-child{
+  margin-left: 0px;
+}
+.footer-nav__ul li a{
+  color: #a6afb5;
+}
+.footer-nav__ul li a:hover{
+  text-decoration: underline;
+}
+
+/* footer部分 -- end */
