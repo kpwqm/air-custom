@@ -13,7 +13,7 @@ gulp.task("css", function(){
 })
 
 gulp.task('css-watch',function(cb){
-  var watcher = gulp.watch('./static/css/`*.*', ['css']);
+  var watcher = gulp.watch('./static/css/*.*', ['css']);
   watcher.on('change', function(event) {
     console.log('File ' + event.path + ' was ' + event.type + ', running tasks...');
   });
