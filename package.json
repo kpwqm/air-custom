@@ -1,0 +1,25 @@
+{
+  "name": "air-custom",
+  "version": "1.0.0",
+  "description": "",
+  "main": "gulpfile.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/kpwqm/air-custom.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/kpwqm/air-custom/issues"
+  },
+  "homepage": "https://github.com/kpwqm/air-custom#readme",
+  "dependencies": {
+    "gulp": "^3.9.1",
+    "gulp-css-spriter": "^0.4.0"
+  },
+  "devDependencies": {
+  }
+}
