@@ -18,8 +18,10 @@
   "homepage": "https://github.com/kpwqm/air-custom#readme",
   "dependencies": {
     "gulp": "^3.9.1",
-    "gulp-css-spriter": "^0.4.0"
+    "gulp-css-spriter": "^0.4.0",
+    "gulp-run-sequence": "^0.3.2"
   },
   "devDependencies": {
+    "gulp-concat": "^2.6.1"
   }
 }

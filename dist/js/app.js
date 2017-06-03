@@ -14,3 +14,7 @@ jq(document).ready(function(){
 })
   
 console.log('End common.js ...');
+console.log('loaded index.js ...');
+
+  
+console.log('End index.js ...');
