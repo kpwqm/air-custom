@@ -1,7 +1,7 @@
 /* reset */
 html,body,h1,h2,h3,h4,h5,h6,div,dl,dt,dd,ul,ol,li,p,blockquote,pre,hr,figure,table,caption,th,td,form,fieldset,legend,input,button,textarea,menu{margin:0; padding:0;}
 html,body,button,input,select,textarea{font-family: "黑体", "Microsoft YaHei", "微软雅黑", "Helvetica Neue", Helvetica, STHeiTi, tahoma, Arial, sans-serif; }
-body{min-width: 1260px; font-size: 12px; line-height: 1.5; color: #333; background-color: #fff; overflow-x: hidden; }
+body{min-width: 1260px; font-size: 14px; line-height: 1.5; color: #333; background-color: #fff; overflow-x: hidden; }
 ul,ol{list-style: none outside none;}
 li{list-style:none;}
 h1,h2,h3,h4,h5,h6,small{font-size:100%;}
@@ -66,7 +66,11 @@ i[class^="icon-"]{display: block;}
 .bgc-e6e6e6{background-color: #e6e6e6!important;}
 
 .auto{margin: 0 auto;}
-
+.ellipsis{
+  overflow-x: hidden;
+  text-overflow:ellipsis;
+  white-space: nowrap;
+}
 .base-wrap{
   margin: 0 auto;
   width: 1260px;
@@ -114,6 +118,7 @@ body, html {
 .header-top-box{
   height: 130px;
   padding-top: 27px;
+  font-size: 14px;
 }
 .header-top-box a{
   display: block;
@@ -123,9 +128,8 @@ body, html {
   color: #747474;
   text-decoration: underline;
 }
-.header-top__left,
-.header-top__right{
-  width: 230px;
+.header-top__left{
+  margin-left: 26px;
 }
 .header-left__ul li,
 .header-right__ul li{
@@ -135,12 +139,8 @@ body, html {
   margin-left: 40px;
 }
 .header-top__right{
+  margin-right: 76px;
   text-align: right;
-}
-.header-top__right .user-signin span,
-.header-top__right .user-signin a{
-  color: #4c4c4c;
-  font-size: 14px;
 }
 .icon-search__header{
   display: block;
@@ -176,7 +176,7 @@ body, html {
 }
 .header-nav__ul li a{
   height: 66px;
-  /*font-size: 12px;*/
+  font-size: 16px;
   color: #747474;
 }
 .header-nav__ul a .line{
@@ -193,11 +193,17 @@ body, html {
 }
 /* >>>头部导航栏部分 -- end */
 /*已登陆部分 -- start*/
+.user-signin a,
+.user-signin span,
 .user-logined .user-account a,
 .user-logined .user-account span{
-  display: inline-block;
+  display: block;
+  float: left;
+  font-size: 14px;
+  color: #4c4c4c;
 }
 .user-logined .user-name__a{
+  max-width: 200px;
   height: 30px;
 }
 .user-logined .user-arrow{
@@ -238,7 +244,7 @@ body, html {
   text-align: left;
   background-color: #fff;
   border: 1px solid #c9c9c9;
-  left: -112px;
+  right: -74px;
   top: 30px;
   z-index: 999;
   display: none;
@@ -350,7 +356,7 @@ body, html {
 }
 .footer-qrcode-box{
   padding-top: 85px;
-  width: 452px;
+  width: 510px;
   height: 400px;
 }
 .footer-qrcode-box .icon-logo__bottom{
@@ -386,7 +392,7 @@ body, html {
   background: url('../images/common/qrcode-ios.png') center no-repeat;
 }
 .qrcodes-box__ul .qrcode-txt{
-  /*font-size: 12px;*/
+  font-size: 14px;
   color: #0f1d41;
 }
 .footer{
@@ -397,6 +403,7 @@ body, html {
 .footer-box{
   width: 895px;
   padding-top: 35px;
+  font-size: 12px;
 }
 .footer-nav__ul li{
   width: 94px;
