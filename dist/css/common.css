@@ -252,6 +252,13 @@ a.disabled {
 	-webkit-box-sizing: border-box;
 }
 
+input::-webkit-input-placeholder,
+input:-moz-placeholder,
+input::-moz-placeholder,
+input:-ms-input-placeholder {
+	color: #c9c9c9;
+}
+
 i[class^="icon-"] {
 	display: block;
 }
@@ -356,8 +363,17 @@ i[class^="icon-"] {
 	background-color: #e6e6e6!important;
 }
 
+.bgi-title__h1 {
+	/* @meta {"spritesheet":{"include":false}} */
+	background: url('../images/common/bg-title.png') no-repeat center bottom;
+}
+
 .auto {
 	margin: 0 auto;
+}
+
+.va-top {
+	vertical-align: top;
 }
 
 .ellipsis {
@@ -368,10 +384,12 @@ i[class^="icon-"] {
 
 .base-wrap {
 	margin: 0 auto;
-	width: 1260px;
+	width: 1200px;
 	min-height: 20px;
 	position: relative;
 }
+
+/* 按钮 */
 
 .ac-btn {
 	min-width: 64px;
@@ -458,7 +476,7 @@ html {
 	width: 18px;
 	height: 18px;
 	background: url('/dist/images/sprite-1.0.0.png') center no-repeat;
-	background-position: -298px -229px;
+	background-position: -255px -190px;
 }
 
 .header-top__middle {
@@ -670,32 +688,32 @@ html {
 
 .icon-user-cart {
 	background: url('/dist/images/sprite-1.0.0.png') center no-repeat;
-	background-position: -338px -209px;
+	background-position: -261px -108px;
 }
 
 .icon-user-favorites {
 	background: url('/dist/images/sprite-1.0.0.png') center no-repeat;
-	background-position: -318px -209px;
+	background-position: -261px -88px;
 }
 
 .icon-user-orders {
 	background: url('/dist/images/sprite-1.0.0.png') center no-repeat;
-	background-position: -298px -209px;
+	background-position: -261px -128px;
 }
 
 .icon-user-pay {
 	background: url('/dist/images/sprite-1.0.0.png') center no-repeat;
-	background-position: -338px -189px;
+	background-position: -255px -170px;
 }
 
 .icon-user-account {
 	background: url('/dist/images/sprite-1.0.0.png') center no-repeat;
-	background-position: -318px -189px;
+	background-position: -275px -170px;
 }
 
 .icon-user-login {
 	background: url('/dist/images/sprite-1.0.0.png') center no-repeat;
-	background-position: -298px -189px;
+	background-position: -261px -68px;
 }
 
 /*已登陆部分 -- end*/
@@ -753,17 +771,17 @@ html {
 
 .icon-qrcode__wechat {
 	background: url('/dist/images/sprite-1.0.0.png') center no-repeat;
-	background-position: -96px -170px;
+	background-position: -0px -170px;
 }
 
 .icon-qrcode__android {
 	background: url('/dist/images/sprite-1.0.0.png') center no-repeat;
-	background-position: -0px -170px;
+	background-position: -165px -68px;
 }
 
 .icon-qrcode__ios {
 	background: url('/dist/images/sprite-1.0.0.png') center no-repeat;
-	background-position: -165px -68px;
+	background-position: -96px -170px;
 }
 
 .qrcodes-box__ul .qrcode-txt {
@@ -824,22 +842,22 @@ html {
 
 #fixed-consult {
 	background: url(/dist/images/sprite-1.0.0.png) no-repeat center;
-	background-position: -298px -126px;
+	background-position: -298px -63px;
 }
 
 #fixed-app {
 	background: url(/dist/images/sprite-1.0.0.png) no-repeat center;
-	background-position: -298px -63px;
+	background-position: -192px -170px;
 }
 
 #fixed-favorites {
 	background: url(/dist/images/sprite-1.0.0.png) no-repeat center;
-	background-position: -298px -0px;
+	background-position: -298px -126px;
 }
 
 #fixed-top {
 	background: url(/dist/images/sprite-1.0.0.png) no-repeat center;
-	background-position: -192px -170px;
+	background-position: -298px -0px;
 }
 
 /*右侧固定部分 - end*/

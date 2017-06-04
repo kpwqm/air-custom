@@ -1,0 +1,139 @@
+/*登陆页面 css -- start */
+.main-login{
+  padding-top: 100px!important;
+}
+.main-login_box{
+  width: 666px;
+  margin: 0 auto;
+  background: #fff;
+  border-radius: 5px;
+  border: 2px solid #c9c9c9;
+  box-shadow: 0 0 10px #c9c9c9;
+}
+.main-login,#footer{
+  background: rgba(227, 227, 227, 1);
+}
+.login-title{
+  display: block;
+  padding-top: 125px;
+  font-size: 40px;
+  color: #4e4e4e;
+  letter-spacing: 6px;
+  text-align: center;
+}
+.icon-bg-user_title {
+	/*background: url('../images/sprite-1.0.0.png') center no-repeat;
+	background-position: -0px -170px;*/
+  width: 207px;
+  height: 14px;
+	background: url('../images/common/bg-user_title.png') center no-repeat;
+  margin: 25px auto;
+}
+.login-form .login-username,.login-form .login-password-box{
+  display: block;
+  margin: 0 auto;
+  margin-top: 17px;
+  width: 70%;
+}
+.login-form .login-username,.login-form .login-password-box .login-password{
+  height: 30px;
+  line-height: 30px;
+  font-size: 16px;
+  border-radius: 3px;
+  border: 1px solid #c9c9c9;
+  padding-left: 40px;
+}
+.login-form .login-username{
+	background: url('../images/common/icon-user-login-1.png') 10px center no-repeat;
+}
+.login-form .login-password-box .login-password{
+  width: 100%;
+	background: url('../images/common/icon-user-password.png') 9px center no-repeat;
+}
+.login-form .login-password-box{
+  position: relative;
+}
+.login-form .login-password_see{
+  position: absolute;
+  right: 15px;
+  top: 0;
+  bottom: 0;
+  margin: auto;
+  width: 28px;
+  height: 18px;
+	background: url('../images/common/icon-user-see.png') center no-repeat;
+}
+.login-form .login-submit{
+  display: block;
+  margin: 0 auto;
+  margin-top: 40px;
+  width: 307px;
+  height: 50px;
+  background: rgba(15, 29, 65, 1);
+  color: #fff;
+  font-size: 16px;
+  border: 0;
+  border-radius: 5px;
+  -webkit-transition: all 0.2s ease-in-out;
+  -moz-transition: all 0.2s ease-in-out;
+  transition: all 0.2s ease-in-out;
+}
+.login-form .login-submit:hover{
+  background: rgba(15, 29, 65, 0.8);
+}
+.login-forget{
+  display: table;
+  margin: 0 auto;
+  margin-top: 10px;
+  margin-bottom: 70px;
+  font-size: 14px;
+  color: #7e8698;
+}
+.main-login_box .login-external{
+    display: table;
+    margin: 0 auto;
+    margin-bottom: 25px;
+}
+.main-login_box .login-external a{
+  display: block;
+  float: left;
+  margin: 0 10px;
+  width: 32px;
+  height: 32px;
+}
+.main-login_box .login-external a.login-wechat{
+	background: url('../images/common/icon-user-wechat.png') center no-repeat;
+}
+.main-login_box .login-external a.login-qq{
+	background: url('../images/common/icon-user-qq.png') center no-repeat;
+}
+.main-login_bottom{
+  padding: 23px 40px;
+  height: 77px;
+  border-top: 2px solid #c9c9c9;
+  background: -webkit-linear-gradient(rgba(255, 255, 255, 1), rgba(240, 240, 240, 1)); /* Safari 5.1 - 6.0 */
+  background: -o-linear-gradient(rgba(255, 255, 255, 1), rgba(240, 240, 240, 1)); /* Opera 11.1 - 12.0 */
+  background: -moz-linear-gradient(rgba(255, 255, 255, 1), rgba(240, 240, 240, 1)); /* Firefox 3.6 - 15 */
+  background: linear-gradient(rgba(255, 255, 255, 1), rgba(240, 240, 240, 1)); /* 标准的语法 */
+}
+.main-login_bottom .login-cancel,.main-login_bottom ul li{
+  float: left;
+  line-height: 32px;
+  font-size: 14px;
+  color: #4c4c4c;
+}
+.main-login_bottom ul{
+  float: right;
+}
+.main-login_bottom ul li .login-register{
+  display: block;
+  width: 133px;
+  height: 32px;
+  margin-left: 25px;
+  text-align: center;
+  border-radius: 3px;
+  background: rgba(15, 29, 65, 1);
+  color: #fff;
+}
+
+/*登陆页面 css -- end */
