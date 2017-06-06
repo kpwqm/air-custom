@@ -20,6 +20,7 @@
   </script>
   <script src="./static/lib/bootstrap/modal/index.js"></script>
   <link rel="stylesheet" href="./static/lib/bootstrap/modal/style.css">
+  <link rel="stylesheet" href="./dist/css/style_chen.css">
 
 </head>
 <body>
@@ -172,12 +173,62 @@
       </div>
     </div>
     <!--header 部分 - end-->
-    <div id="main">
-      
+    <div id="main" class="main-login bgc-e3e3e3">
+      <!--个人收藏 部分 - start-->
+      <div class="main-personal_box">
+        <span class="login-title">个人收藏</span>
+        <i class="icon-bg-user_title"></i>
+        <!--个人收藏 编辑 - start-->
+        <div class="personal_contral-box">
+          <a class="personal_contral" href="javascript:void(0)">编辑</a>
+          <div class="personal_contral-ing">
+            <a class="personal_contral-del" href="javascript:void(0)">删除</a>
+            <a class="personal_contral-can" href="javascript:void(0)">取消</a>
+          </div>
+        </div>
+        <!--个人收藏 编辑 - end-->
+        <!--个人收藏 列表 - start-->
+        <div class="personal_list clearfix">
+          <form action="">
+          <ul> 
+            <li>
+              <div class="title">
+                <label class="list_checkbox"><input name="personal_list" type="checkbox">Aer Pro-l-150</lal>
+              </div>
+              <a class="more" href="javascript:void(0)">更多信息</a>
+              <div class="imgbox middle_center"><img src="dist/images/common/pic-per1.jpg" alt=""></div>
+            </li>
+            <li>
+              <div class="title">
+                <label class="list_checkbox"><input name="personal_list" type="checkbox">Aer Pro-l-180</lal>
+              </div>
+              <a class="more" href="javascript:void(0)">更多信息</a>
+              <div class="imgbox middle_center"><img src="dist/images/common/pic-per2.jpg" alt=""></div>
+            </li>
+            <li>
+              <div class="title">
+                <label class="list_checkbox"><input name="personal_list" type="checkbox">Aer Pro-l-240</lal>
+              </div>
+              <a class="more" href="javascript:void(0)">更多信息</a>
+              <div class="imgbox middle_center"><img src="dist/images/common/pic-per3.jpg" alt=""></div>
+            </li>
+            <li>
+              <div class="title">
+                <label class="list_checkbox"><input name="personal_list" type="checkbox">Aer Cube</lal>
+              </div>
+              <a class="more" href="javascript:void(0)">更多信息</a>
+              <div class="imgbox middle_center"><img src="dist/images/common/pic-per4.jpg" alt=""></div>
+            </li>
+          </ul>
+          </form>
+        </div>
+        <!--个人收藏 列表 - end-->
+      </div>
+      <!--个人收藏 部分 - end-->
     </div>
   </div>
   <!--footer 部分 - start-->
-  <div id="footer">
+  <div id="footer" class="bgc-e3e3e3">
     <!--底部二维码部分 - start-->
     <div class="footer-qrcode-box auto">
       <i class="icon-logo__bottom auto"></i>
@@ -262,4 +313,5 @@
 </body>
 <!--<script src="./static/js/common.js?v1.0.0"></script>-->
 <script src="./dist/js/app.js"></script>
+<script src="./dist/js/chen.js"></script>
 </html>

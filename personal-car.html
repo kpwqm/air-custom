@@ -20,6 +20,7 @@
   </script>
   <script src="./static/lib/bootstrap/modal/index.js"></script>
   <link rel="stylesheet" href="./static/lib/bootstrap/modal/style.css">
+  <link rel="stylesheet" href="./dist/css/style_chen.css">
 
 </head>
 <body>
@@ -172,12 +173,68 @@
       </div>
     </div>
     <!--header 部分 - end-->
-    <div id="main">
-      
+    <div id="main" class="main-personal bgc-e3e3e3">
+    <!--我的购物车 - start-->
+      <div class="main-personal_car">
+        <div class="title">我的购物车</div>
+        <div class="personal_car-box">
+          <table>
+            <tr>
+              <td><a class="car-all" href="javascript:void(0)">全选</a></td>
+              <td>商品名称</td>
+              <td>单价</td>
+              <td>数量</td>
+              <td>应付总额</td>
+              <td>操作</td>
+            </tr>
+            <tr>
+              <td>
+                <input type="checkbox" name="car" class="" checked>
+                <a href="javascript:void(0)" class="car-pro middle_center">
+                  <img src="./static/images/user-cart-product-64.png" alt="">
+                </a>
+              </td>
+              <td>商品名称</td>
+              <td class="price">￥<span>599.00</span></td>
+              <td>
+                <a href="javascript:void(0)" class="car-plus car-and f-l">-</a>
+                <input type="text" value="2" class="car-num f-l" onkeyup="value=value.replace(/[^\d]/g,'') ">
+                <a href="javascript:void(0)" class="car-add car-and f-l">+</a>
+              </td>
+              <td class="sigle_price">￥<span>599.00</span></td>
+              <td><a href="javascript:void(0)" class="car-del">删除</a></td>
+            </tr>
+            <tr>
+              <td>
+                <input type="checkbox" name="car" class="">
+                <a href="javascript:void(0)" class="car-pro middle_center">
+                  <img src="./static/images/user-cart-product-64.png" alt="">
+                </a>
+              </td>
+              <td>商品名称</td>
+              <td class="price">￥<span>299.20</span></td>
+              <td>
+                <a href="javascript:void(0)" class="car-plus car-and f-l">-</a>
+                <input type="text" value="2" class="car-num f-l" onkeyup="value=value.replace(/[^\d]/g,'') ">
+                <a href="javascript:void(0)" class="car-add car-and f-l">+</a>
+              </td>
+              <td class="sigle_price">￥<span>599.00</span></td>
+              <td><a href="javascript:void(0)" class="car-del">删除</a></td>
+            </tr>
+          </table>
+          <div class="car-sum middle_center">
+            <div class="car-sum-box">
+              <a class="car-sum-part2 f-r" href="javascript:void(0)">去结算</a>
+              <div class="car-sum-price f-r">应付款金额：￥<span>2396.00</span></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    <!--我的购物车 - end-->
     </div>
   </div>
   <!--footer 部分 - start-->
-  <div id="footer">
+  <div id="footer" class="bgc-e3e3e3">
     <!--底部二维码部分 - start-->
     <div class="footer-qrcode-box auto">
       <i class="icon-logo__bottom auto"></i>
@@ -262,4 +319,5 @@
 </body>
 <!--<script src="./static/js/common.js?v1.0.0"></script>-->
 <script src="./dist/js/app.js"></script>
+<script src="./dist/js/chen.js"></script>
 </html>

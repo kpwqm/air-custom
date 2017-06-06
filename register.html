@@ -20,6 +20,7 @@
   </script>
   <script src="./static/lib/bootstrap/modal/index.js"></script>
   <link rel="stylesheet" href="./static/lib/bootstrap/modal/style.css">
+  <link rel="stylesheet" href="./dist/css/style_chen.css">
 
 </head>
 <body>
@@ -172,12 +173,79 @@
       </div>
     </div>
     <!--header 部分 - end-->
-    <div id="main">
-      
+    <div id="main" class="main-login bgc-e3e3e3">
+      <!--用户注册 部分 - start-->
+      <div class="main-register_box">
+        <span class="login-title">用户注册</span>
+        <i class="icon-bg-user_title"></i>
+        <form action="" class="register-form">
+          <!--注册表单 - start-->
+          <ul>
+            <li>
+              <div class="register-left f-l"><span class="cl-red">＊</span>手机号：</div>
+              <div class="register-rigjt f-l">
+                <input type="text" name="phone" placeholder="请输入11位手机号">
+              </div>
+            </li>
+            <li>
+              <div class="register-left f-l"><span class="cl-red">＊</span>密码：</div>
+              <div class="register-rigjt f-l">
+                <input type="password" name="password" class="f-l" placeholder="6~20个字符，请不要输入非法字符">
+                <div class="password-strength f-l">
+                  <span>密码强度：</span>
+                </div>
+              </div>
+            </li>
+            <li>
+              <div class="register-left f-l"><span class="cl-red">＊</span>确认密码：</div>
+              <div class="register-rigjt f-l">
+                <input type="password" name="password" placeholder="再次输入密码">
+              </div>
+            </li>
+            <li>
+              <div class="register-left f-l"><span class="cl-red">＊</span>验证码：</div>
+              <div class="register-rigjt f-l">
+                <input type="text" class="register-identifying f-l" name="login-id" placeholder="填写验证码">
+                <div class="identifying f-l">
+                  <img src="./dist/images/common/pic-identifying.jpg" ondragstart="return false" alt="">
+                </div>
+                <a href="javascript:void(0)" class="f-l identifying-change">看不清？换一个</a>
+              </div>
+            </li>
+            <li>
+              <div class="register-left f-l"><span class="cl-red">＊</span>验证码：</div>
+              <div class="register-rigjt f-l">
+                <input type="text" class="register-identifying f-l" name="login-id" placeholder="填写验证码">
+                <a href="javascript:void(0)" class="f-l identifying-phone">获取短信验证码</a>
+              </div>
+            </li>
+            <li class="readed">
+              <label>
+                <input name="readed" type="checkbox">我已阅读并同意
+                <a href="javascript:void(0)" class="read-agreement">会员注册协议</a>和
+                <a href="javascript:void(0)" class="read-agreement">隐私保护政策</a>
+              </label>
+            </li>
+          </ul>
+
+          <input type="submit" value="注册" class="login-submit">
+
+          <!--注册表单 - end-->
+
+        </form>
+        <div class="main-login_bottom register-bottom">
+          <a class="login-cancel" href="javascript:void(0)">取消</a>
+          <ul>
+            <li>已有会员账号请直接登陆</li>
+            <li><a class="login-register" href="javascript:void(0)">转到登录页</a></li>
+          </ul>
+        </div>
+      </div>
+      <!--用户注册 部分 - end-->
     </div>
   </div>
   <!--footer 部分 - start-->
-  <div id="footer">
+  <div id="footer" class="bgc-e3e3e3">
     <!--底部二维码部分 - start-->
     <div class="footer-qrcode-box auto">
       <i class="icon-logo__bottom auto"></i>
@@ -262,4 +330,5 @@
 </body>
 <!--<script src="./static/js/common.js?v1.0.0"></script>-->
 <script src="./dist/js/app.js"></script>
+<script src="./dist/js/chen.js"></script>
 </html>

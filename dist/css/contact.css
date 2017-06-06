@@ -101,12 +101,12 @@
 	position: absolute;
 	top: 8px;
 	background: url('/dist/images/sprite-1.0.0.png') no-repeat center;
-	background-position: -314px -249px;
+	background-position: -314px -266px;
 }
 
 .apply-sex-box input[type="radio"]:checked + i {
 	background: url('/dist/images/sprite-1.0.0.png') no-repeat center;
-	background-position: -298px -249px;
+	background-position: -298px -266px;
 }
 
 .apply-store__select {
@@ -159,24 +159,24 @@
 
 .icon-tel {
 	background: url('/dist/images/sprite-1.0.0.png') no-repeat center;
-	background-position: -298px -219px;
+	background-position: -0px -266px;
 }
 
 .icon-phone {
 	background: url('/dist/images/sprite-1.0.0.png') no-repeat center;
-	background-position: -328px -189px;
+	background-position: -266px -128px;
 }
 
 .icon-email {
 	background: url('/dist/images/sprite-1.0.0.png') no-repeat center;
-	background-position: -328px -219px;
+	background-position: -266px -98px;
 }
 
 .contact-txt__right .icon-position {
 	display: inline-block;
 	vertical-align: top;
 	background: url('/dist/images/sprite-1.0.0.png') no-repeat center;
-	background-position: -298px -189px;
+	background-position: -266px -68px;
 }
 
 .contact-txt__right .contact-position__txt {
@@ -224,7 +224,7 @@
 	width: 16px;
 	height: 16px;
 	background: url('/dist/images/sprite-1.0.0.png') no-repeat center;
-	background-position: -330px -249px;
+	background-position: -330px -266px;
 	top: 5px;
 	left: 7px;
 }

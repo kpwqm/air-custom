@@ -145,3 +145,81 @@
 
 
 /*news-page.html*/
+.icon-featured{
+  width: 101px;
+  height: 102px;
+  background: url('../images/common/icon-featured.png') no-repeat center;
+  position: absolute;
+  top: -9px;
+  right: -9px;
+}
+.news-page-box .news-title{
+  margin-top: 51px;
+  font-size: 26px;
+  line-height: 1.5;
+}
+.news-page-box .news-date{
+  margin: 7px 0;
+}
+.news-page-box .news-content{
+  padding: 50px 0px;
+  margin: 22px 0 27px;
+  /* @meta {"spritesheet":{"include":false}} */
+  background: url('../images/common/bg-title.png') no-repeat bottom center;
+}
+.news-page-box .news-content:before{
+  position: relative;
+  text-align: center;
+  content: url(../images/common/bg-title.png);
+  top: -50px;
+  left: 50%;
+  margin-left: -104px;
+}
+
+.news-page-box .news-content p{
+  margin-bottom: 25px;
+  word-break: break-all;
+}
+.news-page-box .news-content p.img-tip{
+  margin-top: 14px;
+  text-align: center;
+  font-size: 12px;
+}
+.news-content h3{
+  font-size: 22px;
+  color: #c4a07a;
+  margin-top: 30px;
+  margin-bottom: 25px;
+}
+
+.news-share-plugin{
+  height: 65px;
+  display: table;
+  margin: auto;
+}
+.news-share__btns a{
+  display: block;
+  float: left;
+  width: 26px;
+  height: 26px;
+  margin-left: 11px;
+}
+.news-share__btns a:first-child{
+  margin-left: 0;
+}
+.news-share__btns .share-wechat{
+  background: url('../images/common/share-wechat.png') no-repeat center;
+}
+.news-share__btns .share-sina{
+  background: url('../images/common/share-sina.png') no-repeat center;
+}
+.news-share__btns .share-qq{
+  background: url('../images/common/share-qq.png') no-repeat center;
+}
+.news-share__btns .share-douban{
+  background: url('../images/common/share-douban.png') no-repeat center;
+}
+.news-share__btns .share-qzone{
+  background: url('../images/common/share-qzone.png') no-repeat center;
+}
+

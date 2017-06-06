@@ -1,7 +1,7 @@
 /* reset */
 html,body,h1,h2,h3,h4,h5,h6,div,dl,dt,dd,ul,ol,li,p,blockquote,pre,hr,figure,table,caption,th,td,form,fieldset,legend,input,button,textarea,menu{margin:0; padding:0;}
 html,body,button,input,select,textarea{font-family: "黑体", "Microsoft YaHei", "微软雅黑", "Helvetica Neue", Helvetica, STHeiTi, tahoma, Arial, sans-serif; }
-body{min-width: 1260px; font-size: 14px; line-height: 1.5; color: #333; background-color: #fff; overflow-x: hidden; }
+body{min-width: 1260px; font-size: 14px; line-height: 1.5; color: #4c4c4c; background-color: #fff; overflow-x: hidden; }
 ul,ol{list-style: none outside none;}
 li{list-style:none;}
 h1,h2,h3,h4,h5,h6,small{font-size:100%;}
@@ -28,7 +28,7 @@ input[type="search"]{-webkit-appearance: textfield; -moz-box-sizing: border-box;
 input[type="search"]::-webkit-search-cancel-button, input[type="search"]::-webkit-search-decoration{-webkit-appearance: none;}
 input,textarea,select{font-family:inherit;font-size:inherit;font-weight:inherit;*font-size:100%}
 textarea{overflow:auto; resize:none; outline: none;}
-a,a:hover{color:#333;}
+a,a:hover{color:#4c4c4c;}
 a{background: transparent; text-decoration: none; -webkit-tap-highlight-color: transparent;}
 a:hover,a:focus,a:active{text-decoration: none;}
 a:focus{outline: none;}
@@ -441,8 +441,10 @@ body, html {
 /* footer部分 -- end */
 /*右侧固定部分 - start*/
 .fixed-bar-box{
-  position: absolute;
+  position: fixed;
   right: 52px;
+  top: 200px;
+  display: none;
 }
 .fixed-bar__ul a{
   display: block;

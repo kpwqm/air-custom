@@ -48,7 +48,7 @@ body {
 	min-width: 1260px;
 	font-size: 14px;
 	line-height: 1.5;
-	color: #333;
+	color: #4c4c4c;
 	background-color: #fff;
 	overflow-x: hidden;
 }
@@ -210,7 +210,7 @@ textarea {
 
 a,
 a:hover {
-	color: #333;
+	color: #4c4c4c;
 }
 
 a {
@@ -480,7 +480,7 @@ html {
 	width: 18px;
 	height: 18px;
 	background: url('/dist/images/sprite-1.0.0.png') center no-repeat;
-	background-position: -255px -190px;
+	background-position: -280px -266px;
 }
 
 .header-top__middle {
@@ -692,32 +692,32 @@ html {
 
 .icon-user-cart {
 	background: url('/dist/images/sprite-1.0.0.png') center no-repeat;
-	background-position: -261px -108px;
+	background-position: -260px -266px;
 }
 
 .icon-user-favorites {
 	background: url('/dist/images/sprite-1.0.0.png') center no-repeat;
-	background-position: -261px -88px;
+	background-position: -240px -266px;
 }
 
 .icon-user-orders {
 	background: url('/dist/images/sprite-1.0.0.png') center no-repeat;
-	background-position: -261px -128px;
+	background-position: -220px -266px;
 }
 
 .icon-user-pay {
 	background: url('/dist/images/sprite-1.0.0.png') center no-repeat;
-	background-position: -255px -170px;
+	background-position: -200px -266px;
 }
 
 .icon-user-account {
 	background: url('/dist/images/sprite-1.0.0.png') center no-repeat;
-	background-position: -275px -170px;
+	background-position: -180px -266px;
 }
 
 .icon-user-login {
 	background: url('/dist/images/sprite-1.0.0.png') center no-repeat;
-	background-position: -261px -68px;
+	background-position: -160px -266px;
 }
 
 /*已登陆部分 -- end*/
@@ -780,12 +780,12 @@ html {
 
 .icon-qrcode__android {
 	background: url('/dist/images/sprite-1.0.0.png') center no-repeat;
-	background-position: -165px -68px;
+	background-position: -96px -170px;
 }
 
 .icon-qrcode__ios {
 	background: url('/dist/images/sprite-1.0.0.png') center no-repeat;
-	background-position: -96px -170px;
+	background-position: -192px -170px;
 }
 
 .qrcodes-box__ul .qrcode-txt {
@@ -833,8 +833,10 @@ html {
 /*右侧固定部分 - start*/
 
 .fixed-bar-box {
-	position: absolute;
+	position: fixed;
 	right: 52px;
+	top: 200px;
+	display: none;
 }
 
 .fixed-bar__ul a {
@@ -846,22 +848,22 @@ html {
 
 #fixed-consult {
 	background: url(/dist/images/sprite-1.0.0.png) no-repeat center;
-	background-position: -298px -63px;
+	background-position: -298px -0px;
 }
 
 #fixed-app {
 	background: url(/dist/images/sprite-1.0.0.png) no-repeat center;
-	background-position: -192px -170px;
+	background-position: -298px -126px;
 }
 
 #fixed-favorites {
 	background: url(/dist/images/sprite-1.0.0.png) no-repeat center;
-	background-position: -298px -126px;
+	background-position: -298px -63px;
 }
 
 #fixed-top {
 	background: url(/dist/images/sprite-1.0.0.png) no-repeat center;
-	background-position: -298px -0px;
+	background-position: -298px -189px;
 }
 
 /*右侧固定部分 - end*/
