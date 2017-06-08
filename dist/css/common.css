@@ -45,7 +45,7 @@ textarea {
 }
 
 body {
-	min-width: 1260px;
+	min-width: 1200px;
 	font-size: 14px;
 	line-height: 1.5;
 	color: #4c4c4c;
@@ -848,22 +848,96 @@ html {
 
 #fixed-consult {
 	background: url(/dist/images/sprite-1.0.0.png) no-repeat center;
-	background-position: -298px -0px;
+	background-position: -298px -63px;
 }
 
 #fixed-app {
 	background: url(/dist/images/sprite-1.0.0.png) no-repeat center;
-	background-position: -298px -126px;
+	background-position: -298px -0px;
 }
 
 #fixed-favorites {
 	background: url(/dist/images/sprite-1.0.0.png) no-repeat center;
-	background-position: -298px -63px;
+	background-position: -298px -189px;
 }
 
 #fixed-top {
 	background: url(/dist/images/sprite-1.0.0.png) no-repeat center;
-	background-position: -298px -189px;
+	background-position: -298px -126px;
 }
 
 /*右侧固定部分 - end*/
+
+/* 分页页码显示 */
+
+.pagination {
+	display: table;
+	margin: auto;
+}
+
+.pagination-item {
+	float: left;
+	display: block;
+	width: 30px;
+	height: 30px;
+	line-height: 30px;
+	margin-left: 13px;
+	color: #7e8689;
+	font-size: 20px;
+	text-align: center;
+	background-color: #e6e6e6;
+	border: 1px solid #7e8698;
+}
+
+.pagination-item:first-child {
+	margin-left: 0;
+}
+
+.pagination-item__current,
+.pagination-item:hover {
+	background-color: #fff;
+}
+
+.pagination-item__first,
+.pagination-item__last,
+.pagination-item__prev,
+.pagination-item__next {
+	display: block;
+	margin-top: 9px;
+	float: left;
+	height: 12px;
+}
+
+.pagination-item__first,
+.pagination-item__last {
+	width: 12px;
+}
+
+.pagination-item__first {
+	margin-right: 11px;
+	background: url('/dist/images/sprite-1.0.0.png') no-repeat center;
+	background-position: -340px -252px;
+}
+
+.pagination-item__last {
+	margin-left: 11px;
+	background: url('/dist/images/sprite-1.0.0.png') no-repeat center;
+	background-position: -328px -252px;
+}
+
+.pagination-item__prev,
+.pagination-item__next {
+	width: 15px;
+}
+
+.pagination-item__prev {
+	margin-right: 9px;
+	background: url('/dist/images/sprite-1.0.0.png') no-repeat center;
+	background-position: -313px -252px;
+}
+
+.pagination-item__next {
+	margin-left: 9px;
+	background: url('/dist/images/sprite-1.0.0.png') no-repeat center;
+	background-position: -298px -252px;
+}

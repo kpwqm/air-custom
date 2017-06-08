@@ -1,7 +1,7 @@
 /* reset */
 html,body,h1,h2,h3,h4,h5,h6,div,dl,dt,dd,ul,ol,li,p,blockquote,pre,hr,figure,table,caption,th,td,form,fieldset,legend,input,button,textarea,menu{margin:0; padding:0;}
 html,body,button,input,select,textarea{font-family: "黑体", "Microsoft YaHei", "微软雅黑", "Helvetica Neue", Helvetica, STHeiTi, tahoma, Arial, sans-serif; }
-body{min-width: 1260px; font-size: 14px; line-height: 1.5; color: #4c4c4c; background-color: #fff; overflow-x: hidden; }
+body{min-width: 1200px; font-size: 14px; line-height: 1.5; color: #4c4c4c; background-color: #fff; overflow-x: hidden; }
 ul,ol{list-style: none outside none;}
 li{list-style:none;}
 h1,h2,h3,h4,h5,h6,small{font-size:100%;}
@@ -466,3 +466,62 @@ body, html {
 }
 
 /*右侧固定部分 - end*/
+
+/* 分页页码显示 */
+.pagination{
+  display: table;
+  margin: auto;
+}
+.pagination-item{
+  float: left;
+  display: block;
+  width: 30px;
+  height: 30px;
+  line-height: 30px;
+  margin-left: 13px;
+  color: #7e8689;
+  font-size: 20px;
+  text-align: center;
+  background-color: #e6e6e6;
+  border: 1px solid #7e8698;
+}
+.pagination-item:first-child{
+  margin-left: 0;
+}
+.pagination-item__current,
+.pagination-item:hover{
+  background-color: #fff;
+}
+.pagination-item__first,
+.pagination-item__last,
+.pagination-item__prev,
+.pagination-item__next{
+  display: block;
+  margin-top: 9px;
+  float: left;
+  height: 12px;
+}
+.pagination-item__first,
+.pagination-item__last{
+  width: 12px;
+}
+.pagination-item__first{
+  margin-right: 11px;
+  background: url('../images/common/pagination-first.png') no-repeat center;
+}
+.pagination-item__last{
+  margin-left: 11px;
+  background: url('../images/common/pagination-last.png') no-repeat center;
+}
+.pagination-item__prev,
+.pagination-item__next{
+  width: 15px;
+}
+.pagination-item__prev{
+  margin-right: 9px;
+  background: url('../images/common/pagination-prev.png') no-repeat center;
+}
+.pagination-item__next{
+  margin-left: 9px;
+  background: url('../images/common/pagination-next.png') no-repeat center;
+}

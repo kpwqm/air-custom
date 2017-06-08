@@ -255,23 +255,18 @@
 
           <!--分页页码显示 - start-->
           <div class="pagination-box absolute">
-            <ul class="pagination__ul clearfix">
-              <li>
-                <a class="pagination-item pagination-item__prev" href="javascript:void(0)">上一页</a>
-              </li>
-              <li>
-                <a class="pagination-item pagination-item__current" href="javascript:void(0)">1</a>
-              </li>
-              <li>
-                <a class="pagination-item" href="javascript:void(0)">2</a>
-              </li>
-              <li>
-                <a class="pagination-item" href="javascript:void(0)">3</a>
-              </li>
-              <li>
-                <a class="pagination-item pagination-item__next" href="javascript:void(0)">下一页</a>
-              </li>
-            </ul>
+            <div class="pagination">
+              <!--可添加类disabled进行禁用-->
+              <a class="pagination-item__first disabled" href="javascript:void(0)"><!--首页--></a>
+              <a class="pagination-item__prev" href="javascript:void(0)"><!--上一页--></a>
+              <a class="pagination-item pagination-item__current" href="javascript:void(0)">1</a>
+              <a class="pagination-item" href="javascript:void(0)">2</a>
+              <a class="pagination-item" href="javascript:void(0)">3</a>
+              <a class="pagination-item" href="javascript:void(0)">4</a>
+              <a class="pagination-item" href="javascript:void(0)">5</a>
+              <a class="pagination-item__next" href="javascript:void(0)"><!--下一页--></a>
+              <a class="pagination-item__last" href="javascript:void(0)"><!--末页--></a>
+            </div>
           </div>
           <!--分页页码显示 - end-->
         </div>
