@@ -1,0 +1,723 @@
+.middle_center{
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  -webkit-justify-content: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  -webkit-align-items: center;
+  align-items: center;
+}
+.fixed-bar-box {
+  z-index: 999;
+}
+
+/*登陆页面 css -- start */
+.main-login,.main-personal{
+  padding-top: 100px!important;
+}
+.main-login_box,.main-register_box,.main-personal_box,.main-personal_car,.main-account_box{
+  position: relative;
+  width: 666px;
+  margin: 0 auto;
+  background: #fff;
+  border-radius: 8px;
+  border: 2px solid #c9c9c9;
+  -webkit-box-shadow: 0 4px 15px #c9c9c9;
+  box-shadow: 0 4px 15px #c9c9c9;
+  z-index: 99;
+  overflow: hidden;
+}
+.bgc-e3e3e3{
+  background: #e3e3e3;
+}
+.login-title{
+  display: block;
+  padding-top: 125px;
+  font-size: 40px;
+  color: #4e4e4e;
+  letter-spacing: 6px;
+  text-align: center;
+}
+.icon-bg-user_title {
+	/*background: url('../images/sprite-1.0.0.png') center no-repeat;
+	background-position: -0px -170px;*/
+  width: 207px;
+  height: 14px;
+	background: url('../images/common/bg-user_title.png') center no-repeat;
+  margin: 0 auto;
+  margin-top: 25px;
+  margin-bottom: 40px;
+}
+.login-form .login-box{
+  position: relative;
+  display: block;
+  margin: 0 auto;
+  width: 70%;
+}
+.login-form .login-username,.login-form .login-box .login-password{
+  height: 30px;
+  line-height: 30px;
+  font-size: 16px;
+  border-radius: 3px;
+  border: 1px solid #c9c9c9;
+  padding-left: 40px;
+}
+.login-form .login-box input{
+  width: 100%;
+}
+.login-form .box-username:before{
+  content: '';
+  position: absolute;
+  left: 11px;
+  width: 15px;
+  height: 30px;
+	background: url('../images/common/icon-user-login-1.png') center center no-repeat;
+  background-position: 0;
+}
+.login-form .login-box .login-password{
+  width: 100%;
+	background: url('../images/common/icon-user-password.png') 9px center no-repeat;
+}
+.login-form .login-box{
+  position: relative;
+  margin-top: 17px; 
+}
+.login-form .login-password_see{
+  position: absolute;
+  right: 15px;
+  top: 0;
+  bottom: 0;
+  margin: auto;
+  width: 28px;
+  height: 18px;
+	background: url('../images/sprite.chen-1.0.0.png') center no-repeat;
+  background-position:  -33px 0;
+}
+.login-submit{
+  display: block;
+  margin: 0 auto;
+  margin-top: 40px;
+  width: 307px;
+  height: 50px;
+  background: #0f1d41;
+  color: #fff;
+  font-size: 16px;
+  border: 0;
+  border-radius: 5px;
+  -webkit-transition: all 0.2s ease-in-out;
+  -moz-transition: all 0.2s ease-in-out;
+  transition: all 0.2s ease-in-out;
+}
+.login-submit:hover,.main-login_bottom .login-register:hover{
+  background: #19306b;
+}
+.login-forget{
+  display: table;
+  margin: 0 auto;
+  margin-top: 10px;
+  margin-bottom: 70px;
+  font-size: 14px;
+  color: #7e8698;
+}
+.main-login_box .login-external{
+    display: table;
+    margin: 0 auto;
+    margin-bottom: 25px;
+}
+.main-login_box .login-external a{
+  display: block;
+  float: left;
+  margin: 0 10px;
+  width: 32px;
+  height: 32px;
+}
+.main-login_box .login-external a.login-wechat{
+	background: url('../images/sprite.chen-1.0.0.png') center no-repeat;
+  background-position: 0 -22px;
+}
+.main-login_box .login-external a.login-qq{
+	background: url('../images/sprite.chen-1.0.0.png') center no-repeat;
+  background-position: -32px -22px;
+}
+.main-login_bottom{
+  padding: 23px 40px;
+  height: 77px;
+  border-top: 2px solid #c9c9c9;
+  background: -webkit-linear-gradient(#fff, #f0f0f0); /* Safari 5.1 - 6.0 */
+  background: -o-linear-gradient(#fff, #f0f0f0); /* Opera 11.1 - 12.0 */
+  background: -moz-linear-gradient(#fff, #f0f0f0); /* Firefox 3.6 - 15 */
+  background: linear-gradient(#fff, #f0f0f0); /* 标准的语法 */
+}
+.main-login_bottom .login-cancel,.main-login_bottom ul li{
+  float: left;
+  line-height: 32px;
+  font-size: 14px;
+  color: #4c4c4c;
+}
+.main-login_bottom ul{
+  float: right;
+}
+.main-login_bottom ul li .login-register{
+  display: block;
+  width: 133px;
+  height: 32px;
+  margin-left: 25px;
+  text-align: center;
+  border-radius: 3px;
+  background: rgba(15, 29, 65, 1);
+  color: #fff;
+  -webkit-transition: all 0.2s ease-in-out;
+  -moz-transition: all 0.2s ease-in-out;
+  transition: all 0.2s ease-in-out;
+}
+
+/*登陆页面 css -- end */
+
+/*用户注册 css -- start */
+.main-register_box .login-title{
+  padding-top: 30px;
+}
+.register-form > ul > li{
+  margin: 0 auto;
+  height: 32px;
+  margin-top: 18px;
+}
+.register-form .register-left{
+  text-align: right;
+  padding-right: 10px;
+  width: 180px;
+  color: #4c4c4c;
+  line-height: 32px;
+}
+.register-right input{
+  width: 320px;
+  height: 32px;
+  border: 1px solid #c9c9c9;
+  border-radius: 5px;
+  padding: 0 10px;
+}
+.cl-red{
+  color: #d70000;
+  font-weight: bold;
+}
+.register-right .register-identifying{
+  width: 134px;
+}
+.identifying{
+  width: 62px;
+  height: 32px;
+  margin: 0 10px;
+  padding: 6px 0;
+  overflow: hidden;
+}
+.identifying img{
+  vertical-align: inherit;
+}
+.identifying-change{
+  line-height: 32px;
+  color: #d70000;
+}
+.identifying-change:hover{
+  color: #d70000;
+  text-decoration: underline;
+}
+.register-right .identifying-phone{
+  width: 134px;
+  height: 32px;
+  line-height: 32px;
+  margin-left: 50px;
+  color: #fff;
+  background: #7e8698;
+  text-align: center;
+  border-radius: 3px;
+}
+.register-right .identifying-phone:hover{
+  background: #949db3;
+}
+.register-form .readed{
+  margin-top: 40px;
+  line-height: 32px;
+  text-align: center;
+  color: #4c4c4c;
+}
+.register-form .readed input{
+  vertical-align: sub;
+  margin-right: 10px;
+}
+.register-form .readed .read-agreement{
+  color: #42aafa;
+}
+.register-bottom{
+  border-top: none;
+  margin-top: 50px;
+}
+.password-strength{
+  margin-left: 10px;
+  color: #4c4c4c;
+}
+
+/*用户注册 css -- end */
+
+/*会员中心 个人收藏 css -- start */
+.main-personal_box,.main-personal_car,.main-account_box{
+  position: relative;
+  width: 898px;
+  min-height: 565px;
+}
+.main-personal_box .login-title,.main-account_box .login-title{
+  padding-top: 30px;
+}
+.main-personal_box .icon-bg-user_title,.main-account_box .icon-bg-user_title{
+  margin-top: 10px;
+  margin-bottom: 30px;
+}
+.personal-massage{
+  display: block;
+  margin-top: 150px;
+  text-align: center;
+  color: #4c4c4c;
+  font-size: 16px;
+}
+.personal_contral-box{
+  margin: 0 25px;
+  height: 40px;
+  box-shadow: 0 3px 3px #ebebeb;
+  background: -webkit-linear-gradient(#f8f8f8, #f0f0f0); /* Safari 5.1 - 6.0 */
+  background: -o-linear-gradient(#f8f8f8, #f0f0f0); /* Opera 11.1 - 12.0 */
+  background: -moz-linear-gradient(#f8f8f8, #f0f0f0); /* Firefox 3.6 - 15 */
+  background: linear-gradient(#f8f8f8, #f0f0f0); /* 标准的语法 */
+}
+.personal_contral{
+  float: right;
+  line-height: 40px;
+  margin-right: 25px;
+  color: #c4a07a;
+  font-size: 14px;
+}
+.personal_list{
+  margin: 0 90px;
+  margin-bottom: 70px;
+}
+.personal_list ul li{
+  float: left;
+  margin-top: 40px;
+  margin-right: 34px;
+  text-align: center;
+}
+.personal_list ul li:nth-of-type(3n){
+  margin-right: 0;
+}
+.personal_list ul li .title{
+  position: relative;
+  font-size: 18px;
+  height: 36px;
+  line-height: 36px;
+  text-align: center;
+}
+.personal_list ul li .list_checkbox input{
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  margin: auto;
+  height: 18px;
+  display: none;
+}
+.personal_list ul li .more{
+  font-size: 14px;
+  line-height: 30px;
+  color: #c4a07a;
+}
+.personal_list ul li .imgbox{
+  margin-top: 15px;
+  width: 215px;
+  height: 215px;
+  border: 1px solid #c9c9c9;
+}
+.personal_contral-ing{
+  position: relative;
+  display: inline-block;
+  float: right;
+  line-height: 40px;
+  margin-right: 25px;
+  color: #767676;
+  display: none;
+}
+.personal_contral-ing::before{
+  content: '|';
+  position: absolute;
+  color: #767676;
+  left: 31px;
+}
+.personal_contral-ing .personal_contral-can,
+.personal_contral-ing .personal_contral-del{
+  float: left;
+  display: inline-block;
+  letter-spacing: 1px;
+}
+.personal_contral-ing .personal_contral-can{
+  margin-left: 5px;
+  color: #767676;
+}
+.personal_contral-ing .personal_contral-del{
+  margin-right: 5px;
+  color: #c4a07a;
+}
+
+/*会员中心 个人收藏 css -- end */
+
+/*我的购物车 css -- start */
+.main-personal_car > .title{
+  padding-left: 37px;
+  position: relative;
+  font-size: 24px;
+  line-height: 24px;
+  color: #4c4c4c;
+}
+.main-personal_car > .title::before{
+  content: '';
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  margin: auto;
+  width: 22px;
+  height: 22px;
+  background: url('../images/sprite-1.0.0.png') center no-repeat;
+  background-position: -337px -208px;
+}
+.main-personal_car{
+  padding: 40px 30px;
+  padding-bottom: 0;
+}
+.personal_car-empty{
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  margin: auto;
+  width: 200px;
+  height: 80px;
+  display: inline-block;
+  text-align: center;
+}
+.personal_car-empty span{
+  font-size: 18px;
+  color: #4c4c4c;
+}
+.personal_car-empty a{
+  display: block;
+  margin: 0 auto;
+  margin-top: 30px;
+  width: 133px;
+  height: 30px;
+  line-height: 30px;
+  color: #fff;
+  background: #0f1d41;
+  border-radius: 3px;
+}
+.personal_car-box table{
+  margin-top: 50px;
+  width: 100%;
+  color: #4c4c4c;
+  border-collapse: separate;
+  border-spacing: 0 10px;
+}
+.personal_car-box table td{
+  position: relative;
+  text-align: center;
+}
+.personal_car-box table tr:first-child td:nth-of-type(1){
+  width: 20%;
+  text-align: left;
+}
+.personal_car-box table tr:first-child td:nth-of-type(2){
+  width: 30%;
+}
+.personal_car-box table tr:first-child td:nth-of-type(3){
+  width: 10%;
+}
+.personal_car-box table tr:first-child td:nth-of-type(4){
+  width: 15%;
+}
+.personal_car-box table tr:first-child td:nth-of-type(5){
+  width: 15%;
+}
+.personal_car-box table tr:first-child td:nth-of-type(6){
+  width: 10%;
+}
+.personal_car-box table input[type='checkbox']{
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  margin: auto;
+  width: auto;
+  height: 13px;
+}
+.personal_car-box .car-pro{
+  width: 100px;
+  height: 100px;
+  margin-left: 35px;
+  border: 1px solid #e2e2e2;
+  overflow: hidden;
+}
+.personal_car-box table tr td:nth-of-type(2){
+  text-align: left;
+}
+.personal_car-box .car-and{
+  display: inline-block;
+  width: 35px;
+  height: 35px;
+  line-height: 35px;
+  font-size: 18px;
+  text-align: center;
+  border: 1px solid #c9c9c9;
+  background: #f5f4f4;
+}
+.personal_car-box .car-num{
+  display: inline-block;
+  margin: 0 2px;
+  width: 50px;
+  height: 35px;
+  line-height: 35px;
+  font-size: 18px;
+  text-align: center;
+  border: 1px solid #c9c9c9;
+}
+.car-sum{
+  margin-top: 50px;
+  border-top: 1px solid #e2e2e2;
+  height: 120px;
+}
+.car-sum .car-sum-box{
+  display: block;
+  width: 100%;
+  padding-right: 70px;
+}
+.car-sum .car-sum-price{
+  font-size: 18px;
+  color: #4c4c4c;
+  line-height: 31px;
+}
+.car-sum .car-sum-part2{
+  width: 133px;
+  height: 31px;
+  line-height: 31px;
+  background: #0f1d41;
+  color: #fff;
+  border-radius: 3px;
+  margin-left: 20px;
+  text-align: center;
+}
+/*我的购物车 css -- end */
+
+/*帐户信息 css -- start */
+.account_box{
+  margin: 0 25px;
+  margin-bottom: 80px;
+  padding-bottom: 15px;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+  box-shadow: 0 3px 3px #ebebeb;
+  overflow: hidden;
+}
+.account_box > .title{
+  padding-left: 20px;
+  height: 40px;
+  line-height: 40px;
+  color: #4c4c4c;
+  font-size: 16px;
+  border-bottom: 1px solid #e1e0e0;
+  background: -webkit-linear-gradient(#f8f8f8, #f0f0f0); /* Safari 5.1 - 6.0 */
+  background: -o-linear-gradient(#f8f8f8, #f0f0f0); /* Opera 11.1 - 12.0 */
+  background: -moz-linear-gradient(#f8f8f8, #f0f0f0); /* Firefox 3.6 - 15 */
+  background: linear-gradient(#f8f8f8, #f0f0f0); /* 标准的语法 */
+}
+.account_box .account_box-content{
+  min-height: 482px;
+}
+.account_box .register-form > ul > li{
+  margin-top: 15px;
+}
+.account_box .register-form > ul > li:first-child{
+  margin-top: 0;
+}
+.account_box-content .register-left{
+  font-size: 16px;
+  color: #4c4c4c;
+}
+.account_box-contral{
+  display: block;
+  margin-top: 80px;
+}
+.account_box-contral input{
+  width: 133px;
+  height: 30px;
+  line-height: 30px;
+  border-radius: 3px;
+  border: 0;
+  margin: 0 15px;
+  color: #fff;
+}
+.account_box-contral .account_box-cancel{
+  background: #4c4c4c;
+}
+.account_box-contral .account_box-submit{
+  background: #0f1d41;
+}
+.account_box .register-form .register-left{
+  width: 100px;
+}
+.account_personal-box{
+  margin: 30px 20px 15px 20px;
+}
+.account_personal-box .title{
+  font-size: 16px;
+  color: #4c4c4c;
+}
+.account_personal-box ul:nth-of-type(1){
+  padding-bottom: 30px;
+  border-bottom: 1px solid #ededed;
+  margin-bottom: 20px;
+}
+.account_personal-box ul li{
+   width: 50%;
+   float: left;
+   line-height: 32px;
+   margin-top: 15px;
+}
+.account_personal-box ul.security_box li{
+  width: 100%;
+}
+.account_personal-bir .bir-time{
+  height: 24px;
+  line-height: 24px;
+  border-radius: 2px;
+  margin: 4px 0;  
+}
+.account_personal-box .register-right input[type=text]{
+  width: 200px;
+}
+.account_personal-box .accont_sex label{
+  float: left;
+  display: flex;
+  margin: 0 10px;
+}
+.account_personal-box .accont_sex input{
+  width: auto;
+  vertical-align: sub;
+  padding-right: 3px;
+}
+.accont_massgae{
+  display: inline-block;
+  min-width: 150px;
+  padding: 0 10px;
+}
+.account_box .security_box .register-left {
+    width: 90px;
+}
+.security_box .register-left{
+  margin: 5px 0;
+  margin-right: 5px;
+  padding-right: 15px;
+  border-right: 1px solid #4c4c4c;
+  line-height: 20px;
+}
+.security_box .accont_massgae{
+  display: inline-block;
+  width: 565px;
+  color: #767676;
+}
+.accont_reset,.accont_bindling{
+  color: #c4a07a;
+}
+.accont_forget{
+  margin-left: 30px;
+}
+.modify_pw-box .register-right{
+  line-height: 32px;
+}
+.modify_pw-box .register-right .identifying-phone{
+  margin-left: 10px;
+}
+.modify_pw-box .account_box-contral input{
+  margin: 0 5px;
+}
+.modify_pw-box .schedule{
+  position: relative;
+  margin-bottom: 80px;
+}
+.modify_pw-box .schedule ul li{
+  position: relative;
+  float: left;
+  width: 160px;
+  height: 5px;
+  background: #c9c9c9;
+}
+.modify_pw-box .schedule ul li.done,
+.modify_pw-box .schedule ul li.done .num{
+  background: #c4a07a;
+}
+.modify_pw-box .schedule ul li.done span{
+  color: #c4a07a;
+}
+.modify_pw-box .schedule ul li:first-child{
+  border-top-left-radius: 5px;
+  border-bottom-left-radius: 5px;
+}
+.modify_pw-box .schedule ul li:last-child{
+  border-top-right-radius: 5px;
+  border-bottom-right-radius: 5px;
+}
+.modify_pw-box .schedule ul li .num{
+  position: absolute;
+  top: -9px;
+  left: 0;
+  right: 0;
+  margin: auto;
+  width: 24px;
+  height: 24px;
+  line-height: 24px;
+  text-align: center;
+  color: #fff;
+  background: #c9c9c9;
+  border-radius: 50%;
+}
+.modify_pw-box .schedule ul li span{
+  position: absolute;
+  top: 20px;
+  margin: auto;
+  width: 100%;
+  font-size: 13px;
+  text-align: center;
+  color: #c9c9c9;
+}
+.account_box .modify_pw-box .register-left{
+  width: 170px;
+}
+.modify_pw-box .register-right input[type=password],
+.modify_pw-box .register-right input[type=email]{
+  width: 230px;
+}
+.modify_pw-box .register-right .modify_pw-input{
+  width: 278px;
+}
+.modify_pw-box .account_box-contral{
+  margin-top: 60px;
+}
+.account_phone-bingo{
+  font-size:16px;
+  color:#4c4c4c;
+}
+.account_phone-bingo div{
+  margin-top: 20px;
+}
+
+/*帐户信息 css -- end */
