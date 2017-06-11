@@ -12,6 +12,7 @@
   <meta name="description" content="">
 
   <link rel="stylesheet" href="./dist/css/common.css?v=1.0.0">
+  <link rel="stylesheet" href="./dist/css/index.css?v=1.0.0">
 
   <script src="./static/lib/jquery-1.12.0.min.js"></script>
   <script>
@@ -77,7 +78,6 @@
                               <span class="fs-15">×2</span>
                             </div>
                           </li>
-                          <!--购物车商品列表 - end-->
                           <li>
                             <div class="user-cart__img f-l">
                               <img src="./static/images/user-cart-product-64.png" alt="">
@@ -87,7 +87,19 @@
                               <span class="fs-15">×2</span>
                             </div>
                           </li>
+                          <li class="clearfix">
+                            <div class="user-cart__img f-l">
+                              <img src="./static/images/user-cart-product-64.png" alt="">
+                            </div>
+                            <div class="user-cart-txt f-l">
+                              <h2>活性碳滤网</h2>
+                              <span class="fs-15">×2</span>
+                            </div>
+                          </li>
+                          <!--购物车商品列表 - end-->
                         </ul>
+                        <!--数据多于3条时显示-->
+                        <a href="javascript:void(0)" class="user-cart__more text-center">购物车内还有更多产品(6)</a>
                         <button class="ac-btn ac-btn-1 user-cart__btn">去结算</button>
                       </div>
                       <!--购物车有数据 - end-->
@@ -173,7 +185,192 @@
     </div>
     <!--header 部分 - end-->
     <div id="main">
-      
+      <!--banner部分 - start-->
+      <div class="banner-wrap">
+        <div class="banner-index relative">
+          <a class="index-play__btn" href="javascript:void(0)">
+            <i class="icon-index-play"></i>
+            <span>观看视频</span>
+          </a>
+
+        </div>
+      </div>
+      <!--banner部分 - end-->
+      <!--选型部分 - start-->
+      <div class="index-type-wrap">
+        <div class="index-type-select relative">
+          <h1 class="index-title__h1">定制专属您的空气方舟</h1>
+          <div class="index-type__form">
+            <!--类型选择-->
+            <div class="index-type__radios clearfix">
+              <label for="index-type-home" class="f-l">
+                <input type="radio" name="index-type" value="home" id="index-type-home" checked>
+                <div>
+                  <span class="index-type__name">家居型</span>
+                  <span class="index-type__desc">空气定制系统</span>
+                </div>
+              </label>
+
+              <label for="index-type-business" class="f-r">
+                <input type="radio" name="index-type" value="business" id="index-type-business">
+                <div>
+                  <span class="index-type__name">商用型</span>
+                  <span class="index-type__desc">空气定制系统</span>
+                </div>
+              </label>
+            </div>
+            <!--数据填写 - start-->
+            <div class="index-data-box">
+              <!--家居型-->
+              <div class="index-home__data">
+                <!--省市选择-->
+                <!--必选项添加类'required'-->
+                <div class="input-box input-box__select required">
+                  <select name="home-province" id="home-province" class="province-city__select required f-l">
+                    <option value="1" selected>广东</option>
+                    <option value="2">福建</option>
+                  </select>
+                  <select name="home-city" id="home-city" class="province-city__select f-r">
+                    <option value="1" selected>广州</option>
+                    <option value="2">深圳</option>
+                  </select>
+                </div>
+                <!--楼盘-->
+                <div class="input-box input-box__select">
+                  <span>楼盘</span>
+                  <select name="home-building" id="home-building">
+                    <option value="1">汇悦台</option>
+                    <option value="2">汇悦台1</option>
+                    <option value="3">汇悦台2</option>
+                  </select>
+                </div>
+                <!--单元-->
+                <div class="input-box input-box__select">
+                  <span>单元</span>
+                  <select name="home-cell" id="home-cell">
+                    <option value="1">嘉座 01</option>
+                    <option value="2">嘉座 02</option>
+                    <option value="3">嘉座 03</option>
+                  </select>
+                </div>
+                <!--户型-->
+                <!--必选项添加类'required'-->
+                <div class="input-box input-box__select required">
+                  <span>户型</span>
+                  <select name="home-rooms" id="home-rooms">
+                    <option value="1">2厅3室</option>
+                    <option value="2">2厅4室</option>
+                    <option value="3">2厅5室</option>
+                  </select>
+                </div>
+                <!--面积-->
+                <!--必选项添加类'required'-->
+                <div class="input-box input-box__select required">
+                  <span>面积</span>
+                  <select name="home-area" id="home-area">
+                    <option value="1">120㎡</option>
+                    <option value="2">140㎡</option>
+                    <option value="3">160㎡</option>
+                  </select>
+                </div>
+              </div>
+              <!--商用型-->
+              <div class="index-business__data">
+                <!--省市选择-->
+                <!--必选项添加类'required'-->
+                <div class="input-box input-box__select required">
+                  <select name="business-province" id="business-province" class="province-city__select required f-l">
+                    <option value="1" selected>广东</option>
+                    <option value="2">福建</option>
+                  </select>
+                  <select name="business-city" id="business-city" class="province-city__select f-r">
+                    <option value="1" selected>广州</option>
+                    <option value="2">深圳</option>
+                  </select>
+                </div>
+                <!--商用空间-->
+                <div class="input-box input-box__select required">
+                  <span>商用空间</span>
+                  <select name="business-usefor" id="business-usefor" class="business-usefor__select">
+                    <option value="1">健身房</option>
+                    <option value="2">健身房</option>
+                    <option value="3">健身房</option>
+                  </select>
+                </div>
+                <!--面积-->
+                <div class="input-box input-box__select required">
+                  <span>面积</span>
+                  <select name="business-area" id="business-area">
+                    <option value="1">400㎡</option>
+                    <option value="2">800㎡</option>
+                    <option value="3">1200㎡</option>
+                  </select>
+                </div>
+              </div>
+              <!--客户数据-->
+              <div class="index-customer__data">
+                <!--姓名、性别-->
+                <div class="input-box">
+                  <input type="text" id="index-userName" value="" placeholder="姓名   李" style="width:320px;">
+                  <div class="user-sex__radios">
+                    <label for="sex-male">
+                      <input type="radio" name="user-sex" value="male" id="sex-male" checked>
+                      <span>先生</span>
+                    </label>
+                    <label for="sex-female">
+                      <input type="radio" name="user-sex" value="female" id="sex-female">
+                      <span>女士</span>
+                    </label>
+                  </div>
+                </div>
+                <!--联系电话-->
+                <div class="input-box">
+                  <input type="text" id="index-userPhone" value="" placeholder="联系电话">
+                </div>
+                <!--提交按钮-->
+                <div class="index-data__submit text-center">
+                  <button class="index-data-submit__btn">开始探索</button>
+                </div>
+              </div>
+            </div>
+
+
+            <!--数据填写 - end-->
+
+          </div>
+        </div>
+      </div>
+      <!--选型部分 - end-->
+
+      <!--定制流程 - start-->
+      <div class="index-oemflow-wrap bgc-e6e6e6">
+        <div class="oem-flow-box">
+          <h1 class="index-title__h1">定制系统流程</h1>
+          <ul class="oem-flow__ul clearfix">
+            <li>
+              <span>提交需求</span>
+              <span>模拟定制</span>
+            </li>
+            <li>
+              <span>网上预约</span>
+              <span>免费检测</span>
+            </li>
+            <li>
+              <span>上门量尺</span>
+              <span>设计方案</span>
+            </li>
+            <li>
+              <span>到店看方案</span>
+              <span>签订合同</span>
+            </li>
+            <li>
+              <span>产品配送</span>
+              <span>安装售后</span>
+            </li>
+          </ul>
+        </div>
+      </div>
+      <!--定制流程 - end-->
     </div>
   </div>
   <!--footer 部分 - start-->
@@ -262,4 +459,7 @@
 </body>
 <!--<script src="./static/js/common.js?v1.0.0"></script>-->
 <script src="./dist/js/app.js"></script>
+<script>
+  jq('.index-home__data').show();
+</script>
 </html>

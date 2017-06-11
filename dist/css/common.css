@@ -41,7 +41,7 @@ button,
 input,
 select,
 textarea {
-	font-family: "黑体", "Microsoft YaHei", "微软雅黑", "Helvetica Neue", Helvetica, STHeiTi, tahoma, Arial, sans-serif;
+	font-family: "黑体", "Microsoft YaHei", "微软雅黑", Arial, "Helvetica Neue", Helvetica, STHeiTi, tahoma, sans-serif;
 }
 
 body {
@@ -355,8 +355,16 @@ i[class^="icon-"] {
 	font-size: 18px!important;
 }
 
+.fs-24 {
+	font-size: 24px!important;
+}
+
 .co-4c4c4c {
 	color: #4c4c4c!important;
+}
+
+.co-c4a07a {
+	color: #c4a07a!important;
 }
 
 .bgc-fff {
@@ -370,6 +378,14 @@ i[class^="icon-"] {
 .bgi-title__h1 {
 	/* @meta {"spritesheet":{"include":false}} */
 	background: url('../images/common/bg-title.png') no-repeat center bottom;
+}
+
+.ml-0 {
+	margin-left: 0!important;
+}
+
+.mr-0 {
+	margin-right: 0!important;
 }
 
 .auto {
@@ -461,13 +477,18 @@ html {
 	margin-left: 26px;
 }
 
-.header-left__ul li,
-.header-right__ul li {
+.header-left__ul > li,
+.header-right__ul > li {
 	float: left;
 }
 
 .header-left__ul li {
 	margin-left: 40px;
+}
+
+.header-left__ul li a.active {
+	color: #747474;
+	text-decoration: underline;
 }
 
 .header-top__right {
@@ -480,7 +501,7 @@ html {
 	width: 18px;
 	height: 18px;
 	background: url('/dist/images/sprite-1.0.0.png') center no-repeat;
-	background-position: -280px -266px;
+	background-position: -634px -304px;
 }
 
 .header-top__middle {
@@ -491,7 +512,7 @@ html {
 	width: 165px;
 	height: 102px;
 	background: url('/dist/images/sprite-1.0.0.png') center no-repeat;
-	background-position: -0px -68px;
+	background-position: -634px -188px;
 }
 
 /* >>>头部导航栏部分 -- start */
@@ -651,11 +672,19 @@ html {
 	font-size: 15px;
 }
 
+.user-cart__more {
+	margin-top: 28px;
+}
+
 .user-cart__btn {
 	width: 248px;
 	height: 31px;
 	margin-top: 35px;
 	margin-bottom: 36px;
+}
+
+.user-cart__more + user-cart__btn {
+	margin-top: 25px;
 }
 
 .user-nav-wrap .user-nav__li {
@@ -692,32 +721,32 @@ html {
 
 .icon-user-cart {
 	background: url('/dist/images/sprite-1.0.0.png') center no-repeat;
-	background-position: -260px -266px;
+	background-position: -1211px -244px;
 }
 
 .icon-user-favorites {
 	background: url('/dist/images/sprite-1.0.0.png') center no-repeat;
-	background-position: -240px -266px;
+	background-position: -1188px -264px;
 }
 
 .icon-user-orders {
 	background: url('/dist/images/sprite-1.0.0.png') center no-repeat;
-	background-position: -220px -266px;
+	background-position: -1214px -152px;
 }
 
 .icon-user-pay {
 	background: url('/dist/images/sprite-1.0.0.png') center no-repeat;
-	background-position: -200px -266px;
+	background-position: -500px -322px;
 }
 
 .icon-user-account {
 	background: url('/dist/images/sprite-1.0.0.png') center no-repeat;
-	background-position: -180px -266px;
+	background-position: -1208px -264px;
 }
 
 .icon-user-login {
 	background: url('/dist/images/sprite-1.0.0.png') center no-repeat;
-	background-position: -160px -266px;
+	background-position: -1214px -218px;
 }
 
 /*已登陆部分 -- end*/
@@ -748,7 +777,7 @@ html {
 	width: 298px;
 	height: 68px;
 	background: url('/dist/images/sprite-1.0.0.png') center no-repeat;
-	background-position: -0px -0px;
+	background-position: -500px -120px;
 }
 
 .qrcodes-box__ul {
@@ -775,17 +804,17 @@ html {
 
 .icon-qrcode__wechat {
 	background: url('/dist/images/sprite-1.0.0.png') center no-repeat;
-	background-position: -0px -170px;
+	background-position: -900px -188px;
 }
 
 .icon-qrcode__android {
 	background: url('/dist/images/sprite-1.0.0.png') center no-repeat;
-	background-position: -96px -170px;
+	background-position: -1092px -188px;
 }
 
 .icon-qrcode__ios {
 	background: url('/dist/images/sprite-1.0.0.png') center no-repeat;
-	background-position: -192px -170px;
+	background-position: -996px -188px;
 }
 
 .qrcodes-box__ul .qrcode-txt {
@@ -848,22 +877,22 @@ html {
 
 #fixed-consult {
 	background: url(/dist/images/sprite-1.0.0.png) no-repeat center;
-	background-position: -298px -63px;
+	background-position: -798px -120px;
 }
 
 #fixed-app {
 	background: url(/dist/images/sprite-1.0.0.png) no-repeat center;
-	background-position: -298px -0px;
+	background-position: -861px -120px;
 }
 
 #fixed-favorites {
 	background: url(/dist/images/sprite-1.0.0.png) no-repeat center;
-	background-position: -298px -189px;
+	background-position: -924px -120px;
 }
 
 #fixed-top {
 	background: url(/dist/images/sprite-1.0.0.png) no-repeat center;
-	background-position: -298px -126px;
+	background-position: -987px -120px;
 }
 
 /*右侧固定部分 - end*/
@@ -916,13 +945,13 @@ html {
 .pagination-item__first {
 	margin-right: 11px;
 	background: url('/dist/images/sprite-1.0.0.png') no-repeat center;
-	background-position: -340px -252px;
+	background-position: -871px -290px;
 }
 
 .pagination-item__last {
 	margin-left: 11px;
 	background: url('/dist/images/sprite-1.0.0.png') no-repeat center;
-	background-position: -328px -252px;
+	background-position: -883px -290px;
 }
 
 .pagination-item__prev,
@@ -933,11 +962,11 @@ html {
 .pagination-item__prev {
 	margin-right: 9px;
 	background: url('/dist/images/sprite-1.0.0.png') no-repeat center;
-	background-position: -313px -252px;
+	background-position: -841px -290px;
 }
 
 .pagination-item__next {
 	margin-left: 9px;
 	background: url('/dist/images/sprite-1.0.0.png') no-repeat center;
-	background-position: -298px -252px;
+	background-position: -856px -290px;
 }

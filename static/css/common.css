@@ -1,6 +1,6 @@
 /* reset */
 html,body,h1,h2,h3,h4,h5,h6,div,dl,dt,dd,ul,ol,li,p,blockquote,pre,hr,figure,table,caption,th,td,form,fieldset,legend,input,button,textarea,menu{margin:0; padding:0;}
-html,body,button,input,select,textarea{font-family: "黑体", "Microsoft YaHei", "微软雅黑", "Helvetica Neue", Helvetica, STHeiTi, tahoma, Arial, sans-serif; }
+html,body,button,input,select,textarea{font-family: "黑体", "Microsoft YaHei", "微软雅黑", Arial, "Helvetica Neue", Helvetica, STHeiTi, tahoma, sans-serif; }
 body{min-width: 1200px; font-size: 14px; line-height: 1.5; color: #4c4c4c; background-color: #fff; overflow-x: hidden; }
 ul,ol{list-style: none outside none;}
 li{list-style:none;}
@@ -66,8 +66,10 @@ i[class^="icon-"]{display: block;}
 .fs-15{font-size: 15px!important;}
 .fs-16{font-size: 16px!important;}
 .fs-18{font-size: 18px!important;}
+.fs-24{font-size: 24px!important;}
 
 .co-4c4c4c{color: #4c4c4c!important;}
+.co-c4a07a{color: #c4a07a!important;}
 
 .bgc-fff{background-color: #fff!important;}
 .bgc-e6e6e6{background-color: #e6e6e6!important;}
@@ -75,6 +77,9 @@ i[class^="icon-"]{display: block;}
   /* @meta {"spritesheet":{"include":false}} */
   background: url('../images/common/bg-title.png') no-repeat center bottom;
 }
+
+.ml-0{margin-left: 0!important;}
+.mr-0{margin-right: 0!important;}
 
 .auto{margin: 0 auto;}
 .va-top{vertical-align: top;}
@@ -144,12 +149,16 @@ body, html {
 .header-top__left{
   margin-left: 26px;
 }
-.header-left__ul li,
-.header-right__ul li{
+.header-left__ul > li,
+.header-right__ul > li{
   float: left;
 }
 .header-left__ul li{
   margin-left: 40px;
+}
+.header-left__ul li a.active{
+  color: #747474;
+  text-decoration: underline;
 }
 .header-top__right{
   margin-right: 76px;
@@ -303,11 +312,17 @@ body, html {
 .user-cart-txt .user-cart_product__count{
   font-size: 15px;
 }
+.user-cart__more{
+  margin-top: 28px;
+}
 .user-cart__btn{
   width: 248px;
   height: 31px;
   margin-top: 35px;
   margin-bottom: 36px;
+}
+.user-cart__more + user-cart__btn{
+  margin-top: 25px;
 }
 .user-nav-wrap .user-nav__li{
   width: 100%;

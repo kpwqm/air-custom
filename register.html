@@ -44,14 +44,14 @@
           <ul class="header-right__ul clearfix">
             <li>
               <!--未登陆 - start-->
-              <div class="user-signin hide">
+              <div class="user-signin">
                 <a href="javascript:void(0)">注册</a>
                 <span style="margin:0 5px">/</span>
                 <a href="javascript:void(0)">登陆</a>
               </div>
               <!--未登陆 - end-->
               <!--已登陆 - start-->
-              <div class="user-logined relative clearfix">
+              <div class="hide user-logined relative clearfix">
                 <div class="user-account">
                   <a class="user-name__a ellipsis" href="javascript:void(0)">My AirCustom</a>
                   <span style="margin:0 5px">/</span>
@@ -78,7 +78,6 @@
                               <span class="fs-15">×2</span>
                             </div>
                           </li>
-                          <!--购物车商品列表 - end-->
                           <li>
                             <div class="user-cart__img f-l">
                               <img src="./static/images/user-cart-product-64.png" alt="">
@@ -88,7 +87,19 @@
                               <span class="fs-15">×2</span>
                             </div>
                           </li>
+                          <!--<li class="clearfix">
+                            <div class="user-cart__img f-l">
+                              <img src="./static/images/user-cart-product-64.png" alt="">
+                            </div>
+                            <div class="user-cart-txt f-l">
+                              <h2>活性碳滤网</h2>
+                              <span class="fs-15">×2</span>
+                            </div>
+                          </li>-->
+                          <!--购物车商品列表 - end-->
                         </ul>
+                        <!--数据多于3条时显示 删除注释即可-->
+                        <!--<a href="javascript:void(0)" class="user-cart__more text-center">购物车内还有更多产品(6)</a>-->
                         <button class="ac-btn ac-btn-1 user-cart__btn">去结算</button>
                       </div>
                       <!--购物车有数据 - end-->

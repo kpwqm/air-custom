@@ -132,7 +132,7 @@
 	width: 101px;
 	height: 102px;
 	background: url('/dist/images/sprite-1.0.0.png') no-repeat center;
-	background-position: -165px -68px;
+	background-position: -799px -188px;
 	position: absolute;
 	top: -9px;
 	right: -9px;
@@ -202,25 +202,25 @@
 
 .news-share__btns .share-wechat {
 	background: url('/dist/images/sprite-1.0.0.png') no-repeat center;
-	background-position: -30px -266px;
+	background-position: -1110px -152px;
 }
 
 .news-share__btns .share-sina {
 	background: url('/dist/images/sprite-1.0.0.png') no-repeat center;
-	background-position: -134px -266px;
+	background-position: -1188px -218px;
 }
 
 .news-share__btns .share-qq {
 	background: url('/dist/images/sprite-1.0.0.png') no-repeat center;
-	background-position: -108px -266px;
+	background-position: -1188px -152px;
 }
 
 .news-share__btns .share-douban {
 	background: url('/dist/images/sprite-1.0.0.png') no-repeat center;
-	background-position: -82px -266px;
+	background-position: -1136px -152px;
 }
 
 .news-share__btns .share-qzone {
 	background: url('/dist/images/sprite-1.0.0.png') no-repeat center;
-	background-position: -56px -266px;
+	background-position: -1162px -152px;
 }
