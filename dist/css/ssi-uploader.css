@@ -9,8 +9,8 @@ span.exclamation7,
 span.exclamation23,
 span.trash7,
 span.trash10 {
-	background-image: url("/dist/images/sprite-1.0.0.png");
-	background-position: -0px -500px;
+	/* @meta {"spritesheet":{"include":false}} */
+	background-image: url("../images/common/sprite.png");
 }
 
 .icon,
@@ -24,8 +24,8 @@ span.exclamation7,
 span.exclamation23,
 span.trash7,
 span.trash10 {
-	background-image: url("/dist/images/sprite-1.0.0.png");
-	background-position: -0px -500px;
+	/* @meta {"spritesheet":{"include":false}} */
+	background-image: url("../images/common/sprite.png");
 }
 
 .ssi-infoTooltip,

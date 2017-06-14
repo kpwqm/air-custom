@@ -7,7 +7,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <meta name="fragment" content="!" />
 
-  <title>会员中心—购物车 - Air Custom</title>
+  <title>会员中心-您的帐户 - Air Custom</title>
   <meta name="keywords" content="">
   <meta name="description" content="">
 
@@ -18,6 +18,9 @@
     //用jq替换$,解决与mootools库中的$的冲突
     var jq = jQuery.noConflict();
   </script>
+  
+  <script src="./dist/js/city2.js"></script>
+  <script src="./dist/js/citySelect2.js"></script>
   <script src="./static/lib/bootstrap/modal/index.js"></script>
   <link rel="stylesheet" href="./static/lib/bootstrap/modal/style.css">
   <link rel="stylesheet" href="./dist/css/userCenter.css">
@@ -173,64 +176,123 @@
       </div>
     </div>
     <!--header 部分 - end-->
-    <div id="main" class="main-personal bgc-e3e3e3">
-    <!--我的购物车 - start-->
-      <div class="main-personal_car">
-        <div class="title">我的购物车</div>
-        <div class="personal_car-box">
-          <table>
-            <tr>
-              <td><a class="car-all" href="javascript:void(0)">全选</a></td>
-              <td>商品名称</td>
-              <td>单价</td>
-              <td>数量</td>
-              <td>应付总额</td>
-              <td>操作</td>
-            </tr>
-            <tr>
-              <td>
-                <input type="checkbox" name="car" class="" checked>
-                <a href="javascript:void(0)" class="car-pro middle_center">
-                  <img src="./static/images/user-cart-product-64.png" alt="">
-                </a>
-              </td>
-              <td><a href="javascript:void(0)">商品名称</a></td>
-              <td class="price">￥<span>599.00</span></td>
-              <td>
-                <a href="javascript:void(0)" class="car-plus car-and f-l">-</a>
-                <input type="text" value="2" class="car-num f-l" onkeyup="value=value.replace(/[^\d]/g,'') ">
-                <a href="javascript:void(0)" class="car-add car-and f-l">+</a>
-              </td>
-              <td class="sigle_price">￥<span>599.00</span></td>
-              <td><a href="javascript:void(0)" class="car-del">删除</a></td>
-            </tr>
-            <tr>
-              <td>
-                <input type="checkbox" name="car" class="">
-                <a href="javascript:void(0)" class="car-pro middle_center">
-                  <img src="./static/images/user-cart-product-64.png" alt="">
-                </a>
-              </td>
-              <td>商品名称</td>
-              <td class="price">￥<span>299.20</span></td>
-              <td>
-                <a href="javascript:void(0)" class="car-plus car-and f-l">-</a>
-                <input type="text" value="2" class="car-num f-l" onkeyup="value=value.replace(/[^\d]/g,'') ">
-                <a href="javascript:void(0)" class="car-add car-and f-l">+</a>
-              </td>
-              <td class="sigle_price">￥<span>599.00</span></td>
-              <td><a href="javascript:void(0)" class="car-del">删除</a></td>
-            </tr>
-          </table>
-          <div class="car-sum middle_center">
-            <div class="car-sum-box">
-              <a class="car-sum-part2 f-r" href="javascript:void(0)">去结算</a>
-              <div class="car-sum-price f-r">应付款金额：￥<span>2396.00</span></div>
+    <div id="main" class="main-login bgc-e3e3e3">
+      <!--帐户信息 部分 - start-->
+      <div class="main-account_box ac_personal_index">
+        <span class="login-title">帐户信息</span>
+        <i class="icon-bg-title"></i>
+        <div class="account_box">
+          <div class="title modal_get_title">修改手机号码</div>
+          <div class="account_personal2-box">
+            <p>积分：2500</p>
+          </div>
+        </div>
+        <div class="account_box">
+          <div class="title modal_get_title">
+            个人信息
+            <a class="ac_personal_contral" href="javascript:void(0)">编辑</a>
+          </div>
+          <div class="account_personal2-box">
+            <p>昵称：2500</p>
+            <p>登陆密码：**** *** ***</p>
+          </div>
+        </div>
+        <div class="account_box transport">
+          <div class="title modal_get_title">
+            运送信息设置
+            <a class="ac_personal_contral" href="javascript:void(0)">编辑</a>
+          </div>
+          <div class="account_personal2-box">
+            <form action="">
+             <div class="transport_box">
+               <div class="title">送货地址</div>
+               <ul class="clearfix revise_transport">
+                 <li>
+                   <div class="transport_left">
+                     <input type="text" name="firstName" placeholder="姓氏">
+                   </div>
+                   <div class="transport_right">
+                     <input type="text" name="givenName" placeholder="名字">
+                   </div>
+                 </li>
+                 <li>
+                   <div class="transport_left">
+                     <input type="text" name="zone_des" placeholder="区号">
+                   </div>
+                   <div class="transport_right">
+                     <input type="text" name="zone_number" placeholder="联系电话">
+                   </div>
+                 </li>
+                 <li>
+                   <div id="city_5">
+                    <select class="prov" id="prov5"></select> 
+                    <select class="city" id="city5"></select>
+                    <select class="dist" id="area5"></select>
+                  </div>
+                 </li>
+                 <li>
+                   <input type="text" name="add2" placeholder="区、街道，楼宇名称">
+                 </li>
+                 <li>
+                   <input type="text" name="add2" placeholder="楼层单位">
+                 </li>
+               </ul>
+               <ul class="show_transport">
+                 <li>姓&nbsp;&nbsp;&nbsp;&nbsp;名：<span>小A</span></li>
+                 <li>联系电话：<span>020-88888888</span></li>
+                 <li>联系地址：<span>广东省广州市荔湾区街道名楼宇名楼层单元</span></li>
+               </ul>
+               
+               <div class="title margintop_15">发货地址</div>
+               <ul class="delivery revise_transport">
+                 <li>
+                   <span class="mini_title">添加收件人的电子邮箱地址：</span>
+                   <input type="email" placeholder="电子邮件">
+                 </li>
+                 <li>
+                   <span class="mini_title">添加收件人联系电话：</span><br>
+                   <span class="mini_title" style="color: #d70000">与收货地址的电话相同</span>
+                   <input type="text" placeholder="手机号码（可选）">
+                 </li>
+               </ul>
+               <ul class="show_transport">
+                 <li>收件人电子邮箱：<span>163@163.com</span></li>
+                 <li>收件人联系电话：<span>020-88888888</span></li>
+               </ul>
+             </div>
+             <div class="transport_box transport_content_box">
+               <div class="title">送货政策</div>
+               <div class="transport_content">
+                  <ul>
+                    <li>
+                      签收时需要签名。<br>
+                      如果您所在的城市不在下拉菜单中的城市范围内，我们目前无法送货。
+                    </li>
+                    <li>
+                      送货时间按照送货至市中心地区进行估算。送货至边远地区可能需要更长的时间。您的发货通知电子邮件中将包括按照您的具体地址估算的送货时间。
+                    </li>
+                    <li>
+                      对于军事禁区，保税监管区或者其他任何政府监管区域，(我们)将无法提供运送服务。
+                    </li>
+                    <li>
+                      送货时间：星期一至星期日 上午 8:30 至下午 5:30 (公众假期暂停交货)
+                    </li>
+                    <li>
+                      如有疑问，请联系您的空气管家：136-8889-2208
+                    </li>
+                  </ul>
+               </div>
+             </div>
+             <div class="clearfix"></div>
+             <div class="account_box-contral transport_contral clearfix text-right revise_transport">
+              <input type="button" value="取消" class="account_box-cancel">
+              <input type="button" value="储存" class="account_box-submit" data-toggle="modal" data-target="#myModal">
             </div>
+            </form>
           </div>
         </div>
       </div>
-    <!--我的购物车 - end-->
+      <!--帐户信息 部分 - end-->
     </div>
   </div>
   <!--footer 部分 - start-->
@@ -296,7 +358,7 @@
   </div>
   <!--右侧固定部分 - end-->
   <!-- Modal - start -->
-  <div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+  <!--<div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
     <div class="modal-dialog" role="document">
       <div class="modal-content">
         <div class="modal-header">
@@ -312,7 +374,7 @@
         </div>
       </div>
     </div>
-  </div>
+  </div>-->
   <!-- Button trigger modal -->
   <!--<button type="button" class="hide btn btn-primary btn-lg" data-toggle="modal" data-target="#myModal">Launch demo modal</button>-->
   <!-- Modal - end -->
@@ -320,4 +382,13 @@
 <!--<script src="./static/js/common.js?v1.0.0"></script>-->
 <script src="./dist/js/app.js"></script>
 <script src="./dist/js/userCenter.js"></script>
+<script>
+  var selectVa2 = new CitySelect({
+				data   : data,
+				provId : "#prov5",
+				cityId : '#city5',
+				areaId : '#area5',
+				isSelect: false
+			});
+</script>
 </html>

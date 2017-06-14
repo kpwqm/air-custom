@@ -100,13 +100,13 @@
 	height: 16px;
 	position: absolute;
 	top: 8px;
-	background: url('/dist/images/sprite-1.0.0.png') no-repeat center;
-	background-position: -652px -304px;
+	background: url('../images/sprite-1.0.0.png') no-repeat center;
+	background-position: -970px -192px;
 }
 
 .apply-sex-box input[type="radio"]:checked + i {
-	background: url('/dist/images/sprite-1.0.0.png') no-repeat center;
-	background-position: -684px -304px;
+	background: url('../images/sprite-1.0.0.png') no-repeat center;
+	background-position: -954px -192px;
 }
 
 .apply-store__select {
@@ -158,25 +158,25 @@
 }
 
 .icon-tel {
-	background: url('/dist/images/sprite-1.0.0.png') no-repeat center;
-	background-position: -1188px -188px;
+	background: url('../images/sprite-1.0.0.png') no-repeat center;
+	background-position: -550px -192px;
 }
 
 .icon-phone {
-	background: url('/dist/images/sprite-1.0.0.png') no-repeat center;
-	background-position: -1202px -120px;
+	background: url('../images/sprite-1.0.0.png') no-repeat center;
+	background-position: -580px -192px;
 }
 
 .icon-email {
-	background: url('/dist/images/sprite-1.0.0.png') no-repeat center;
-	background-position: -1172px -120px;
+	background: url('../images/sprite-1.0.0.png') no-repeat center;
+	background-position: -610px -192px;
 }
 
 .contact-txt__right .icon-position {
 	display: inline-block;
 	vertical-align: top;
-	background: url('/dist/images/sprite-1.0.0.png') no-repeat center;
-	background-position: -1142px -120px;
+	background: url('../images/sprite-1.0.0.png') no-repeat center;
+	background-position: -640px -192px;
 }
 
 .contact-txt__right .contact-position__txt {
@@ -223,8 +223,8 @@
 .map-search__btn .icon-search {
 	width: 16px;
 	height: 16px;
-	background: url('/dist/images/sprite-1.0.0.png') no-repeat center;
-	background-position: -668px -304px;
+	background: url('../images/sprite-1.0.0.png') no-repeat center;
+	background-position: -938px -192px;
 	top: 5px;
 	left: 7px;
 }

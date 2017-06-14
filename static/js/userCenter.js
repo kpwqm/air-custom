@@ -44,11 +44,25 @@ jq(function(){
   });
 
   jq('.car-add').click(function(){
-    var car_num_val=parseInt(jq(this).siblings('.car-num').val());
-    var car_price=jq(this).parent().siblings('.price').children().text();
+    var car_num_val = parseInt(jq(this).siblings('.car-num').val());
+    var car_price = jq(this).parent().siblings('.price').children().text();
+    var toMaxNum = jq(this).parent().find('.return_num').length>0?jq(this).parent().find('.return_num').children().text():false;
     car_num_val++;
-    jq(this).siblings('.car-num').val(car_num_val);
-    jq(this).parent().siblings('.sigle_price').children().text((car_price*car_num_val).toFixed(2));
+    if(toMaxNum){
+      if(toMaxNum>=car_num_val){
+        jq(this).siblings('.car-num').val(car_num_val);
+        jq(this).parent().siblings('.sigle_price').children().text((car_price*car_num_val).toFixed(2));
+      }
+      else{
+        car_num_val--;
+      }
+    }
+    else{
+      jq(this).siblings('.car-num').val(car_num_val);
+      jq(this).parent().siblings('.sigle_price').children().text((car_price*car_num_val).toFixed(2));
+    }
+    
+    
 
     car_sum();
   });
@@ -61,7 +75,18 @@ jq(function(){
       var car_num_val=parseInt(jq(this).val(0));
     }
     var car_price=jq(this).parent().siblings('.price').children().text();
-    jq(this).parent().siblings('.sigle_price').children().text((car_price*car_num_val).toFixed(2));
+    var toMaxNum = jq(this).parent().find('.return_num').length>0?jq(this).parent().find('.return_num').children().text():false;
+    if(toMaxNum){
+      if(toMaxNum>=car_num_val){
+        jq(this).parent().siblings('.sigle_price').children().text((car_price*car_num_val).toFixed(2));
+      }
+      else{
+        jq(this).val(toMaxNum);
+      }
+    }
+    else{
+      jq(this).parent().siblings('.sigle_price').children().text((car_price*car_num_val).toFixed(2));
+    }
 
     car_sum();
   });
@@ -104,6 +129,13 @@ jq(function(){
   car_sum();
 
 
+  // function maxNum(toMaxNum,numMax){
+  //   if(toMaxNum>numMax){
+  //     return false;
+  //   }
+  // }
+
+
 
   /*购物车 数量加减 按钮 start */
 
@@ -118,7 +150,6 @@ jq(function(){
       }
     });
     jq(this).parents('li').addClass('action');
-    console.log(11)
   });
 
   /*支付方式 end */
@@ -285,6 +316,63 @@ jq(function(){
   jq('.modal-title').text(jq('.modal_get_title').text());
 
   /*模态框  end*/
+
+  /*密码强度 - start */
+  jq('#password_register').keyup(function () { 
+		var strongRegex = new RegExp("^(?=.{8,})(?=.*[A-Z])(?=.*[a-z])(?=.*[0-9])(?=.*\\W).*$", "g"); 
+		var mediumRegex = new RegExp("^(?=.{7,})(((?=.*[A-Z])(?=.*[a-z]))|((?=.*[A-Z])(?=.*[0-9]))|((?=.*[a-z])(?=.*[0-9]))).*$", "g"); 
+		var enoughRegex = new RegExp("(?=.{6,}).*", "g"); 
+	
+		if (false == enoughRegex.test(jq(this).val())) { 
+			jq('#level').removeClass('pw-weak'); 
+			jq('#level').removeClass('pw-medium'); 
+			jq('#level').removeClass('pw-strong'); 
+			jq('#level').addClass(' pw-defule'); 
+			 //密码小于六位的时候，密码强度图片都为灰色 
+		} 
+		else if (strongRegex.test(jq(this).val())) { 
+			jq('#level').removeClass('pw-weak'); 
+			jq('#level').removeClass('pw-medium'); 
+			jq('#level').removeClass('pw-strong'); 
+			jq('#level').addClass(' pw-strong'); 
+			 //密码为八位及以上并且字母数字特殊字符三项都包括,强度最强 
+		} 
+		else if (mediumRegex.test(jq(this).val())) { 
+			jq('#level').removeClass('pw-weak'); 
+			jq('#level').removeClass('pw-medium'); 
+			jq('#level').removeClass('pw-strong'); 
+			jq('#level').addClass(' pw-medium'); 
+			 //密码为七位及以上并且字母、数字、特殊字符三项中有两项，强度是中等 
+		} 
+		else { 
+			jq('#level').removeClass('pw-weak'); 
+			jq('#level').removeClass('pw-medium'); 
+			jq('#level').removeClass('pw-strong'); 
+			jq('#level').addClass('pw-weak'); 
+			 //如果密码为6为及以下，就算字母、数字、特殊字符三项都包括，强度也是弱的 
+		} 
+		return true; 
+	});
+  /*密码强度 - end */
+
+  
+  /*运输信息 start */
+  jq('.ac_personal_contral').click(function(){
+    jq(this).hide();
+    jq(this).parents('.ac_personal_index').addClass('revising');
+    jq(this).parent().siblings().find('.show_transport').hide();
+    jq(this).parent().siblings().find('.revise_transport').show();
+  });
+
+  jq('.transport_contral .account_box-cancel').click(function(){
+    jq(this).parents('.ac_personal_index').removeClass('revising');
+    jq(this).parents('.transport').find('.ac_personal_contral').show();
+    jq(this).parents('.transport').find('.show_transport').show();
+    jq(this).parents('.transport').find('.revise_transport').hide();
+  });
+
+  /*运输信息 end */
+
 
 
 

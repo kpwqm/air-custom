@@ -13,12 +13,12 @@ gulp.task("css", function(){
   return gulp.src(cssPath + "*.css")
     .pipe(spriter({
       'spriteSheet': distPath + 'images/sprite-' + version + '.png',
-      'pathToSpriteSheetFromCSS': '/dist/images/sprite-' + version + '.png'
+      'pathToSpriteSheetFromCSS': '../images/sprite-' + version + '.png'
     }))
     .pipe(gulp.dest(distPath + 'css/'))
 })
 gulp.task("js", function(){
-  return gulp.src(jsPath + "*.js")
+  return gulp.src(jsPath + "module/*.js")
     .pipe(concat("app.js"))
     .pipe(gulp.dest(distPath + 'js/'))
 })
@@ -26,10 +26,14 @@ gulp.task("gulpCommonImg", function(){
   return gulp.src('./static/images/**/*.*')
     .pipe(gulp.dest(distPath + '/images/'))
 });
+gulp.task("cpJs", function(){
+  return gulp.src('./static/js/*.*')
+    .pipe(gulp.dest(distPath + '/js/'))
+})
 
 
 gulp.task('air-custom', function (cb){
-  runSequence(['css','gulpCommonImg'], 'js', cb)
+  runSequence(['css','gulpCommonImg'], 'js', 'cpJs', cb)
 })
 gulp.task('air-custom-watch',function(cb){
   var watcher = gulp.watch('./static/**/*.*', ['air-custom']);

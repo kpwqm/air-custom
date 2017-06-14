@@ -1,9 +1,11 @@
 .icon, span.ban7, span.ban7w, span.ban10, span.ban23, span.check7, span.check23, span.exclamation7, span.exclamation23, span.trash7, span.trash10 {
-  background-image: url("ss-icon/sprite.png");
+  /* @meta {"spritesheet":{"include":false}} */
+  background-image: url("../images/common/sprite.png");
 }
 
 .icon, span.ban7, span.ban7w, span.ban10, span.ban23, span.check7, span.check23, span.exclamation7, span.exclamation23, span.trash7, span.trash10 {
-  background-image: url("ss-icon/sprite.png");
+  /* @meta {"spritesheet":{"include":false}} */
+  background-image: url("../images/common/sprite.png");
 }
 
 .ssi-infoTooltip, .ssi-tooltipText {

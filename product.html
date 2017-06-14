@@ -243,17 +243,296 @@
         <!--flash部分-->
       </div>
 
-      <div class="product-more__btn relative">
+      <div class="product-more__btn">
         <div class="product-more__origin">
           <p>系统配件</p>
           <a href="javascript:void(0)">&gt;了解更多</a>
+        </div>
+        <div class="product-hover-wrap">
+          
+          <div class="product-hover__ul">
+            <ul class="relative">
+              <li style="left: 100px;"><span>核心功能段(三段式)</span></li>
+              <li style="left: 356px;"><span>管道</span></li>
+              <li style="left: 515px;"><span>回风柱送风口</span></li>
+              <li style="left: 682px;"><span>传感监控系统</span></li>
+              <li style="left: 870px;"><span>尊享卡</span></li>
+              <li style="left: 1015px;"><span>产品说明书</span></li>
+            </ul>
+          </div>
+
+          <div class="product-more__hover">系统配件</div>
+        </div>
+
+      </div>
+
+      
+      <div class="product-select-wrap relative">
+        <!--户型选择 - start-->
+        <div class="product-select-box">
+          <div class="product-select__title">
+            <h3>户型选择</h3>
+            <a href="javascript:void(0)">&gt;了解更多</a>
+          </div>
+          <div class="product-select-type__form">
+            <div class="product-type__radios clearfix">
+              <label for="product-type-home" class="f-l">
+                <input type="radio" name="product-type" value="home" id="product-type-home" checked>
+                <div>
+                  <span class="product-type__name">家居型</span>
+                  <span class="product-type__desc">空气定制系统</span>
+                </div>
+              </label>
+
+              <label for="product-type-business" class="f-r">
+                <input type="radio" name="product-type" value="business" id="product-type-business">
+                <div>
+                  <span class="product-type__name">商用型</span>
+                  <span class="product-type__desc">空气定制系统</span>
+                </div>
+              </label>
+            </div>
+            <!--家居型 选项 - start-->
+            <div class="product-type__selects home ">
+              <div class="select-box require">
+                <select name="home-province" id="home-province" class="product-province f-l" style="padding-left:20px;">
+                  <option value="1">广东</option>
+                  <option value="2">广东</option>
+                </select>
+                <select name="home-city" id="home-city" class="product-city f-r" style="padding-left:8px;">
+                  <option value="1">广州</option>
+                  <option value="2">广州</option>
+                  <option value="3">广州</option>
+                </select>
+              </div>
+              <!--楼盘-->
+              <div class="select-box">
+                <span>楼盘</span>
+                <select name="home-building" id="home-building">
+                  <option value="1">汇悦台</option>
+                  <option value="2">汇悦台1</option>
+                  <option value="3">汇悦台2</option>
+                </select>
+              </div>
+              <!--单元-->
+              <div class="select-box">
+                <span>单元</span>
+                <select name="home-cell" id="home-cell">
+                  <option value="1">嘉座 01</option>
+                  <option value="2">嘉座 02</option>
+                  <option value="3">嘉座 03</option>
+                </select>
+              </div>
+              <!--户型-->
+              <!--必选项添加类'require'-->
+              <div class="select-box require">
+                <span>户型</span>
+                <select name="home-rooms" id="home-rooms">
+                  <option value="1">2厅3室</option>
+                  <option value="2">2厅4室</option>
+                  <option value="3">2厅5室</option>
+                </select>
+              </div>
+              <!--面积-->
+              <!--必选项添加类'require'-->
+              <div class="select-box require">
+                <span>面积</span>
+                <select name="home-area" id="home-area">
+                  <option value="1">120㎡</option>
+                  <option value="2">140㎡</option>
+                  <option value="3">160㎡</option>
+                </select>
+              </div>
+            </div>
+            <!--家居型 选项 - end-->
+            <!--商用型 选项 - start-->
+            <div class="product-type__selects business hide">
+              <div class="select-box require">
+                <select name="business-province" id="business-province" class="product-province f-l" style="padding-left:20px;">
+                  <option value="1">广东</option>
+                  <option value="2">广东</option>
+                </select>
+                <select name="business-city" id="business-city" class="product-city f-r" style="padding-left:8px;">
+                  <option value="1">广州</option>
+                  <option value="2">广州</option>
+                  <option value="3">广州</option>
+                </select>
+              </div>
+              <!--商用空间-->
+              <div class="select-box">
+                <span>商用空间</span>
+                <select name="business-usefor" id="business-usefor" style="padding-left:100px;">
+                  <option value="1">健身房</option>
+                    <option value="2">健身房</option>
+                    <option value="3">健身房</option>
+                </select>
+              </div>
+              <!--面积-->
+                <div class="select-box require">
+                  <span>面积</span>
+                  <select name="business-area" id="business-area">
+                    <option value="1">400㎡</option>
+                    <option value="2">800㎡</option>
+                    <option value="3">1200㎡</option>
+                  </select>
+                </div>
+            </div>
+            <!--商用型 选项 - end-->
+          </div>
+        </div>
+        <!--户型选择 - end-->
+
+        <!--功能选配 - start-->
+        <div class="product-select-box">
+          <div class="product-select__title">
+            <h3>功能选配</h3>
+            <a href="javascript:void(0)">&gt;了解更多</a>
+          </div>
+          <div class="product-function-checkboxes">
+            <ul class="product-function__ul clearfix">
+              
+              <li>
+                <label for="p-function-1">
+                  <input type="checkbox" id="p-function-1" name="product-function" checked>
+                  <!--遍历数据时，使用背景进行显示-->
+                  <div class="product-function__img" style="background:url('./dist/images/product-function-icon1.png') no-repeat center">
+                    <!--<img src="./dist/images/product-function-icon1.png" alt="">-->
+                  </div>
+                  <div class="product-function__title">新风</div>
+                  <i class="icon-checked"><!--选中后显示--></i>
+                </label>
+              </li>
+
+              <li>
+                <label for="p-function-2">
+                  <input type="checkbox" id="p-function-2" name="product-function">
+                  <div class="product-function__img" style="background:url('./dist/images/product-function-icon2.png') no-repeat center">
+                    <!--<img src="./dist/images/product-function-icon2.png" alt="">-->
+                  </div>
+                  <div class="product-function__title">除霾</div>
+                  <i class="icon-checked"><!--选中后显示--></i>
+                </label>
+              </li>
+
+            </ul>
+          </div>
+        </div>
+        <!--功能选配 - end-->
+
+        <!--回风柱装饰 - start-->
+        <div class="product-select-box">
+          <div class="product-select__title">
+            <h3>回风柱装饰</h3>
+            <a href="javascript:void(0)">&gt;了解更多</a>
+          </div>
+
+          <div class="product-material__radios">
+            <ul class="product-material__ul">
+              <li>
+                <label for="product-material-1">
+                  <!--效果图绑定在input:radio的data-imgSrc属性上-->
+                  <input data-imgSrc="./dist/images/img-material_big-1.png" type="radio" id="product-material-1" name="product-material" checked>
+                  <!--遍历数据时，使用背景进行显示-->
+                  <div class="product-function__img" style="background:url('./dist/images/img-material-1.png') no-repeat center">
+                    <!--<img src="./dist/images/img-material-1.png" alt="">-->
+                  </div>
+                  <div class="product-function__title">国际银</div>
+                  <i class="icon-checked"><!--选中后显示--></i>
+                </label>
+              </li>
+
+              <li>
+                <label for="product-material-2">
+                  <!--效果图绑定在input:radio的data-imgSrc属性上-->
+                  <input data-imgSrc="./dist/images/img-material_big-2.png" type="radio" id="product-material-2" name="product-material">
+                  <!--遍历数据时，使用背景进行显示-->
+                  <div class="product-function__img" style="background:url('./dist/images/img-material-2.png') no-repeat center">
+                    <!--<img src="./dist/images/img-material-2.png" alt="">-->
+                  </div>
+                  <div class="product-function__title">国际银</div>
+                  <i class="icon-checked"><!--选中后显示--></i>
+                </label>
+              </li>
+
+            </ul>
+            <!--效果显示图 - satrt-->
+            <div class="material-show-box">
+              <img class="material-show__img" src="./dist/images/img-material_big-1.png" alt="">
+            </div>
+            <!--效果显示图 - end-->
+          </div>
+
+        </div>
+        <!--回风柱装饰 - end-->
+
+        <!--香氛选择 - start-->
+        <div class="product-select-box">
+          <div class="product-select__title">
+            <h3>香氛选择</h3>
+            <a href="javascript:void(0)">&gt;了解更多</a>
+          </div>
+
+          <div class="product-fragrance__radios">
+            <ul class="product-fragrance__ul">
+              <li>
+                <label for="product-fragrance-1">
+                  <!--效果图绑定在input:radio的data-imgSrc属性上-->
+                  <input data-imgSrc="./dist/images/img-fragrance_big-1.png" type="radio" id="product-fragrance-1" name="product-fragrance" checked>
+                  <!--遍历数据时，使用背景进行显示-->
+                  <div class="product-function__img" style="background:url('./dist/images/img-fragrance-1.png') no-repeat center">
+                    <!--<img src="./dist/images/img-fragrance-1.png" alt="">-->
+                  </div>
+                  <div class="product-function__title">薰衣草</div>
+                  <i class="icon-checked"><!--选中后显示--></i>
+                </label>
+              </li>
+
+              <li>
+                <label for="product-fragrance-2">
+                  <!--效果图绑定在input:radio的data-imgSrc属性上-->
+                  <input data-imgSrc="./dist/images/img-fragrance_big-2.png" type="radio" id="product-fragrance-2" name="product-fragrance">
+                  <!--遍历数据时，使用背景进行显示-->
+                  <div class="product-function__img" style="background:url('./dist/images/img-fragrance-2.png') no-repeat center">
+                    <!--<img src="./dist/images/img-fragrance-2.png" alt="">-->
+                  </div>
+                  <div class="product-function__title">方浮雕</div>
+                  <i class="icon-checked"><!--选中后显示--></i>
+                </label>
+              </li>
+            </ul>
+            <!--效果显示图 - satrt-->
+            <div class="fragrance-show-box">
+              <img class="fragrance-show__img" src="./dist/images/img-fragrance_big-1.png" alt="">
+            </div>
+            <!--效果显示图 - end-->
+          </div>
+
+        </div>
+        <!--香氛选择 - end-->
+
+
+      </div>
+
+
+
+
+      <!--底部文字描述-->
+      <div class="product-bottom-wrap bgc-e6e6e6">
+        <div class="product-bottom-box">
+          <h2>融合全球优质基因，探索永不停止</h2>
+          <p>AIR CUSTOM之所以恒定可靠，</p>
+          <p>源自我们强大的全球产业资源的整合能力。</p>
+          <p>我们与全球空气领域最优秀的机构和企业建立了深厚情谊，</p>
+          <p>以领先的科研能力整合最尖端的科技，</p>
+          <p>满足你对好空气的极致需求。</p>
+          <div class="product-bottom-img__1"> </div>
         </div>
       </div>
 
     </div>
   </div>
   <!--footer 部分 - start-->
-  <div id="footer">
+  <div id="footer" class="bgc-e6e6e6">
     <!--底部二维码部分 - start-->
     <div class="footer-qrcode-box auto">
       <i class="icon-logo__bottom auto"></i>
@@ -338,4 +617,37 @@
 </body>
 <!--<script src="./static/js/common.js?v1.0.0"></script>-->
 <script src="./dist/js/app.js"></script>
+<script>
+  // 判断b是否为a的子元素
+  var contains = function(a,b){
+    return a.contains ? a != b && a.contains(b) : !!(a.compareDocumentPosition(b) & 16);
+  }
+  jq('.product-more__origin').on('mouseover', function(){
+    jq(this).hide();
+    jq('.product-hover-wrap').show();
+  })
+  jq('.product-hover-wrap').on('mouseout', function(ev){
+    if(this != (ev.relatedTarget||ev.fromElement) && !contains(this, (ev.relatedTarget||ev.fromElement))){
+      jq(this).hide();
+      jq('.product-more__origin').show();
+    }
+  })
+
+  // 回风柱装饰选择切换效果图显示
+  jq('.product-material__ul input:radio').change(function(v){
+    var src = jq(this).attr('data-imgSrc');
+    if(v.target.checked)
+      jq('.material-show__img').attr('src', src);
+  })
+
+
+  // 香氛选择切换效果图显示
+  jq('.product-fragrance__ul input:radio').change(function(v){
+    var src = jq(this).attr('data-imgSrc');
+    if(v.target.checked)
+      jq('.fragrance-show__img').attr('src', src);
+  })
+
+
+</script>
 </html>

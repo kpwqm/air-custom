@@ -131,8 +131,8 @@
 .icon-featured {
 	width: 101px;
 	height: 102px;
-	background: url('/dist/images/sprite-1.0.0.png') no-repeat center;
-	background-position: -799px -188px;
+	background: url('../images/sprite-1.0.0.png') no-repeat center;
+	background-position: -299px -260px;
 	position: absolute;
 	top: -9px;
 	right: -9px;
@@ -201,26 +201,26 @@
 }
 
 .news-share__btns .share-wechat {
-	background: url('/dist/images/sprite-1.0.0.png') no-repeat center;
-	background-position: -1110px -152px;
+	background: url('../images/sprite-1.0.0.png') no-repeat center;
+	background-position: -696px -192px;
 }
 
 .news-share__btns .share-sina {
-	background: url('/dist/images/sprite-1.0.0.png') no-repeat center;
-	background-position: -1188px -218px;
+	background: url('../images/sprite-1.0.0.png') no-repeat center;
+	background-position: -748px -192px;
 }
 
 .news-share__btns .share-qq {
-	background: url('/dist/images/sprite-1.0.0.png') no-repeat center;
-	background-position: -1188px -152px;
+	background: url('../images/sprite-1.0.0.png') no-repeat center;
+	background-position: -722px -192px;
 }
 
 .news-share__btns .share-douban {
-	background: url('/dist/images/sprite-1.0.0.png') no-repeat center;
-	background-position: -1136px -152px;
+	background: url('../images/sprite-1.0.0.png') no-repeat center;
+	background-position: -774px -192px;
 }
 
 .news-share__btns .share-qzone {
-	background: url('/dist/images/sprite-1.0.0.png') no-repeat center;
-	background-position: -1162px -152px;
+	background: url('../images/sprite-1.0.0.png') no-repeat center;
+	background-position: -670px -192px;
 }
