@@ -7,7 +7,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <meta name="fragment" content="!" />
 
-  <title>首页 - Air Custom</title>
+  <title>产品送风口&回风柱 - Air Custom</title>
   <meta name="keywords" content="">
   <meta name="description" content="">
 
@@ -20,7 +20,7 @@
   </script>
   <script src="./static/lib/bootstrap/modal/index.js"></script>
   <link rel="stylesheet" href="./static/lib/bootstrap/modal/style.css">
-  <link rel="stylesheet" href="./dist/css/style.css">
+  <link rel="stylesheet" href="./dist/css/pages.css">
 
 </head>
 <body>
@@ -44,14 +44,14 @@
           <ul class="header-right__ul clearfix">
             <li>
               <!--未登陆 - start-->
-              <div class="user-signin">
+              <div class="user-signin hide">
                 <a href="javascript:void(0)">注册</a>
                 <span style="margin:0 5px">/</span>
                 <a href="javascript:void(0)">登陆</a>
               </div>
               <!--未登陆 - end-->
               <!--已登陆 - start-->
-              <div class="hide user-logined relative clearfix">
+              <div class="user-logined relative clearfix">
                 <div class="user-account">
                   <a class="user-name__a ellipsis" href="javascript:void(0)">My AirCustom</a>
                   <span style="margin:0 5px">/</span>
@@ -78,6 +78,7 @@
                               <span class="fs-15">×2</span>
                             </div>
                           </li>
+                          <!--购物车商品列表 - end-->
                           <li>
                             <div class="user-cart__img f-l">
                               <img src="./static/images/user-cart-product-64.png" alt="">
@@ -87,19 +88,7 @@
                               <span class="fs-15">×2</span>
                             </div>
                           </li>
-                          <!--<li class="clearfix">
-                            <div class="user-cart__img f-l">
-                              <img src="./static/images/user-cart-product-64.png" alt="">
-                            </div>
-                            <div class="user-cart-txt f-l">
-                              <h2>活性碳滤网</h2>
-                              <span class="fs-15">×2</span>
-                            </div>
-                          </li>-->
-                          <!--购物车商品列表 - end-->
                         </ul>
-                        <!--数据多于3条时显示 删除注释即可-->
-                        <!--<a href="javascript:void(0)" class="user-cart__more text-center">购物车内还有更多产品(6)</a>-->
                         <button class="ac-btn ac-btn-1 user-cart__btn">去结算</button>
                       </div>
                       <!--购物车有数据 - end-->
@@ -184,79 +173,104 @@
       </div>
     </div>
     <!--header 部分 - end-->
-    <div id="main" class="main-login bgc-e3e3e3">
-      <!--用户注册 部分 - start-->
-      <div class="main-register_box">
-        <span class="login-title">用户注册</span>
-        <i class="icon-bg-title"></i>
-        <form action="" class="register-form">
-          <!--注册表单 - start-->
-          <ul>
-            <li>
-              <div class="register-left f-l"><span class="cl-red">＊</span>手机号：</div>
-              <div class="register-rigjt f-l">
-                <input type="text" name="phone" placeholder="请输入11位手机号">
-              </div>
-            </li>
-            <li>
-              <div class="register-left f-l"><span class="cl-red">＊</span>密码：</div>
-              <div class="register-rigjt f-l">
-                <input type="password" name="password" class="f-l" placeholder="6~20个字符，请不要输入非法字符">
-                <div class="password-strength f-l">
-                  <span>密码强度：</span>
-                </div>
-              </div>
-            </li>
-            <li>
-              <div class="register-left f-l"><span class="cl-red">＊</span>确认密码：</div>
-              <div class="register-rigjt f-l">
-                <input type="password" name="password" placeholder="再次输入密码">
-              </div>
-            </li>
-            <li>
-              <div class="register-left f-l"><span class="cl-red">＊</span>验证码：</div>
-              <div class="register-rigjt f-l">
-                <input type="text" class="register-identifying f-l" name="login-id" placeholder="填写验证码">
-                <div class="identifying f-l">
-                  <img src="./dist/images/common/pic-identifying.jpg" ondragstart="return false" alt="">
-                </div>
-                <a href="javascript:void(0)" class="f-l identifying-change">看不清？换一个</a>
-              </div>
-            </li>
-            <li>
-              <div class="register-left f-l"><span class="cl-red">＊</span>验证码：</div>
-              <div class="register-rigjt f-l">
-                <input type="text" class="register-identifying f-l" name="login-id" placeholder="填写验证码">
-                <a href="javascript:void(0)" class="f-l identifying-phone">获取短信验证码</a>
-              </div>
-            </li>
-            <li class="readed">
-              <label>
-                <input name="readed" type="checkbox">我已阅读并同意
-                <a href="javascript:void(0)" class="read-agreement">会员注册协议</a>和
-                <a href="javascript:void(0)" class="read-agreement">隐私保护政策</a>
-              </label>
-            </li>
-          </ul>
-
-          <input type="submit" value="注册" class="login-submit">
-
-          <!--注册表单 - end-->
-
-        </form>
-        <div class="main-login_bottom register-bottom">
-          <a class="login-cancel" href="javascript:void(0)">取消</a>
-          <ul>
-            <li>已有会员账号请直接登陆</li>
-            <li><a class="login-register" href="javascript:void(0)">转到登录页</a></li>
-          </ul>
+    <div id="main" class="bgc-e3e3e3">
+      <!--banner 部分 - start-->
+      <div class="banner-page banner-huifengzhu-wrap">
+        <div class="base-wrap">
+          <div class="banner-txt-container vc-hc">
+            <p>独特是真正的奢华<br/>
+            成就定制高姿态</p>
+          </div>
         </div>
       </div>
-      <!--用户注册 部分 - end-->
+      <!--banner 部分 - end-->
+      <!--产品介绍 部分 - start-->
+      <div class="page-main-wrap">
+
+        <div class="page-main-900">
+          <h1 class="page-title__h1">送风口 & 回风柱</h1>
+          <ul class="page-part1__ul">
+            <li>
+              <div class="page-part1__img" style="top:28px;left:-10px;">
+                <img src="./dist/images/pages/product-10-img-1.jpg" alt="">
+              </div>
+              <div class="page-part1-txt__right">
+                <h3>柱式回风</h3>
+                <p>无论是中式、欧式、田园式装修，</p>
+                <p>都可以选择完美融合的柱式效果。</p>
+              </div>
+            </li>
+            <li>
+              <div class="page-part1__img" style="top:-38px;right:-16px;">
+                <img src="./dist/images/pages/product-10-img-2.jpg" alt="">
+              </div>
+              <div class="page-part1-txt__left">
+                <h3>常规款回风口</h3>
+                <p>了解用户现有空气相关设备（如中央空调、</p>
+                <p>除湿器、加湿器、空气净化器等）使用情况，</p>
+                <p>并根据现有问题提出解决方案;</p>
+              </div>
+            </li>
+            <li>
+              <div class="page-part1__img" style="top:-32px;left:25px;">
+                <img src="./dist/images/pages/product-10-img-3.jpg" alt="">
+              </div>
+              <div class="page-part1-txt__right">
+                <h3>隐藏式设计</h3>
+                <p>深入了解用户的个性需求特殊功能性需求，</p>
+                <p>根据用户的具体空间布局，整合所需功能，</p>
+                <p>量身定制超级空气系统解决方案.</p>
+              </div>
+            </li>
+            
+          </ul>
+        </div>
+
+        <div class="product-page3__part2">
+          <div class="page-main-900">
+            <h2 class="co-c4a07a">与风格匹配的定制服务</h2>
+            <img style="margin-bottom:56px;" src="./dist/images/pages/img-service-5.png" alt="">
+            <img src="./dist/images/pages/img-pro-img4.jpg" alt="">
+          </div>
+        </div>
+
+        <div class="product-page3__part3 page-main-900">
+          <div class="product-page3__part3-box">
+            <img src="./dist/images/pages/img-pro-img5.jpg" alt="">
+            <div class="vc-hc">
+              <p>顶送底回的方式<br/>
+              以最契合风格的定制<br/>
+              奉上洁净清新的空气</p>
+            </div>
+          </div>
+
+          <div class="product-page3__part3-box">
+            <img src="./dist/images/pages/img-pro-img6.jpg" alt="">
+            <div class="vc-hc">
+              <p>顶送底回的方式<br/>
+              以最契合风格的定制<br/>
+              奉上洁净清新的空气</p>
+            </div>
+          </div>
+
+          <div class="product-page3__part3-box">
+            <img src="./dist/images/pages/img-pro-img7.jpg" alt="">
+            <div class="vc-hc">
+              <p>顶送底回的方式<br/>
+              以最契合风格的定制<br/>
+              奉上洁净清新的空气</p>
+            </div>
+          </div>
+        </div>
+
+
+
+      </div>
+      <!--产品介绍 部分 - end-->
     </div>
   </div>
   <!--footer 部分 - start-->
-  <div id="footer" class="bgc-e3e3e3">
+  <div id="footer" class="bgc-e6e6e6">
     <!--底部二维码部分 - start-->
     <div class="footer-qrcode-box auto">
       <i class="icon-logo__bottom auto"></i>
@@ -341,5 +355,4 @@
 </body>
 <!--<script src="./static/js/common.js?v1.0.0"></script>-->
 <script src="./dist/js/app.js"></script>
-<script src="./dist/js/chen.js"></script>
 </html>

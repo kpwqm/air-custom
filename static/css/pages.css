@@ -240,8 +240,108 @@
   left: 0px;
 }
 
+/* product-3-10.html >>> */
+.banner-fragrance-wrap{
+  /* @meta {"spritesheet":{"include":false}} */
+  background: url('../images/pages/img-pro-banner1.jpg') no-repeat center;
+}
+.banner-txt-container{
+  position: absolute;
+  left: 10px;
+  top: 268px;
+  width: 538px;
+  min-height: 180px;
+  color: #fff;
+  line-height: 50px;
+  font-size:30px;
+  text-align: center;
+  z-index: 99;
+}
+.banner-txt-container::before{
+  content: '';
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  width: 100%;
+  height: 100%;
+  background: #0f1d41;
+  filter: alpha(opacity=80);
+  opacity: 0.8;
+  z-index: -1;
+}
 
-
-
-
-
+.page-main-900{
+  width: 900px;
+  margin: auto;
+  position: relative;
+}
+.page-title__h1{
+  height: 145px;
+  line-height: 145px;
+  text-align: center;
+  font-size: 50px;
+  /* @meta {"spritesheet":{"include":false}} */
+  background: url('../images/common/bg-title-2.png') no-repeat bottom center;
+}
+.page-part1__ul{
+  margin-bottom: 80px;
+}
+.page-part1__ul li{
+  width: 100%;
+  height: 245px;
+  background-color: #e6e6e6;
+  margin-top: 65px;
+  position: relative;
+}
+.page-part1__ul li .page-part1__img,
+.page-part1__ul li .page-part1-txt__right{
+  position: absolute;
+}
+.page-part1__ul li .page-part1-txt__left,
+.page-part1__ul li .page-part1-txt__right{
+  max-width: 420px;
+}
+.page-part1__ul li .page-part1-txt__left{
+  text-align: right;
+  padding-top: 18px;
+  margin-right: 436px;
+  
+}
+.page-part1__ul li .page-part1-txt__right{
+  text-align: left;
+  left: 450px;
+  top: 32px;
+}
+.page-part1__ul li h3{
+  color: #c4a07a;
+  font-size: 36px;
+  margin-bottom: 10px;
+}
+.page-part1__ul li p{
+  font-size: 18px;
+}
+.product-page3__part3{
+  padding-top: 120px;
+}
+.product-page3__part2{
+  height: 828px;
+  background-color: #e6e6e6;
+  text-align: center;
+}
+.product-page3__part2 h2{
+  padding-top: 54px;
+  padding-bottom: 10px;
+  font-size: 50px;
+}
+.product-page3__part3-box div{
+  height: 290px;
+  text-align: center;
+}
+.product-page3__part3-box div.vc-hc p{
+  color: #6d6363;
+  font-size: 24px;
+}
+.banner-huifengzhu-wrap{
+  /* @meta {"spritesheet":{"include":false}} */
+  background: url('../images/pages/img-product-10-banner.jpg') no-repeat center;
+}

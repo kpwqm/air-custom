@@ -373,6 +373,17 @@ jq(function(){
 
   /*运输信息 end */
 
+  /*产品内页 -start */
+  jq('.function_box-main').mouseover(function(){
+    jq(this).find('.action_hover').fadeIn(400);
+  })
+  jq('.function_box-main').mouseleave(function(){
+    // setTimeout(function() {
+      jq('.function_box-main').find('.action_hover').fadeOut(600);
+    // }, 1000);
+  })
+  /*产品内页 -end */
+
 
 
 

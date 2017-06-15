@@ -40,12 +40,12 @@
   letter-spacing: 6px;
   text-align: center;
 }
-.icon-bg-user_title {
+.icon-bg-title {
 	/*background: url('../images/sprite-1.0.0.png') center no-repeat;
 	background-position: -0px -170px;*/
   width: 207px;
   height: 14px;
-	background: url('../images/common/bg-user_title.png') center no-repeat;
+	background: url('../images/common/bg-title.png') center no-repeat;
   margin: 0 auto;
   margin-top: 25px;
   margin-bottom: 40px;
@@ -269,7 +269,7 @@
 .main-personal_box .login-title{
   padding-top: 30px;
 }
-.main-personal_box .icon-bg-user_title{
+.main-personal_box .icon-bg-title{
   margin-top: 10px;
   margin-bottom: 30px;
 }
