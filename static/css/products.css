@@ -88,6 +88,9 @@
   /* @meta {"spritesheet":{"include":false}} */
   background: url('../images/banner-product.jpg') no-repeat center;
 }
+#video_box{
+  max-height: 600px;
+}
 .banner-product-box,
 .banner-product__nav{
   width: 1200px;
@@ -99,7 +102,6 @@
   position: absolute;
 }
 .banner-product__nav .banner-product__navbg{
-  
   top: 0px;
   width: inherit;
   background-color: #0f1d41;

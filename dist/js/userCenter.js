@@ -375,13 +375,13 @@ jq(function(){
 
   /*产品内页 -start */
   jq('.function_box-main').mouseover(function(){
-    jq(this).find('.action_hover').fadeIn(400);
+    jq(this).addClass('hashover');
+    jq(this).find('.action_hover').fadeOut(400);
+
   })
-  jq('.function_box-main').mouseleave(function(){
-    // setTimeout(function() {
-      jq('.function_box-main').find('.action_hover').fadeOut(600);
-    // }, 1000);
-  })
+  jq('.pro_hotspot').click(function(){
+    jq(this).parent().addClass('action').siblings().removeClass('action');
+  });
   /*产品内页 -end */
 
 

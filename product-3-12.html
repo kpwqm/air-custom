@@ -1,0 +1,344 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset='UTF-8'>
+  <meta name="renderer" content="webkit" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="fragment" content="!" />
+
+  <title>首页 - 产品智能监控系统 - Air Custom</title>
+  <meta name="keywords" content="">
+  <meta name="description" content="">
+
+  <link rel="stylesheet" href="./dist/css/common.css?v=1.0.0">
+
+  <script src="./static/lib/jquery-1.12.0.min.js"></script>
+  <script>
+    //用jq替换$,解决与mootools库中的$的冲突
+    var jq = jQuery.noConflict();
+  </script>
+  <script src="./static/lib/bootstrap/modal/index.js"></script>
+  <link rel="stylesheet" href="./static/lib/bootstrap/modal/style.css">
+  <link rel="stylesheet" href="./dist/css/userCenter.css">
+
+</head>
+<body>
+  <div class="grid-box">
+    <!--header 部分 - start-->
+    <div id="header">
+      <div class="header-top-box"> 
+        <div class="header-top__left f-l">
+          <!--header部分左侧 - start-->
+          <ul class="header-left__ul clearfix">
+            <li>
+              <a href="javascript:void(0)">新媒体中心</a>
+            </li>
+            <li>
+              <a href="javascript:void(0)">耗材购买</a>
+            </li>
+          </ul>
+          <!--header部分左侧 - end-->
+        </div>
+        <div class="header-top__right f-r">
+          <ul class="header-right__ul clearfix">
+            <li>
+              <!--未登陆 - start-->
+              <div class="user-signin hide">
+                <a href="javascript:void(0)">注册</a>
+                <span style="margin:0 5px">/</span>
+                <a href="javascript:void(0)">登陆</a>
+              </div>
+              <!--未登陆 - end-->
+              <!--已登陆 - start-->
+              <div class="user-logined relative clearfix">
+                <div class="user-account">
+                  <a class="user-name__a ellipsis" href="javascript:void(0)">My AirCustom</a>
+                  <span style="margin:0 5px">/</span>
+                  <a class="user-exit__a" href="javascript:void(0)">退出</a>
+                </div>
+                
+                <div class="user-nav-wrap absolute">
+                  <div class="user-arrow"><div class="user-arrow-inner"></div></div>
+                  <div class="user-nav-box">
+                    <!--购物车数据 - start-->
+                    <div class="user-cart-box">
+                      <!--购物车无数据-->
+                      <div class="user-cart__error hide">你的购物车是空的</div>
+                      <!--购物车有数据 - start-->
+                      <div class="user-cart-products">
+                        <ul class="user-cart__ul">
+                          <!--购物车商品列表 - start-->
+                          <li>
+                            <div class="user-cart__img f-l">
+                              <img src="./static/images/user-cart-product-64.png" alt="">
+                            </div>
+                            <div class="user-cart-txt f-l">
+                              <h2>活性碳滤网</h2>
+                              <span class="fs-15">×2</span>
+                            </div>
+                          </li>
+                          <!--购物车商品列表 - end-->
+                          <li>
+                            <div class="user-cart__img f-l">
+                              <img src="./static/images/user-cart-product-64.png" alt="">
+                            </div>
+                            <div class="user-cart-txt f-l">
+                              <h2>活性碳滤网</h2>
+                              <span class="fs-15">×2</span>
+                            </div>
+                          </li>
+                        </ul>
+                        <button class="ac-btn ac-btn-1 user-cart__btn">去结算</button>
+                      </div>
+                      <!--购物车有数据 - end-->
+                    </div>
+                    <!--购物车数据 - end-->
+                    <!--用户登陆后相应导航 - start-->
+                    <ul class="user-nav__ul clearfix">
+                      <li class="user-nav__li active">
+                        <i class="icon-user-cart"></i>
+                        <a href="javascript:void(0)">购物车</a>
+                      </li>
+                      <li class="user-nav__li">
+                        <i class="icon-user-favorites"></i>
+                        <a href="javascript:void(0)">收藏(10)</a>
+                      </li>
+                      <li class="user-nav__li">
+                        <i class="icon-user-orders"></i>
+                        <a href="javascript:void(0)">订单</a>
+                      </li>
+                      <li class="user-nav__li">
+                        <i class="icon-user-pay"></i>
+                        <a href="javascript:void(0)">支付</a>
+                      </li>
+                      <li class="user-nav__li">
+                        <i class="icon-user-account"></i>
+                        <a href="javascript:void(0)">账户</a>
+                      </li>
+                      <li class="user-nav__li">
+                        <i class="icon-user-login"></i>
+                        <a href="javascript:void(0)">退出</a>
+                      </li>
+                    </ul>
+                    <!--用户登陆后相应导航 - end-->
+                  </div>
+                  
+                </div>
+              </div>
+              <!--已登陆 - end-->
+            </li>
+            <li style="margin-left: 32px;">
+              <a class="icon-search__header" href="javascript:void(0)"></a>
+            </li>
+          </ul>
+        </div>
+        <div class="header-top__middle">
+          <i class="icon-logo auto"></i>
+        </div>
+      </div>
+      <div class="haeder-nav-box">
+        <ul class="header-nav__ul">
+          <li>
+            <a class="active" href="javascript:void(0)">
+              <span>首  页</span><span class="line"></span>
+            </a>
+          </li>
+          <li>
+            <a href="javascript:void(0)">
+              <span>Air Custom世界</span><span class="line"></span>
+            </a>
+          </li>
+          <li>
+            <a href="javascript:void(0)">
+              <span>产   品</span><span class="line"></span>
+            </a>
+          </li>
+          <li>
+            <a href="javascript:void(0)">
+              <span>服  务</span><span class="line"></span>
+            </a>
+          </li>
+          <li>
+            <a href="javascript:void(0)">
+              <span>案  例</span><span class="line"></span>
+            </a>
+          </li>
+          <li>
+            <a href="javascript:void(0)">
+              <span>联系我们</span><span class="line"></span>
+            </a>
+          </li>
+        </ul>
+      </div>
+    </div>
+    <!--header 部分 - end-->
+    <div id="main" class="bgc-e3e3e3">
+      <!--banner 部分 - start-->
+      <div class="page_banner banner_function_b">
+        <div class="page_width">
+          <!--<div class="pg_banner-connet middle_center">
+            <p>
+              融合专利不胜枚举，<br>
+              工业医疗级系统转民用，<br>
+              处理效果卓尔不凡<br>
+            </p>
+          </div>-->
+        </div>
+      </div>
+      <!--banner 部分 - end-->
+      <!--产品介绍 部分 - start-->
+      <div class="page_main">
+        <div class="title clearfix">
+          <span>智能监控系统</span>
+          <i class="icon-page-title3"></i>
+        </div>
+        <!--传感器  -start-->
+        <div class="function_box page_width clearfix">
+          <div class="text-center title_header">
+            -看见，看不见的空气；<br>
+            -掌控，掌控不到的空气
+          </div>
+          <div class="title text-center title_pro">
+            <span>传感器</span>
+          </div>
+          <div class="function_box-banner"><img src="./dist/images/pages/img-pro-img8.jpg" alt=""></div>
+          <div class="function_box-main2">
+            <div class="title text-center">
+              工业精度级传感器，<br>
+              24小时高敏度监测
+            </div>
+            <div class="imgbox middle_center">
+              <img src="./dist/images/pages/img-pro-img34.png" alt="">
+            </div>
+          </div>
+        </div>
+        <!--传感器  -end-->
+        
+        <!--空气品质处理系统监控显示屏  -start-->
+        <div class="function_box page_width clearfix">
+          <div class="title text-center title_pro">空气品质处理系统监控显示屏</div>
+          <div class="function_box-banner"><img src="./dist/images/pages/img-pro-img10.jpg" alt=""></div>
+          <div class="function_box-main2">
+            <div class="title text-center">
+              <span>超薄液晶显示屏</span>
+              室内、外空气质量即时可见
+            </div>
+            <div class="imgbox middle_center">
+              <img src="./dist/images/pages/img-pro-img11.png" alt="">
+            </div>
+          </div>
+        </div>
+        <!--空气品质处理系统监控显示屏  -end-->
+
+        <!--手机APP  -start-->
+        <div class="function_box page_width clearfix">
+          <div class="title text-center title_pro">手机APP</div>
+          <div class="function_box-banner"><img src="./dist/images/pages/img-pro-img12.jpg" alt=""></div>
+          <div class="function_box-main2">
+            <div class="title text-center">
+              <span>
+                运用”物联网+”<br>
+                进行远程智能云操控
+              </span>
+              轻松实现人机交互舒适环境一键开启，智享健康。
+            </div>
+            <div class="imgbox middle_center">
+              <img src="./dist/images/pages/img-pro-img13.jpg" alt="">
+            </div>
+          </div>
+        </div>
+        <!--手机APP  -end-->
+
+      </div>
+      <!--产品介绍 部分 - end-->
+    </div>
+  </div>
+  <!--footer 部分 - start-->
+  <div id="footer" class="bgc-e3e3e3">
+    <!--底部二维码部分 - start-->
+    <div class="footer-qrcode-box auto">
+      <i class="icon-logo__bottom auto"></i>
+      <div class="qrcodes-box">
+        <ul class="qrcodes-box__ul clearfix">
+          <li>
+            <i class="icon-qrcode__wechat"></i>
+            <span class="qrcode-txt">关 注 官 方 微 信</span>
+          </li>
+          <li>
+            <i class="icon-qrcode__android"></i>
+            <span class="qrcode-txt">系统控制  A P P(安卓)</span>
+          </li>
+          <li>
+            <i class="icon-qrcode__ios"></i>
+            <span class="qrcode-txt">系统控制  A P P (iOS)</span>
+          </li>
+        </ul>
+      </div>
+    </div>
+    <!--底部二维码部分 - end-->
+
+    <div class="footer">
+      <div class="footer-box auto">
+        <div class="footer-copyright f-l">Copyright &copy; 2017 爱康森德. 版权所有 粤ICP备16008367号-1</div>
+        <div class="footer-nav-box relative f-r">
+          <ul class="footer-nav__ul clearfix">
+            <li>
+              <a href="javascript:void(0)">使用条款</a>
+            </li>
+            <li>
+              <a href="javascript:void(0)">隐私权政策</a>
+            </li>
+            <li>
+              <a href="javascript:void(0)">网站地图</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!--footer 部分 - end-->
+  <!--右侧固定部分 - start-->
+  <div class="fixed-bar-box">
+    <ul class="fixed-bar__ul">
+      <!--<li>
+        <a id="fixed-consult" href="javascript:void(0)">咨询</a>
+      </li>-->
+      <li>
+        <a id="fixed-app" href="javascript:void(0)"><!--APP--></a>
+      </li>
+      <li>
+        <a id="fixed-favorites" href="javascript:void(0)"><!--收藏--></a>
+      </li>
+      <li>
+        <a id="fixed-top" href="javascript:void(0)"><!--顶部--></a>
+      </li>
+    </ul>
+  </div>
+  <!--右侧固定部分 - end-->
+  <!-- Modal - start -->
+  <div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+    <div class="modal-dialog" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+          <h4 class="modal-title" id="myModalLabel">Modal title</h4>
+        </div>
+        <div class="modal-body">
+          这是弹窗部分
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+          <button type="button" class="btn btn-primary">Save changes</button>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- Button trigger modal -->
+  <!--<button type="button" class="hide btn btn-primary btn-lg" data-toggle="modal" data-target="#myModal">Launch demo modal</button>-->
+  <!-- Modal - end -->
+</body>
+<!--<script src="./static/js/common.js?v1.0.0"></script>-->
+<script src="./dist/js/app.js"></script>
+<script src="./dist/js/userCenter.js"></script>
+</html>

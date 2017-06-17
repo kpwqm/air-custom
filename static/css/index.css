@@ -6,6 +6,9 @@
   /* @meta {"spritesheet":{"include":false}} */
   background: url('../images/banner-index.jpg') no-repeat center;
 }
+#video_box{
+  max-height: 600px;
+}
 .banner-index .index-play__btn{
   width: 134px;
   text-align: center;

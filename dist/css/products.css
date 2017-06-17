@@ -108,6 +108,10 @@
 	background: url('../images/banner-product.jpg') no-repeat center;
 }
 
+#video_box {
+	max-height: 600px;
+}
+
 .banner-product-box,
 .banner-product__nav {
 	width: 1200px;
