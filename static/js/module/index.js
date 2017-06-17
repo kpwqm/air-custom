@@ -1,5 +1,18 @@
 console.log('loaded index.js ...');
-
+// index.html > 切换类型
+jq("#index-type-home, #index-type-business").on('change',function(){
+  if(this.checked){
+    if(this.value == "home"){
+      jq('.index-business__data').hide();
+      jq('.index-home__data').show();
+    }else if(this.value == "business"){
+      jq('.index-home__data').hide();
+      jq('.index-business__data').show();
+    }
+  }else{
+    return false;
+  }
+})
 // search.html > tabs切换
 jq(".search-tabs__ul li").on("click", function(){
   jq(this).addClass("active").siblings().removeClass("active");
@@ -20,17 +33,14 @@ jq(".product-play__btn").on("click", function(){
   jq('.banner-product-box').append(_html);
 })
 
-
-
-// index.html > 切换类型
-jq("#index-type-home, #index-type-business").on('change',function(){
+jq("#product-type-home, #product-type-business").on('change',function(){
   if(this.checked){
     if(this.value == "home"){
-      jq('.index-business__data').hide();
-      jq('.index-home__data').show();
+      jq('.product-type__selects.business').hide().removeClass('hide');
+      jq('.product-type__selects.home').show();
     }else if(this.value == "business"){
-      jq('.index-home__data').hide();
-      jq('.index-business__data').show();
+      jq('.product-type__selects.home').hide();
+      jq('.product-type__selects.business').show().removeClass('hide');
     }
   }else{
     return false;
