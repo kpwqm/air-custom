@@ -345,3 +345,64 @@
   /* @meta {"spritesheet":{"include":false}} */
   background: url('../images/pages/img-product-10-banner.jpg') no-repeat center;
 }
+
+/*  >>> product-3-9.html >>> */
+.banner-pe-wrap{
+  height: 690px;
+  /* @meta {"spritesheet":{"include":false}} */
+  background: url('../images/pages/product-pe-banner.jpg') no-repeat center;
+}
+.banner-pe-wrap .banner-txt-container{
+  height: 218px;
+  width: 655px;
+  text-align: left;
+  padding-left: 70px;
+  padding-top: 8px;
+  top: 380px;
+  left: 35px;
+}
+.banner-txt-container h2{
+  font-size: 36px;
+  line-height: 2.2em;
+}
+.banner-txt-container p{
+  font-size: 20px;
+  line-height: 1.8em;
+}
+.product-pe-wrap{
+  width: 1195px;
+  margin: 0 auto;
+}
+.product-pe-wrap .product-pe__title{
+  font-size: 40px;
+  height: 188px;
+  line-height: 188px;
+  text-align: center;
+}
+.product-pe__ul li:first-child{
+  height: 368px;
+  margin-bottom: 154px;
+}
+.product-pe__ul li{
+  height: 385px;
+  margin-bottom: 145px;
+  background-color: #fff;
+  position: relative;
+}
+.product-pe-txt,
+.product-pe__img{
+  position: absolute;
+}
+.product-pe-txt{
+  left: 143px;
+  top: 70px;
+}
+.product-pe-txt h2{
+  font-size: 36px;
+  font-weight: bold;
+}
+.product-pe-txt p{
+  font-size: 20px;
+  line-height: 1.8em;
+}
+
