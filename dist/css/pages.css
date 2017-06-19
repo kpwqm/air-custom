@@ -482,3 +482,139 @@
 	font-size: 20px;
 	line-height: 1.8em;
 }
+
+/*  >>> cases.html  >>> */
+
+.banner-case {
+	text-align: center;
+	height: 610px;
+	/* @meta {"spritesheet":{"include":false}} */
+	background: url('../images/cases-img-banner.jpg') no-repeat center;
+}
+
+.cases-wrap .banner-case__txt {
+	width: 655px;
+	height: 218px;
+	color: #fff;
+	position: absolute;
+	top: 126px;
+	left: 274px;
+	z-index: 99;
+}
+
+.cases-wrap .banner-case__txt:before {
+	content: '';
+	position: absolute;
+	right: 0;
+	bottom: 0;
+	width: 655px;
+	height: 218px;
+	background: #0f1d41;
+	filter: alpha(opacity=80);
+	opacity: 0.8;
+	z-index: -1;
+}
+
+.cases-wrap .banner-case__txt h2 {
+	font-size: 50px;
+	padding-top: 10px;
+}
+
+.cases-wrap .banner-case__ul {
+	position: relative;
+	height: 70px;
+	/* @meta {"spritesheet":{"include":false}} */
+	background: url('../images/case-banner-txt.png') no-repeat center;
+}
+
+.cases-wrap .banner-case__ul li {
+	font-size: 34px;
+	float: left;
+	position: relative;
+	top: 12px;
+}
+
+.cases-main-wrap {
+	width: 900px;
+	margin: 0 auto;
+	padding-top: 107px;
+	padding-bottom: 120px;
+}
+
+.page-cases__ul li {
+	min-height: 380px;
+	position: relative;
+	margin-top: 80px;
+}
+
+.page-cases__ul li:first-child {
+	margin-top: 0;
+}
+
+.cases-intro-wrap {
+	position: absolute;
+	width: 278px;
+	height: 277px;
+	top: 50%;
+	margin-top: -140px;
+	padding: 18px 30px;
+	z-index: 99;
+}
+
+.cases-intro-wrap::before {
+	content: '';
+	position: absolute;
+	right: 0;
+	bottom: 0;
+	width: 100%;
+	height: 100%;
+	background: #0f1d41;
+	filter: alpha(opacity=80);
+	opacity: 0.8;
+	z-index: -1;
+}
+
+.cases-intro-wrap.cases-intro__left {
+	left: 68px;
+}
+
+.cases-intro-wrap.cases-intro__right {
+	right: 54px;
+}
+
+.cases-intro-wrap > div {
+	border-top: 1px solid #be9e7f;
+	border-bottom: 1px solid #be9e7f;
+	font-size: 20px;
+	color: #be9e7f;
+}
+
+.cases-intro-wrap .cases-intro__type {
+	padding-left: 29px;
+	margin-top: 25px;
+}
+
+.cases-intro-wrap .cases-intro__type:before {
+	content: "■";
+	position: absolute;
+	left: 29px;
+}
+
+.cases-intro-wrap .cases-intro__title {
+	color: #fff;
+	font-size: 30px;
+	height: 132px;
+	width: 100%;
+	display: table;
+}
+
+.cases-intro-wrap .cases-intro__title span {
+	display: table-cell;
+	vertical-align: middle;
+	text-align: center;
+}
+
+.cases-intro__system {
+	text-align: right;
+	margin-bottom: 22px;
+}
