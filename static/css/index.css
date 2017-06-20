@@ -101,7 +101,7 @@ h1.index-title__h1{
   height: 50px;
   position: relative;
 }
-.index-type__form .input-box.required:before{
+.index-type__form .input-box__select.require:before{
   display: block;
   width: 18px;
   height: 28px;
@@ -113,25 +113,36 @@ h1.index-title__h1{
   left: 8px; top: 2px;
 }
 .index-type__form .input-box select{
-  width: 502px;
+  width: 400px;
   height: 30px;
-  padding-left: 85px;
+  margin-left: 37px;
+  border: none;
 }
-.input-box select.business-usefor__select{
-  padding-left: 120px;
+.input-box .input-box__select{
+  width: 502px;
+  height: 32px;
+  border: 1px solid #7e8698;
+  -webkit-border-radius: 2px;
+  -moz-border-radius: 2px;
+  border-radius: 2px;
 }
-.input-box.input-box__select span{
-  position: absolute;
-  left: 18px;
-  display: block;
+.input-box .input-box__select span{
+  display: inline-block;
   line-height: 28px;
   color: #c9c9c9;
+  margin-left: 18px;
 }
-.input-box select.province-city__select{
-  width: 235px;
-  padding-left: 16px;
+.input-box .province-city__select{
+  width: 237px;
 }
-
+.input-box .province-city__select select{
+  width: 217px;
+  padding-left: 0;
+  margin-left: 18px;
+}
+.input-box select.business-usefor__select{
+  width: 364px;
+}
 .index-type__form .input-box input{
   position: relative;
   display: inline-block;
@@ -142,7 +153,6 @@ h1.index-title__h1{
   padding-left: 18px;
   padding-right: 18px;
 }
-.index-type__form .input-box select,
 .index-type__form .input-box input,
 .user-sex__radios{
   border: 1px solid #7e8698;

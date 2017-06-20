@@ -70,6 +70,7 @@ i[class^="icon-"]{display: block;}
 
 .co-4c4c4c{color: #4c4c4c!important;}
 .co-c4a07a{color: #c4a07a!important;}
+.co-9e9e9e{color: #9e9e9e!important;}
 
 .bgc-fff{background-color: #fff!important;}
 .bgc-e6e6e6{background-color: #e6e6e6!important;}
@@ -202,7 +203,8 @@ body, html {
 .header-nav__ul li{
   float: left;
   line-height: 66px;
-  margin-left: 140px;
+  /*margin-left: 140px;*/
+  margin-left: 170px;
 }
 .header-nav__ul li:first-child{
   margin-left: 0;

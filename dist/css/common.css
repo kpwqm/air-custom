@@ -367,6 +367,10 @@ i[class^="icon-"] {
 	color: #c4a07a!important;
 }
 
+.co-9e9e9e {
+	color: #9e9e9e!important;
+}
+
 .bgc-fff {
 	background-color: #fff!important;
 }
@@ -543,7 +547,8 @@ html {
 .header-nav__ul li {
 	float: left;
 	line-height: 66px;
-	margin-left: 140px;
+	/*margin-left: 140px;*/
+	margin-left: 170px;
 }
 
 .header-nav__ul li:first-child {
