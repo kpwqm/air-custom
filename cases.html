@@ -191,7 +191,7 @@
       <!--案例列表 部分 - start-->
       <div class="cases-main-wrap">
         <ul class="page-cases__ul">
-          <li>
+          <li data-toggle="modal" data-target="#myModal">
             <img class="page-cases__img" src="./dist/images/cases-img-1.jpg" alt="">
             <div class="cases-intro-wrap cases-intro__left">
               <div>
@@ -298,18 +298,33 @@
   <!--右侧固定部分 - end-->
   <!-- Modal - start -->
   <div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
-    <div class="modal-dialog" role="document">
+    <div class="modal-dialog case-dialog" role="document">
       <div class="modal-content">
         <div class="modal-header">
-          <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
-          <h4 class="modal-title" id="myModalLabel">Modal title</h4>
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true"></span></button>
+          <h4 class="modal-title" id="myModalLabel">广州高端写字楼</h4>
         </div>
         <div class="modal-body">
-          这是弹窗部分
-        </div>
-        <div class="modal-footer">
-          <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
-          <button type="button" class="btn btn-primary">Save changes</button>
+          <!--案例html内容部分 - start-->
+          <div class="case-modal-banner">
+            <div class="modal-banner__img">
+              <img src="./dist/images/cases-img-1.jpg" alt="">
+            </div>
+            <div class="modal-banner_txt">
+              <div>
+                <div class="case-modal__type">前装</div>
+                <div class="case-modal__title">
+                  <span>广州东塔</span>
+                </div>
+                <div class="case-modal__system">——中央定制系统</div>
+              </div>
+            </div>
+          </div>
+
+          <div class="case-modal-content">
+            <h2>项目现状</h2>
+          </div>
+          <!--案例html内容部分 - end-->
         </div>
       </div>
     </div>

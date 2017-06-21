@@ -294,87 +294,107 @@
             </div>
             <!--家居型 选项 - start-->
             <div class="product-type__selects home ">
-              <div class="select-box require">
-                <select name="home-province" id="home-province" class="product-province f-l" style="padding-left:20px;">
-                  <option value="1">广东</option>
-                  <option value="2">广东</option>
-                </select>
-                <select name="home-city" id="home-city" class="product-city f-r" style="padding-left:8px;">
-                  <option value="1">广州</option>
-                  <option value="2">广州</option>
-                  <option value="3">广州</option>
-                </select>
+              <div class="select-box">
+                <div class="select-wrap location-select f-l require">
+                  <select name="home-province" id="home-province">
+                    <option value="1">广东</option>
+                    <option value="2">广东</option>
+                  </select>
+                </div>
+                <div class="select-wrap location-select f-r" style="padding-left:10px;">
+                  <select name="home-city" id="home-city" style="width:218px;">
+                    <option value="1">广州</option>
+                    <option value="2">广州</option>
+                    <option value="3">广州</option>
+                  </select>
+                </div>
               </div>
               <!--楼盘-->
               <div class="select-box">
-                <span>楼盘</span>
-                <select name="home-building" id="home-building">
-                  <option value="1">汇悦台</option>
-                  <option value="2">汇悦台1</option>
-                  <option value="3">汇悦台2</option>
-                </select>
+                <div class="select-wrap">
+                  <span>楼盘</span>
+                  <select name="home-building" id="home-building">
+                    <option value="1">汇悦台</option>
+                    <option value="2">汇悦台1</option>
+                    <option value="3">汇悦台2</option>
+                  </select>
+                </div>
               </div>
               <!--单元-->
               <div class="select-box">
-                <span>单元</span>
-                <select name="home-cell" id="home-cell">
-                  <option value="1">嘉座 01</option>
-                  <option value="2">嘉座 02</option>
-                  <option value="3">嘉座 03</option>
-                </select>
+                <div class="select-wrap">
+                  <span>单元</span>
+                  <select name="home-cell" id="home-cell">
+                    <option value="1">嘉座 01</option>
+                    <option value="2">嘉座 02</option>
+                    <option value="3">嘉座 03</option>
+                  </select>
+                </div>
               </div>
               <!--户型-->
               <!--必选项添加类'require'-->
-              <div class="select-box require">
-                <span>户型</span>
-                <select name="home-rooms" id="home-rooms">
-                  <option value="1">2厅3室</option>
-                  <option value="2">2厅4室</option>
-                  <option value="3">2厅5室</option>
-                </select>
+              <div class="select-box">
+                <div class="select-wrap require">
+                  <span>户型</span>
+                  <select name="home-rooms" id="home-rooms">
+                    <option value="1">2厅3室</option>
+                    <option value="2">2厅4室</option>
+                    <option value="3">2厅5室</option>
+                  </select>
+                </div>
               </div>
               <!--面积-->
               <!--必选项添加类'require'-->
-              <div class="select-box require">
-                <span>面积</span>
-                <select name="home-area" id="home-area">
-                  <option value="1">120㎡</option>
-                  <option value="2">140㎡</option>
-                  <option value="3">160㎡</option>
-                </select>
+              <div class="select-box ">
+                <div class="select-wrap require">
+                  <span>面积</span>
+                  <select name="home-area" id="home-area">
+                    <option value="1">120㎡</option>
+                    <option value="2">140㎡</option>
+                    <option value="3">160㎡</option>
+                  </select>
+                </div>
               </div>
             </div>
             <!--家居型 选项 - end-->
             <!--商用型 选项 - start-->
             <div class="product-type__selects business hide">
-              <div class="select-box require">
-                <select name="business-province" id="business-province" class="product-province f-l" style="padding-left:20px;">
-                  <option value="1">广东</option>
-                  <option value="2">广东</option>
-                </select>
-                <select name="business-city" id="business-city" class="product-city f-r" style="padding-left:8px;">
-                  <option value="1">广州</option>
-                  <option value="2">广州</option>
-                  <option value="3">广州</option>
-                </select>
+              <div class="select-box">
+                <div class="select-wrap location-select f-l require">
+                  <select name="business-province" id="business-province">
+                    <option value="1">广东</option>
+                    <option value="2">广东</option>
+                  </select>
+                </div>
+                <div class="select-wrap location-select f-r" style="padding-left:10px;">
+                  <select name="business-city" id="business-city" style="width:218px;">
+                    <option value="1">广州</option>
+                    <option value="2">广州</option>
+                    <option value="3">广州</option>
+                  </select>
+                </div>
               </div>
               <!--商用空间-->
               <div class="select-box">
-                <span>商用空间</span>
-                <select name="business-usefor" id="business-usefor" style="padding-left:100px;">
-                  <option value="1">健身房</option>
+                <div class="select-wrap" style="padding-left:100px;">
+                  <span>商用空间</span>
+                  <select name="business-usefor" id="business-usefor" style="width:398px;">
+                    <option value="1">健身房</option>
                     <option value="2">健身房</option>
                     <option value="3">健身房</option>
-                </select>
+                  </select>
+                </div>
               </div>
               <!--面积-->
-                <div class="select-box require">
-                  <span>面积</span>
-                  <select name="business-area" id="business-area">
-                    <option value="1">400㎡</option>
-                    <option value="2">800㎡</option>
-                    <option value="3">1200㎡</option>
-                  </select>
+                <div class="select-box">
+                  <div class="select-wrap require">
+                    <span>面积</span>
+                    <select name="business-area" id="business-area">
+                      <option value="1">400㎡</option>
+                      <option value="2">800㎡</option>
+                      <option value="3">1200㎡</option>
+                    </select>
+                  </div>
                 </div>
             </div>
             <!--商用型 选项 - end-->
