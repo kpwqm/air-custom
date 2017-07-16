@@ -2014,7 +2014,7 @@
 }
 
 .modal-open {
-	overflow: auto;
+	/*overflow: auto;*/
 	padding-right: 0 !important;
 }
 

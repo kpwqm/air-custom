@@ -281,29 +281,6 @@
           <input type="button" value="取消" class="account_box-cancel">
           <input type="button" value="去结算" class="account_box-submit" data-toggle="modal" data-target="#myModal">
         </div>
-
-        <!-- Modal - start -->
-        <div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
-          <div class="middle_center modal_bg">
-            <div class="modal-dialog" role="document">
-              <div class="modal-content">
-                <div class="modal-header">
-                  <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
-                  <h4 class="modal-title" id="myModalLabel"></h4>
-                </div>
-                <div class="modal-body text-center">
-                  <img src="./dist/images/common/warm.png" alt="">
-                  <br><br>
-                  <p><span class="cl-red">＊</span>为必填项，请补充完整！</p>
-                </div>
-                <div class="modal-footer">
-                  <button type="button" class="btn btn-default modal_confirm" data-dismiss="modal">确定</button>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-        <!-- Modal - end -->
         
       </div>
     <!--我的订单 - end-->
@@ -373,6 +350,28 @@
   <!--右侧固定部分 - end-->
   <!-- Modal - start -->
   <div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+    <div class="middle_center modal_bg">
+      <div class="modal-dialog" role="document">
+        <div class="modal-content">
+          <div class="modal-header">
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+            <h4 class="modal-title" id="myModalLabel"></h4>
+          </div>
+          <div class="modal-body text-center">
+            <img src="./dist/images/common/warm.png" alt="">
+            <br><br>
+            <p><span class="cl-red">＊</span>为必填项，请补充完整！</p>
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-default modal_confirm" data-dismiss="modal">确定</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- Modal - end -->
+  <!-- Modal - start
+  <div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
     <div class="modal-dialog" role="document">
       <div class="modal-content">
         <div class="modal-header">
@@ -389,7 +388,7 @@
       </div>
     </div>
   </div>
-  <!-- Button trigger modal -->
+  Button trigger modal -->
   <!--<button type="button" class="hide btn btn-primary btn-lg" data-toggle="modal" data-target="#myModal">Launch demo modal</button>-->
   <!-- Modal - end -->
 </body>

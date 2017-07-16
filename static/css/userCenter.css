@@ -1638,7 +1638,7 @@
   display: none!important
 }
 .modal-open{
-  overflow: auto;
+  /*overflow: auto;*/
   padding-right: 0 !important;
 }
 .modal-open .modal{
