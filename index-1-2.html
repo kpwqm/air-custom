@@ -1,0 +1,454 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset='UTF-8'>
+  <meta name="renderer" content="webkit" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="fragment" content="!" />
+
+  <title>首页 - Air Custom</title>
+  <meta name="keywords" content="">
+  <meta name="description" content="">
+
+  <link rel="stylesheet" href="./dist/css/common.css?v=1.0.0">
+  <link rel="stylesheet" href="./dist/css/index.css?v=1.0.0">
+
+  <script src="./static/lib/jquery-1.12.0.min.js"></script>
+  <script>
+    //用jq替换$,解决与mootools库中的$的冲突
+    var jq = jQuery.noConflict();
+  </script>
+  <script src="./static/lib/bootstrap/modal/index.js"></script>
+  <link rel="stylesheet" href="./static/lib/bootstrap/modal/style.css">
+
+</head>
+<body>
+  <div class="grid-box">
+    <!--header 部分 - start-->
+    <div id="header">
+      <div class="header-top-box"> 
+        <div class="header-top__left f-l">
+          <!--header部分左侧 - start-->
+          <ul class="header-left__ul clearfix">
+            <li>
+              <a href="javascript:void(0)">新媒体中心</a>
+            </li>
+            <li>
+              <a href="javascript:void(0)">耗材购买</a>
+            </li>
+          </ul>
+          <!--header部分左侧 - end-->
+        </div>
+        <div class="header-top__right f-r">
+          <ul class="header-right__ul clearfix">
+            <li>
+              <!--未登陆 - start-->
+              <div class="user-signin hide">
+                <a href="javascript:void(0)">注册</a>
+                <span style="margin:0 5px">/</span>
+                <a href="javascript:void(0)">登陆</a>
+              </div>
+              <!--未登陆 - end-->
+              <!--已登陆 - start-->
+              <div class="user-logined relative clearfix">
+                <div class="user-account">
+                  <a class="user-name__a ellipsis" href="javascript:void(0)">My AirCustom</a>
+                  <span style="margin:0 5px">/</span>
+                  <a class="user-exit__a" href="javascript:void(0)">退出</a>
+                </div>
+                
+                <div class="user-nav-wrap absolute">
+                  <div class="user-arrow"><div class="user-arrow-inner"></div></div>
+                  <div class="user-nav-box">
+                    <!--购物车数据 - start-->
+                    <div class="user-cart-box">
+                      <!--购物车无数据-->
+                      <div class="user-cart__error hide">你的购物车是空的</div>
+                      <!--购物车有数据 - start-->
+                      <div class="user-cart-products">
+                        <ul class="user-cart__ul">
+                          <!--购物车商品列表 - start-->
+                          <li>
+                            <div class="user-cart__img f-l">
+                              <img src="./static/images/user-cart-product-64.png" alt="">
+                            </div>
+                            <div class="user-cart-txt f-l">
+                              <h2>活性碳滤网</h2>
+                              <span class="fs-15">×2</span>
+                            </div>
+                          </li>
+                          <!--购物车商品列表 - end-->
+                          <li>
+                            <div class="user-cart__img f-l">
+                              <img src="./static/images/user-cart-product-64.png" alt="">
+                            </div>
+                            <div class="user-cart-txt f-l">
+                              <h2>活性碳滤网</h2>
+                              <span class="fs-15">×2</span>
+                            </div>
+                          </li>
+                          <!--<li class="clearfix">
+                            <div class="user-cart__img f-l">
+                              <img src="./static/images/user-cart-product-64.png" alt="">
+                            </div>
+                            <div class="user-cart-txt f-l">
+                              <h2>活性碳滤网</h2>
+                              <span class="fs-15">×2</span>
+                            </div>
+                          </li>-->
+                          <!--购物车商品列表 - end-->
+                        </ul>
+                        <!--数据多于3条时显示 删除注释即可-->
+                        <!--<a href="javascript:void(0)" class="user-cart__more text-center">购物车内还有更多产品(6)</a>-->
+                        <button class="ac-btn ac-btn-1 user-cart__btn">去结算</button>
+                      </div>
+                      <!--购物车有数据 - end-->
+                    </div>
+                    <!--购物车数据 - end-->
+                    <!--用户登陆后相应导航 - start-->
+                    <ul class="user-nav__ul clearfix">
+                      <li class="user-nav__li active">
+                        <i class="icon-user-cart"></i>
+                        <a href="javascript:void(0)">购物车</a>
+                      </li>
+                      <li class="user-nav__li">
+                        <i class="icon-user-favorites"></i>
+                        <a href="javascript:void(0)">收藏(10)</a>
+                      </li>
+                      <li class="user-nav__li">
+                        <i class="icon-user-orders"></i>
+                        <a href="javascript:void(0)">订单</a>
+                      </li>
+                      <li class="user-nav__li">
+                        <i class="icon-user-pay"></i>
+                        <a href="javascript:void(0)">支付</a>
+                      </li>
+                      <li class="user-nav__li">
+                        <i class="icon-user-account"></i>
+                        <a href="javascript:void(0)">账户</a>
+                      </li>
+                      <li class="user-nav__li">
+                        <i class="icon-user-login"></i>
+                        <a href="javascript:void(0)">退出</a>
+                      </li>
+                    </ul>
+                    <!--用户登陆后相应导航 - end-->
+                  </div>
+                  
+                </div>
+              </div>
+              <!--已登陆 - end-->
+            </li>
+            <li style="margin-left: 32px;">
+              <a class="icon-search__header" href="javascript:void(0)"></a>
+            </li>
+          </ul>
+        </div>
+        <div class="header-top__middle">
+          <i class="icon-logo auto"></i>
+        </div>
+      </div>
+      <div class="haeder-nav-box">
+        <ul class="header-nav__ul">
+          <li>
+            <a href="javascript:void(0)">
+              <span>首  页</span><span class="line"></span>
+            </a>
+          </li>
+          <li>
+            <a href="javascript:void(0)">
+              <span>Air Custom世界</span><span class="line"></span>
+            </a>
+          </li>
+          <li>
+            <a class="active" href="javascript:void(0)">
+              <span>产   品</span><span class="line"></span>
+            </a>
+          </li>
+          <li>
+            <a href="javascript:void(0)">
+              <span>服  务</span><span class="line"></span>
+            </a>
+          </li>
+          <li>
+            <a href="javascript:void(0)">
+              <span>案  例</span><span class="line"></span>
+            </a>
+          </li>
+          <li>
+            <a href="javascript:void(0)">
+              <span>联系我们</span><span class="line"></span>
+            </a>
+          </li>
+        </ul>
+      </div>
+    </div>
+    <!--header 部分 - end-->
+    <div id="main">
+      <!--banner部分-->
+      <div class="slider-wrap">
+        
+      </div>
+
+        <!--功能选配 - start-->
+      <div class="product-select-box">
+        <div class="product-select__title">
+          <h3>功能选配</h3>
+          <a href="javascript:void(0)">&gt;了解更多</a>
+        </div>
+        <div class="product-function-checkboxes">
+          <ul class="product-function__ul clearfix">
+            
+            <li>
+              <label for="p-function-1">
+                <input type="checkbox" id="p-function-1" name="product-function" checked>
+                <!--遍历数据时，使用背景进行显示-->
+                <div class="product-function__img" style="background:url('./dist/images/product-function-icon1.png') no-repeat center">
+                  <!--<img src="./dist/images/product-function-icon1.png" alt="">-->
+                </div>
+                <div class="product-function__title">新风</div>
+                <i class="icon-checked"><!--选中后显示--></i>
+              </label>
+            </li>
+
+            <li>
+              <label for="p-function-2">
+                <input type="checkbox" id="p-function-2" name="product-function">
+                <div class="product-function__img" style="background:url('./dist/images/product-function-icon2.png') no-repeat center">
+                  <!--<img src="./dist/images/product-function-icon2.png" alt="">-->
+                </div>
+                <div class="product-function__title">除霾</div>
+                <i class="icon-checked"><!--选中后显示--></i>
+              </label>
+            </li>
+
+          </ul>
+        </div>
+      </div>
+      <!--功能选配 - end-->
+
+      <!--回风柱装饰 - start-->
+      <div class="product-select-box">
+        <div class="product-select__title">
+          <h3>回风柱装饰</h3>
+          <a href="javascript:void(0)">&gt;了解更多</a>
+        </div>
+
+        <div class="product-material__radios">
+          <ul class="product-material__ul">
+            <li>
+              <label for="product-material-1">
+                <!--效果图绑定在input:radio的data-imgSrc属性上-->
+                <input data-imgSrc="./dist/images/img-material_big-1.png" type="radio" id="product-material-1" name="product-material" checked>
+                <!--遍历数据时，使用背景进行显示-->
+                <div class="product-function__img" style="background:url('./dist/images/img-material-1.png') no-repeat center">
+                  <!--<img src="./dist/images/img-material-1.png" alt="">-->
+                </div>
+                <div class="product-function__title">国际银</div>
+                <i class="icon-checked"><!--选中后显示--></i>
+              </label>
+            </li>
+
+            <li>
+              <label for="product-material-2">
+                <!--效果图绑定在input:radio的data-imgSrc属性上-->
+                <input data-imgSrc="./dist/images/img-material_big-2.png" type="radio" id="product-material-2" name="product-material">
+                <!--遍历数据时，使用背景进行显示-->
+                <div class="product-function__img" style="background:url('./dist/images/img-material-2.png') no-repeat center">
+                  <!--<img src="./dist/images/img-material-2.png" alt="">-->
+                </div>
+                <div class="product-function__title">国际银</div>
+                <i class="icon-checked"><!--选中后显示--></i>
+              </label>
+            </li>
+
+          </ul>
+          <!--效果显示图 - satrt-->
+          <div class="material-show-box">
+            <img class="material-show__img" src="./dist/images/img-material_big-1.png" alt="">
+          </div>
+          <!--效果显示图 - end-->
+        </div>
+
+      </div>
+      <!--回风柱装饰 - end-->
+
+      <!--加入购物车 - start-->
+      <div class="product-addCart-wrap">
+        <h3>AIRCUSTOM空气定制</h3>
+        <div class="product-addCart-box">
+          <div class="addCart__title">预约金额</div>
+          <div class="addCart-product-attrs">
+            <div class="product__price">
+              <span>￥</span>
+              <span style="color:#434343;font-size:28px;">15,8000</span>
+              <span>元</span>
+            </div>
+            <div class="product__preprice">
+              <span>预订金</span>
+              <span>5,000</span>
+              <span>元</span>
+            </div>
+            <div class="product__attrs-box">
+              <h4>定制清单</h4>
+              <div class="product__type">
+                <span>产品类型：</span>
+                <span>家居型</span>
+              </div>
+              <div class="product__area">
+                <span>空间面积：</span>
+                <span>200平方</span>
+              </div>
+              <div class="product__function">
+                <ul>
+                  <li>
+                    <label for="product__function-1">
+                      <input type="checkbox" id="product__function-1" checked disabled>
+                      <span>新风</span>
+                    </label>
+                  </li>
+                  <li>
+                    <label for="product__function-2">
+                      <input type="checkbox" id="product__function-2" checked disabled>
+                      <span>除霾</span>
+                    </label>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+
+
+
+
+          <!-- 预定按钮 - start -->
+          <div class="addCart-btn">
+            <button>预定</button>
+          </div>
+          <!-- 预定按钮 - end -->
+        </div>
+      </div>
+      <!--加入购物车 - end-->
+
+    </div>
+  </div>
+  <!--footer 部分 - start-->
+  <div id="footer" class="bgc-e6e6e6">
+    <!--底部二维码部分 - start-->
+    <div class="footer-qrcode-box auto">
+      <i class="icon-logo__bottom auto"></i>
+      <div class="qrcodes-box">
+        <ul class="qrcodes-box__ul clearfix">
+          <li>
+            <i class="icon-qrcode__wechat"></i>
+            <span class="qrcode-txt">关 注 官 方 微 信</span>
+          </li>
+          <li>
+            <i class="icon-qrcode__android"></i>
+            <span class="qrcode-txt">系统控制  A P P(安卓)</span>
+          </li>
+          <li>
+            <i class="icon-qrcode__ios"></i>
+            <span class="qrcode-txt">系统控制  A P P (iOS)</span>
+          </li>
+        </ul>
+      </div>
+    </div>
+    <!--底部二维码部分 - end-->
+
+    <div class="footer">
+      <div class="footer-box auto">
+        <div class="footer-copyright f-l">Copyright &copy; 2017 爱康森德. 版权所有 粤ICP备16008367号-1</div>
+        <div class="footer-nav-box relative f-r">
+          <ul class="footer-nav__ul clearfix">
+            <li>
+              <a href="javascript:void(0)">使用条款</a>
+            </li>
+            <li>
+              <a href="javascript:void(0)">隐私权政策</a>
+            </li>
+            <li>
+              <a href="javascript:void(0)">网站地图</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!--footer 部分 - end-->
+  <!--右侧固定部分 - start-->
+  <div class="fixed-bar-box">
+    <ul class="fixed-bar__ul">
+      <!--<li>
+        <a id="fixed-consult" href="javascript:void(0)">咨询</a>
+      </li>-->
+      <li>
+        <a id="fixed-app" href="javascript:void(0)"><!--APP--></a>
+      </li>
+      <li>
+        <a id="fixed-favorites" href="javascript:void(0)"><!--收藏--></a>
+      </li>
+      <li>
+        <a id="fixed-top" href="javascript:void(0)"><!--顶部--></a>
+      </li>
+    </ul>
+  </div>
+  <!--右侧固定部分 - end-->
+  <!-- Modal - start -->
+  <div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+    <div class="modal-dialog" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+          <h4 class="modal-title" id="myModalLabel">Modal title</h4>
+        </div>
+        <div class="modal-body">
+          这是弹窗部分
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+          <button type="button" class="btn btn-primary">Save changes</button>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- Button trigger modal -->
+  <!--<button type="button" class="hide btn btn-primary btn-lg" data-toggle="modal" data-target="#myModal">Launch demo modal</button>-->
+  <!-- Modal - end -->
+</body>
+<!--<script src="./static/js/common.js?v1.0.0"></script>-->
+<script src="./dist/js/app.js"></script>
+<script>
+  // 判断b是否为a的子元素
+  /*var contains = function(a,b){
+    return a.contains ? a != b && a.contains(b) : !!(a.compareDocumentPosition(b) & 16);
+  }
+  jq('.product-more__origin').on('mouseover', function(){
+    jq(this).hide();
+    jq('.product-hover-wrap').show();
+  })
+  jq('.product-hover-wrap').on('mouseout', function(ev){
+    if(this != (ev.relatedTarget||ev.fromElement) && !contains(this, (ev.relatedTarget||ev.fromElement))){
+      jq(this).hide();
+      jq('.product-more__origin').show();
+    }
+  })
+
+  // 回风柱装饰选择切换效果图显示
+  jq('.product-material__ul input:radio').change(function(v){
+    var src = jq(this).attr('data-imgSrc');
+    if(v.target.checked)
+      jq('.material-show__img').attr('src', src);
+  })
+
+
+  // 香氛选择切换效果图显示
+  jq('.product-fragrance__ul input:radio').change(function(v){
+    var src = jq(this).attr('data-imgSrc');
+    if(v.target.checked)
+      jq('.fragrance-show__img').attr('src', src);
+  })*/
+
+</script>
+</html>
