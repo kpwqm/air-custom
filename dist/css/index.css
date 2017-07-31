@@ -55,7 +55,7 @@ h1.index-title__h1 {
 }
 
 .index-type__form {
-	width: 526px;
+	width: 792px;
 	margin: 53px auto 0;
 }
 
@@ -71,9 +71,16 @@ h1.index-title__h1 {
 	position: relative;
 	width: 216px;
 	height: 272px;
+	display: inline-block;
+	margin-left: 64px;
 }
 
-.index-type__radios > label > div {
+.index-type__radios > label:first-child {
+	margin: 0;
+}
+
+.index-type__radios > label > div,
+.index-type__radios > label > a > div {
 	width: 216px;
 	height: 272px;
 	border: 1px solid #dadada;
