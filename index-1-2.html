@@ -7,7 +7,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <meta name="fragment" content="!" />
 
-  <title>首页 - Air Custom</title>
+  <title>分体 - Air Custom</title>
   <meta name="keywords" content="">
   <meta name="description" content="">
 
@@ -19,6 +19,7 @@
     //用jq替换$,解决与mootools库中的$的冲突
     var jq = jQuery.noConflict();
   </script>
+  <script src="./static/lib/unslider.min.js"></script>
   <script src="./static/lib/bootstrap/modal/index.js"></script>
   <link rel="stylesheet" href="./static/lib/bootstrap/modal/style.css">
 
@@ -186,150 +187,125 @@
     </div>
     <!--header 部分 - end-->
     <div id="main">
-      <!--banner部分-->
+      <!--slider 部分 - start -->
       <div class="slider-wrap">
-        
+        <ul class="slider-ul">
+          <li>
+            <div style="background-image: url('./dist/images/banner/banner-1-big.jpg');"></div>
+          </li>
+          <li>
+            <div style="background-image: url('./dist/images/banner/banner-2-big.jpg');"></div>
+          </li>
+          <li>
+            <div style="background-image: url('./dist/images/banner/banner-3-big.jpg');"></div>
+          </li>
+          <li>
+            <div style="background-image: url('./dist/images/banner/banner-4-big.jpg');"></div>
+          </li>
+          <li>
+            <div style="background-image: url('./dist/images/banner/banner-5-big.jpg');"></div>
+          </li>
+          <li>
+            <div style="background-image: url('./dist/images/banner/banner-6-big.jpg');"></div>
+          </li>
+        </ul>
       </div>
+      <!--slider 部分 - end -->
 
-        <!--功能选配 - start-->
-      <div class="product-select-box">
-        <div class="product-select__title">
-          <h3>功能选配</h3>
-          <a href="javascript:void(0)">&gt;了解更多</a>
-        </div>
-        <div class="product-function-checkboxes">
-          <ul class="product-function__ul clearfix">
-            
-            <li>
-              <label for="p-function-1">
-                <input type="checkbox" id="p-function-1" name="product-function" checked>
-                <!--遍历数据时，使用背景进行显示-->
-                <div class="product-function__img" style="background:url('./dist/images/product-function-icon1.png') no-repeat center">
-                  <!--<img src="./dist/images/product-function-icon1.png" alt="">-->
-                </div>
-                <div class="product-function__title">新风</div>
-                <i class="icon-checked"><!--选中后显示--></i>
-              </label>
-            </li>
+      <div class="index-split-wrap">
+        <div class="index-split-box clearfix">
+          <!-- 属性选择 部分 - start -->
+          <div class="split-left-box f-l">
+            <div class="split-left-header">
+              <div class="left-title f-l">变形魔方</div>
+              <div class="left-tips f-r">
+                <p style="font-size:24px;">分体定制系统</p>
+                <p style="font-size:18px;">装修后</p>
+              </div>
+            </div>
 
-            <li>
-              <label for="p-function-2">
-                <input type="checkbox" id="p-function-2" name="product-function">
-                <div class="product-function__img" style="background:url('./dist/images/product-function-icon2.png') no-repeat center">
-                  <!--<img src="./dist/images/product-function-icon2.png" alt="">-->
-                </div>
-                <div class="product-function__title">除霾</div>
-                <i class="icon-checked"><!--选中后显示--></i>
-              </label>
-            </li>
+            <div class="split-attrs-1">
+              <div class="split-1-title">
+                <i></i>
+                <span>功能选配</span>
+              </div>
+              
+              <ul class="split-fns__ul clearfix">
+                <!-- 前两个默认选中checked -->
+                <li>
+                  <label for="fns-1">
+                    <input type="checkbox" id="fns-1" name="split-fns" checked>
+                    <div class="split-fns__img" style="background:url('./dist/images/product-function-icon1.png') no-repeat center"></div>
+                    <div class="split-fns__title">新风</div>
+                    <i class="icon-checked"></i>
+                  </label>
+                </li>
+                <li>
+                  <label for="fns-2">
+                    <input type="checkbox" id="fns-2" name="split-fns" checked>
+                    <div class="split-fns__img" style="background:url('./dist/images/product-function-icon2.png') no-repeat center"></div>
+                    <div class="split-fns__title">除霾</div>
+                    <i class="icon-checked"></i>
+                  </label>
+                </li>
+                
+              </ul>
 
-          </ul>
-        </div>
-      </div>
-      <!--功能选配 - end-->
+            </div>
 
-      <!--回风柱装饰 - start-->
-      <div class="product-select-box">
-        <div class="product-select__title">
-          <h3>回风柱装饰</h3>
-          <a href="javascript:void(0)">&gt;了解更多</a>
-        </div>
-
-        <div class="product-material__radios">
-          <ul class="product-material__ul">
-            <li>
-              <label for="product-material-1">
-                <!--效果图绑定在input:radio的data-imgSrc属性上-->
-                <input data-imgSrc="./dist/images/img-material_big-1.png" type="radio" id="product-material-1" name="product-material" checked>
-                <!--遍历数据时，使用背景进行显示-->
-                <div class="product-function__img" style="background:url('./dist/images/img-material-1.png') no-repeat center">
-                  <!--<img src="./dist/images/img-material-1.png" alt="">-->
-                </div>
-                <div class="product-function__title">国际银</div>
-                <i class="icon-checked"><!--选中后显示--></i>
-              </label>
-            </li>
-
-            <li>
-              <label for="product-material-2">
-                <!--效果图绑定在input:radio的data-imgSrc属性上-->
-                <input data-imgSrc="./dist/images/img-material_big-2.png" type="radio" id="product-material-2" name="product-material">
-                <!--遍历数据时，使用背景进行显示-->
-                <div class="product-function__img" style="background:url('./dist/images/img-material-2.png') no-repeat center">
-                  <!--<img src="./dist/images/img-material-2.png" alt="">-->
-                </div>
-                <div class="product-function__title">国际银</div>
-                <i class="icon-checked"><!--选中后显示--></i>
-              </label>
-            </li>
-
-          </ul>
-          <!--效果显示图 - satrt-->
-          <div class="material-show-box">
-            <img class="material-show__img" src="./dist/images/img-material_big-1.png" alt="">
+            <div class="split-color-wrap">
+              <h2>颜色</h2>
+              <ul class="split-color__ul clearfix">
+                <li>
+                  <label for="co-1">
+                    <input type="radio" id="co-1" name="split-cos" checked>
+                    <div class="split-color__img" style="background:url('./dist/images/img-material-1.png') no-repeat center"></div>
+                    <div class="split-color__title">国际银</div>
+                    <i class="icon-checked"></i>
+                  </label>
+                </li>
+                <li>
+                  <label for="co-2">
+                    <input type="radio" id="co-2" name="split-cos"">
+                    <div class="split-color__img" style="background:url('./dist/images/img-material-2.png') no-repeat center"></div>
+                    <div class="split-color__title">浅美枫</div>
+                    <i class="icon-checked"></i>
+                  </label>
+                </li>
+              </ul>
+            </div>
           </div>
-          <!--效果显示图 - end-->
-        </div>
+          <!-- 属性选择 部分 - end -->
+          <!-- 预算金额 部分 - start -->
+          <div class="split-right-box f-r">
+            <h2>预算金额</h2>
+            <div class="split-total-box">
 
-      </div>
-      <!--回风柱装饰 - end-->
-
-      <!--加入购物车 - start-->
-      <div class="product-addCart-wrap">
-        <h3>AIRCUSTOM空气定制</h3>
-        <div class="product-addCart-box">
-          <div class="addCart__title">预约金额</div>
-          <div class="addCart-product-attrs">
-            <div class="product__price">
-              <span>￥</span>
-              <span style="color:#434343;font-size:28px;">15,8000</span>
-              <span>元</span>
-            </div>
-            <div class="product__preprice">
-              <span>预订金</span>
-              <span>5,000</span>
-              <span>元</span>
-            </div>
-            <div class="product__attrs-box">
-              <h4>定制清单</h4>
-              <div class="product__type">
-                <span>产品类型：</span>
-                <span>家居型</span>
+              <div class="split-total-price">
+                <span>￥</span>
+                <span class="num">158000</span>
+                <span>元</span>
               </div>
-              <div class="product__area">
-                <span>空间面积：</span>
-                <span>200平方</span>
-              </div>
-              <div class="product__function">
+              <!-- 显示选中的属性 -->
+              <div class="split-total-attrs">
                 <ul>
                   <li>
-                    <label for="product__function-1">
-                      <input type="checkbox" id="product__function-1" checked disabled>
-                      <span>新风</span>
-                    </label>
+                    <input type="checkbox" checked disabled>
+                    <span>新风</span>
                   </li>
                   <li>
-                    <label for="product__function-2">
-                      <input type="checkbox" id="product__function-2" checked disabled>
-                      <span>除霾</span>
-                    </label>
+                    <input type="checkbox" checked disabled>
+                    <span>除霾</span>
                   </li>
                 </ul>
               </div>
             </div>
+            <button class="split-submit__btn">订购</button>
           </div>
-
-
-
-
-          <!-- 预定按钮 - start -->
-          <div class="addCart-btn">
-            <button>预定</button>
-          </div>
-          <!-- 预定按钮 - end -->
+          <!-- 预算金额 部分 - end -->
         </div>
       </div>
-      <!--加入购物车 - end-->
+
 
     </div>
   </div>
@@ -420,6 +396,10 @@
 <!--<script src="./static/js/common.js?v1.0.0"></script>-->
 <script src="./dist/js/app.js"></script>
 <script>
+  jq('.slider-wrap').unslider({
+    autoplay: true
+    ,speed: 2000
+  });
   // 判断b是否为a的子元素
   /*var contains = function(a,b){
     return a.contains ? a != b && a.contains(b) : !!(a.compareDocumentPosition(b) & 16);
