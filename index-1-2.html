@@ -12,7 +12,7 @@
   <meta name="description" content="">
 
   <link rel="stylesheet" href="./dist/css/common.css?v=1.0.0">
-  <link rel="stylesheet" href="./dist/css/index.css?v=1.0.0">
+  <link rel="stylesheet" href="./dist/css/index.css?v=1.0.1">
 
   <script src="./static/lib/jquery-1.12.0.min.js"></script>
   <script>
@@ -234,7 +234,7 @@
                 <!-- 前两个默认选中checked -->
                 <li>
                   <label for="fns-1">
-                    <input type="checkbox" id="fns-1" name="split-fns" checked>
+                    <input type="checkbox" id="fns-1" name="split-fns" checked data-title="新风" />
                     <div class="split-fns__img" style="background:url('./dist/images/product-function-icon1.png') no-repeat center"></div>
                     <div class="split-fns__title">新风</div>
                     <i class="icon-checked"></i>
@@ -242,7 +242,7 @@
                 </li>
                 <li>
                   <label for="fns-2">
-                    <input type="checkbox" id="fns-2" name="split-fns" checked>
+                    <input type="checkbox" id="fns-2" name="split-fns" checked data-title="除霾" />
                     <div class="split-fns__img" style="background:url('./dist/images/product-function-icon2.png') no-repeat center"></div>
                     <div class="split-fns__title">除霾</div>
                     <i class="icon-checked"></i>
@@ -258,7 +258,7 @@
               <ul class="split-color__ul clearfix">
                 <li>
                   <label for="co-1">
-                    <input type="radio" id="co-1" name="split-cos" checked>
+                    <input type="checkbox" id="co-1" name="split-cos" checked data-title="国际银" />
                     <div class="split-color__img" style="background:url('./dist/images/img-material-1.png') no-repeat center"></div>
                     <div class="split-color__title">国际银</div>
                     <i class="icon-checked"></i>
@@ -266,7 +266,7 @@
                 </li>
                 <li>
                   <label for="co-2">
-                    <input type="radio" id="co-2" name="split-cos"">
+                    <input type="checkbox" id="co-2" name="split-cos" data-title="浅美枫" />
                     <div class="split-color__img" style="background:url('./dist/images/img-material-2.png') no-repeat center"></div>
                     <div class="split-color__title">浅美枫</div>
                     <i class="icon-checked"></i>
@@ -288,16 +288,9 @@
               </div>
               <!-- 显示选中的属性 -->
               <div class="split-total-attrs">
-                <ul>
-                  <li>
-                    <input type="checkbox" checked disabled>
-                    <span>新风</span>
-                  </li>
-                  <li>
-                    <input type="checkbox" checked disabled>
-                    <span>除霾</span>
-                  </li>
-                </ul>
+                <span>新风</span>
+                <span>除霾</span>
+                <span>国际银</span>
               </div>
             </div>
             <button class="split-submit__btn">订购</button>
@@ -397,38 +390,25 @@
 <script src="./dist/js/app.js"></script>
 <script>
   jq('.slider-wrap').unslider({
-    autoplay: true
-    ,speed: 2000
+    // autoplay: true
+    // ,speed: 2000
   });
-  // 判断b是否为a的子元素
-  /*var contains = function(a,b){
-    return a.contains ? a != b && a.contains(b) : !!(a.compareDocumentPosition(b) & 16);
-  }
-  jq('.product-more__origin').on('mouseover', function(){
-    jq(this).hide();
-    jq('.product-hover-wrap').show();
+  var selected = ['新风','除霾','国际银']
+  jq('.split-fns__ul input:checkbox, .split-color__ul input:checkbox').on('click', function(ev){
+    selected = [];
+    
+    jq('.split-fns__ul input:checkbox, .split-color__ul input:checkbox').each(function(index,dom){
+      if(dom.checked){
+        selected.push(dom.dataset['title'])
+      }
+    })
+    var html = [];
+    selected.map(function(item){
+      html.push('<span>'+item+'</span>')
+    })
+    jq('.split-total-attrs').empty()
+    jq('.split-total-attrs').append(html)    
   })
-  jq('.product-hover-wrap').on('mouseout', function(ev){
-    if(this != (ev.relatedTarget||ev.fromElement) && !contains(this, (ev.relatedTarget||ev.fromElement))){
-      jq(this).hide();
-      jq('.product-more__origin').show();
-    }
-  })
-
-  // 回风柱装饰选择切换效果图显示
-  jq('.product-material__ul input:radio').change(function(v){
-    var src = jq(this).attr('data-imgSrc');
-    if(v.target.checked)
-      jq('.material-show__img').attr('src', src);
-  })
-
-
-  // 香氛选择切换效果图显示
-  jq('.product-fragrance__ul input:radio').change(function(v){
-    var src = jq(this).attr('data-imgSrc');
-    if(v.target.checked)
-      jq('.fragrance-show__img').attr('src', src);
-  })*/
 
 </script>
 </html>

@@ -471,12 +471,13 @@ h1.index-title__h1 {
 	margin-right: 60px;
 }
 
-.split-attrs-1 li label {
+.split-attrs-1 li label,
+.split-color__ul li label {
 	cursor: pointer;
 }
 
 .split-fns__ul li input[type='checkbox'],
-.split-color__ul li input[type='radio'] {
+.split-color__ul li input[type='checkbox'] {
 	width: 0;
 	height: 0;
 	font-size: 0;
@@ -520,7 +521,7 @@ h1.index-title__h1 {
 }
 
 .split-fns__ul li input[type="checkbox"]:checked ~ .icon-checked,
-.split-color__ul li input[type="radio"]:checked ~ .icon-checked {
+.split-color__ul li input[type="checkbox"]:checked ~ .icon-checked {
 	display: block;
 }
 
@@ -571,8 +572,18 @@ h1.index-title__h1 {
 }
 
 .split-total-attrs {
-	text-align: center;
-	padding: 0 20px 20;
+	margin-top: 30px;
+	padding: 20px;
+}
+
+.split-total-attrs span {
+	display: block;
+	width: 58px;
+	padding: 0px 5px;
+	float: left;
+	overflow: hidden;
+	text-overflow: ellipsis;
+	white-space: nowrap;
 }
 
 .split-submit__btn {

@@ -555,8 +555,12 @@
 }
 
 .product-addCart-wrap h3 {
-	font-size: 28px;
-	text-align: center;
+	/* font-size: 28px;
+  text-align: center; */
+	width: 318px;
+	height: 56px;
+	/* @meta {"spritesheet":{"include":false}} */
+	background: url('../images/h2.png') no-repeat center;
 }
 
 .product-addCart-box {
@@ -619,10 +623,22 @@
 
 .addCart-product-attrs .product__function {
 	margin-top: 90px;
+	padding: 0 18px;
 }
 
 .addCart-product-attrs .product__function input[type="checkbox"] {
 	vertical-align: middle;
+}
+
+.addCart-product-attrs .product__function span {
+	display: block;
+	float: left;
+	width: 70px;
+	padding: 0 10px;
+	text-align: left;
+	overflow: hidden;
+	text-overflow: ellipsis;
+	white-space: nowrap;
 }
 
 /*product.html >>> end*/

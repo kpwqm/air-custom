@@ -413,7 +413,7 @@
               
               <li>
                 <label for="p-function-1">
-                  <input type="checkbox" id="p-function-1" name="product-function" checked>
+                  <input type="checkbox" id="p-function-1" name="product-function" checked data-title="新风" />
                   <!--遍历数据时，使用背景进行显示-->
                   <div class="product-function__img" style="background:url('./dist/images/product-function-icon1.png') no-repeat center">
                     <!--<img src="./dist/images/product-function-icon1.png" alt="">-->
@@ -425,7 +425,7 @@
 
               <li>
                 <label for="p-function-2">
-                  <input type="checkbox" id="p-function-2" name="product-function">
+                  <input type="checkbox" id="p-function-2" name="product-function" checked data-title="除霾" />
                   <div class="product-function__img" style="background:url('./dist/images/product-function-icon2.png') no-repeat center">
                     <!--<img src="./dist/images/product-function-icon2.png" alt="">-->
                   </div>
@@ -451,7 +451,7 @@
               <li>
                 <label for="product-material-1">
                   <!--效果图绑定在input:radio的data-imgSrc属性上-->
-                  <input data-imgSrc="./dist/images/img-material_big-1.png" type="radio" id="product-material-1" name="product-material" checked>
+                  <input data-imgSrc="./dist/images/img-material_big-1.png" type="checkbox" id="product-material-1" name="product-material" checked data-title="国际银" />
                   <!--遍历数据时，使用背景进行显示-->
                   <div class="product-function__img" style="background:url('./dist/images/img-material-1.png') no-repeat center">
                     <!--<img src="./dist/images/img-material-1.png" alt="">-->
@@ -464,7 +464,7 @@
               <li>
                 <label for="product-material-2">
                   <!--效果图绑定在input:radio的data-imgSrc属性上-->
-                  <input data-imgSrc="./dist/images/img-material_big-2.png" type="radio" id="product-material-2" name="product-material">
+                  <input data-imgSrc="./dist/images/img-material_big-2.png" type="checkbox" id="product-material-2" name="product-material" data-title="国际银" />
                   <!--遍历数据时，使用背景进行显示-->
                   <div class="product-function__img" style="background:url('./dist/images/img-material-2.png') no-repeat center">
                     <!--<img src="./dist/images/img-material-2.png" alt="">-->
@@ -497,7 +497,7 @@
               <li>
                 <label for="product-fragrance-1">
                   <!--效果图绑定在input:radio的data-imgSrc属性上-->
-                  <input data-imgSrc="./dist/images/img-fragrance_big-1.png" type="radio" id="product-fragrance-1" name="product-fragrance" checked>
+                  <input data-imgSrc="./dist/images/img-fragrance_big-1.png" type="checkbox" id="product-fragrance-1" name="product-fragrance" checked data-title="薰衣草" />
                   <!--遍历数据时，使用背景进行显示-->
                   <div class="product-function__img" style="background:url('./dist/images/img-fragrance-1.png') no-repeat center">
                     <!--<img src="./dist/images/img-fragrance-1.png" alt="">-->
@@ -510,7 +510,7 @@
               <li>
                 <label for="product-fragrance-2">
                   <!--效果图绑定在input:radio的data-imgSrc属性上-->
-                  <input data-imgSrc="./dist/images/img-fragrance_big-2.png" type="radio" id="product-fragrance-2" name="product-fragrance">
+                  <input data-imgSrc="./dist/images/img-fragrance_big-2.png" type="checkbox" id="product-fragrance-2" name="product-fragrance" data-title="方浮雕" />
                   <!--遍历数据时，使用背景进行显示-->
                   <div class="product-function__img" style="background:url('./dist/images/img-fragrance-2.png') no-repeat center">
                     <!--<img src="./dist/images/img-fragrance-2.png" alt="">-->
@@ -532,7 +532,7 @@
 
         <!--加入购物车 - start-->
         <div class="product-addCart-wrap">
-          <h3>AIRCUSTOM空气定制</h3>
+          <h3><!--AIRCUSTOM--></h3>
           <div class="product-addCart-box">
             <div class="addCart__title">预约金额</div>
             <div class="addCart-product-attrs">
@@ -556,8 +556,12 @@
                   <span>空间面积：</span>
                   <span>200平方</span>
                 </div>
-                <div class="product__function">
-                  <ul>
+                <div class="product__function clearfix">
+                  <span>新风</span>
+                  <span>除霾</span>
+                  <span>国际银</span>
+                  <span>薰衣草</span>
+                  <!-- <ul>
                     <li>
                       <label for="product__function-1">
                         <input type="checkbox" id="product__function-1" checked disabled>
@@ -570,7 +574,7 @@
                         <span>除霾</span>
                       </label>
                     </li>
-                  </ul>
+                  </ul> -->
                 </div>
               </div>
             </div>
@@ -723,6 +727,22 @@
       jq('.fragrance-show__img').attr('src', src);
   })
 
+  var selected = ['新风','除霾','国际银'];
+  jq('.product-select-box input:checkbox').on('click', function(ev){
+    selected = [];
+    
+    jq('.product-select-box input:checkbox').each(function(index,dom){
+      if(dom.checked){
+        selected.push(dom.dataset['title'])
+      }
+    })
+    var html = [];
+    selected.map(function(item){
+      html.push('<span>'+item+'</span>')
+    })
+    jq('.product__function').empty()
+    jq('.product__function').append(html) 
+  })
 
 </script>
 </html>

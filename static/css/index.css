@@ -397,11 +397,12 @@ h1.index-title__h1{
   height: 178px;
   margin-right: 60px;
 }
-.split-attrs-1 li label{
+.split-attrs-1 li label,
+.split-color__ul li label{
   cursor: pointer;
 }
 .split-fns__ul li input[type='checkbox'],
-.split-color__ul li input[type='radio']{
+.split-color__ul li input[type='checkbox']{
   width: 0;
   height: 0;
   font-size: 0;
@@ -440,7 +441,7 @@ h1.index-title__h1{
   display: none;
 }
 .split-fns__ul li input[type="checkbox"]:checked ~ .icon-checked,
-.split-color__ul li input[type="radio"]:checked ~ .icon-checked{
+.split-color__ul li input[type="checkbox"]:checked ~ .icon-checked{
   display: block;
 }
 .split-color-wrap{
@@ -457,7 +458,6 @@ h1.index-title__h1{
   overflow-y: auto;
   margin-top: 24px;
 }
-
 
 .split-right-box{
   width: 276px;
@@ -484,8 +484,17 @@ h1.index-title__h1{
   color: #3f3f3f;
 }
 .split-total-attrs{
-  text-align: center;
-  padding: 0 20px 20;
+  margin-top: 30px;
+  padding: 20px;
+}
+.split-total-attrs span{  
+  display: block;
+  width: 58px;
+  padding:0px 5px;
+  float: left;
+  overflow: hidden;
+  text-overflow:ellipsis;
+  white-space: nowrap;
 }
 .split-submit__btn{
   width: 100%;
@@ -496,6 +505,7 @@ h1.index-title__h1{
   text-align: center;
   font-size: 16px;
 }
+
 
 
 
