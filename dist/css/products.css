@@ -253,6 +253,7 @@
 .product-hover__ul > ul {
 	width: 1205px;
 	height: 192px;
+	cursor: default;
 }
 
 .product-hover__ul {
@@ -265,15 +266,28 @@
 }
 
 .product-hover__ul > ul > li {
-	font-size: 14px;
-	color: #757575;
 	position: absolute;
-	top: 147px;
+	bottom: 24px;
 }
 
-.product-hover__ul > ul > li:hover {
+.product-hover__ul > ul > li a {
+	display: block;
+	text-align: center;
+	position: relative;
+	font-size: 14px;
+	color: #757575;
+}
+
+.product-hover__ul > ul > li a:hover span {
 	text-decoration: underline;
 	color: #0f1d41;
+}
+
+.product-hover__ul > ul > li a span {
+	position: absolute;
+	width: 100%;
+	bottom: 0px;
+	left: 0;
 }
 
 .product-select-wrap {
